@@ -112,10 +112,10 @@
             <button class="reviews__prev" type="button">Предыдущий отзыв</button>
             <button class="reviews__next" type="button">Следующий отзыв</button>
           </div>
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+          <p class="toggles">
+            <button class="toogles__button toogles__button--current" type="button">1</button>
+            <button class="toogles__button" type="button">2</button>
+            <button class="toogles__button" type="button">3</button>
           </p>
         </div>
       </section>
@@ -124,68 +124,56 @@
           <h2 class="visually-hidden">Цены и свойства</h2>
           <table class="prices__properties">
             <tr>
-                <th>
-                  <h3 class="visually-hidden">Свойства</h3>
-                </th>
-                <th>
-                  <p class="prices__title">База</p>
-                  <p class="prices__text">1,99 usd</p>
-                </th>
-                <th>
-                  <p class="prices__title prices__title--hit">Стандарт</p>
-                  <p class="prices__text">3,99 usd</p>
-                </th>
-                <th>
-                  <p class="prices__title">Анлим</p>
-                  <p class="prices__text">9,99 usd</p>
-                </th>
-            </tr>
-            <tr>
-                <td>
-                  <p class="properties__title">Розовый фильтр</p>
-                </td>
-                <td>
-                  <p class="properties__selected"></p>
-                </td>
-                <td>
-                  <p class="properties__selected"></p>
-                </td>
-                <td>
-                  <p class="properties__selected"></p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                  <p class="properties__title">Смайлики</p>
-                </td>
-                <td>
-                  <p class="properties__unselected"></p>
-                </td>
-                <td>
-                  <p class="properties__selected"></p>
-                </td>
-                <td>
-                  <p class="properties__selected"></p>
-                </td>
+              <th class="prices__cell">
+                <p class="prices__title">База</p>
+                <p class="prices__text">1,99 usd</p>
+              </th>
+              <th class="prices__cell prices__cell--hit">
+                <p class="prices__title">Стандарт</p>
+                <p class="prices__text">3,99 usd</p>
+              </th>
+              <th class="prices__cell">
+                <p class="prices__title">Анлим</p>
+                <p class="prices__text">9,99 usd</p>
+              </th>
             </tr>
             <tr>
               <td>
-                <p class="advantages__title">Комментарии</p>
+                <div class="properties__title properties__title--selected">Розовый фильтр</div>
               </td>
               <td>
-                <p class="properties__unselected"></p>
+                <div class="properties__title properties__title--selected">Розовый фильтр</div>
               </td>
               <td>
-                <p class="properties__unselected"></p>
+                <div class="properties__title properties__title--selected">Розовый фильтр</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="properties__title properties__title--unselected">Смайлики</div>
               </td>
               <td>
-                <p class="properties__selected"></p>
+                <div class="properties__title properties__title--selected">Смайлики</div>
               </td>
-          </tr>
+              <td>
+                <div class="properties__title properties__title--selected">Смайлики</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="properties__title properties__title--unselected">Комментарии</div>
+              </td>
+              <td>
+                <div class="properties__title properties__title--unselected">Комментарии</div>
+              </td>
+              <td>
+                <div class="properties__title properties__title--selected">Комментарии</div>
+              </td>
+            </tr>
           </table>
-          <p class="toggles prices__toggles">
-            <button class="toogles__button toogles__button--current" type="button">1</button>
-            <button class="toogles__button" type="button">2</button>
+          <p class="toggles">
+            <button class="toogles__button" type="button">1</button>
+            <button class="toogles__button toogles__button--current" type="button">2</button>
             <button class="toogles__button" type="button">3</button>
           </p>
         </div>
@@ -198,9 +186,7 @@
           <p class="contacts__title">Звоните:</p>
           <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
           <p class="contacts__title">Пишите:</p>
-          <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">
-            <span class="contacts__text">mail@htmlacademy.ru</span>
-          </a>
+          <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           <p class="contacts__title">Приезжайте в гости:</p>
           <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
           <div class="road-map"></div>
@@ -208,7 +194,7 @@
         <a class="page-footer__logo">
           <img src="img/icons/logotype-blue-tablet.svg" width="145" height="40" alt="HTML Academy: Пинк.">
         </a>
-        <div class="page-footer__social">
+        <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
@@ -221,7 +207,7 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright">
+        <div class="page-footer__copyright copyright">
           <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
