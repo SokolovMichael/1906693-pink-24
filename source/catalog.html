@@ -4,9 +4,136 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="img/icons/logotype-mobile.svg" width="74" height="23" alt="HTML Academy: Пинк.">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main main-catalog">
+      <div class="intro__wrapper catalog-intro">
+        <h1 class="catalog-intro__slogan">Фотографии пользователей</h1>
+      </div>
+      <p class="catalog__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <section class="photos">
+        <div class="photos__wrapper">
+          <h2 class="visually-hidden">Фотографии и отзывы</h2>
+          <ul class="photos__list">
+            <li class="photos__item">
+              <img class="photos__image" src="img/catalog/panorama-tablet.jpg" width="320" height="137" alt="Панорамное фото от Анны.">
+              <div class="photos__item-wrapper comments">
+                <span class="comments__author">Анна</span>
+                <span class="comments__time">(5 минут назад)</span>
+                <p class="comments__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <div class="comments__like">Нравится: 215</div>
+              </div>
+            </li>
+            <li class="photos__item">
+              <img class="photos__image" src="img/catalog/photo-1-mobile.jpg" width="280" height="180" alt="Фото от Левона.">
+              <div class="photos__item-wrapper comments">
+                <span class="comments__author">Левон</span>
+                <span class="comments__time">(5 часов назад)</span>
+                <p class="comments__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <div class="comments__like">Нравится: 356</div>
+              </div>
+            </li>
+            <li class="photos__item">
+              <img class="photos__image" src="img/catalog/photo-2-mobile.jpg" width="280" height="180" alt="Фото от Антона.">
+              <div class="photos__item-wrapper comments">
+                <span class="comments__author">Антон</span>
+                <span class="comments__time">(12 часов назад)</span>
+                <p class="comments__text">Соседи будут рады!</p>
+                <div class="comments__like">Нравится: 666</div>
+              </div>
+            </li>
+            <li class="photos__item">
+              <img class="photos__image" src="img/catalog/photo-3-tablet.jpg" width="280" height="180" alt="Фото от Бориса.">
+              <div class="photos__item-wrapper comments">
+                <span class="comments__author">Борис</span>
+                <span class="comments__time">(20 часов назад)</span>
+                <p class="comments__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <div class="comments__like">Нравится: 215</div>
+              </div>
+            </li>
+            <li class="photos__item">
+              <img class="photos__image" src="img/catalog/photo-4-tablet.jpg" width="280" height="180" alt="Кубанская бахча.">
+              <div class="photos__item-wrapper comments">
+                <span class="comments__author">Сергей</span>
+                <span class="comments__time">(25 часов назад)</span>
+                <p class="comments__text">Самая кубанская в мире!</p>
+                <div class="comments__like">Нравится: 4</div>
+              </div>
+            </li>
+            <li class="photos__item">
+              <img class="photos__image" src="img/catalog/photo-5-tablet.jpg" width="280" height="180" alt="Фото от Максима.">
+              <div class="photos__item-wrapper comments">
+                <span class="comments__author">Максим</span>
+                <span class="comments__time">(40 часов назад)</span>
+                <p class="comments__text">Где снег-то?</p>
+                <div class="comments__like">Нравится: 150</div>
+              </div>
+            </li>
+            <li class="photos__item">
+              <img class="photos__image" src="img/catalog/photo-6-tablet.jpg" width="280" height="180" alt="Фото крыла самолета.">
+              <div class="photos__item-wrapper comments">
+                <span class="comments__author">Надежда</span>
+                <span class="comments__time">(45 часов назад)</span>
+                <p class="comments__text">Всем GM и взаимные лайки!</p>
+                <div class="comments__like">Нравится: 2560</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="main-catalog__wrapper">
+        <p class="main-catalog__slogan">Затмите их всех!</p>
+        <p class="main-catalog__slogan">Выкладывайте все, что накопилось в телефоне!</p>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo">
+          <img src="img/icons/logotype-blue-tablet.svg" width="145" height="40" alt="HTML Academy: Пинк.">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">Мы на Ютубе</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

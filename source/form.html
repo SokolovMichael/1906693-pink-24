@@ -4,9 +4,176 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="img/icons/logotype-mobile.svg" width="74" height="23" alt="HTML Academy: Пинк.">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">Фотографии</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main main-form">
+      <div class="intro__wrapper form-intro">
+        <h1 class="form-intro__slogan">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
+      <p class="form__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+      <form class="form-choice" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="form-choice username">
+          <legend class="visually-hidden">Данные пользователя</legend>
+          <ul class="username__list">
+            <li class="username__item">
+              <label for="username__surname">Фамилия:</label>
+              <input class="username__input" type="text" id="username__surname" name="username__surname" placeholder="Укажите фамилию *" required>
+            </li>
+            <li class="username__item">
+              <label for="username__name">Имя:</label>
+              <input class="username__input" type="text" id="username__name" name="username__name" placeholder="Введите ваше имя *" required>
+            </li>
+            <li class="username__item">
+              <label for="username__patronymic">Отчество:</label>
+              <input class="username__input" type="text" id="username__patronymic" name="username__patronymic" placeholder="Ну и отчество тоже">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-choice travel-achievements">
+          <legend class="travel-achievements__title">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="travel-achievements__list">
+            <li class="travel-achievements__item">
+              <label class="travel-achievements__control control">
+                <input class="visually-hidden control__input" type="checkbox" name="took-a-selfie-with-a-shark" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Сделал селфи с акулой</span>
+              </label>
+            </li>
+            <li class="travel-achievements__item">
+              <label class="travel-achievements__control control">
+                <input class="visually-hidden control__input" type="checkbox" name="sunburned-on-the-beach" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Обгорел на пляже</span>
+              </label>
+            </li>
+            <li class="travel-achievements__item">
+              <label class="travel-achievements__control control">
+                <input class="visually-hidden control__input" type="checkbox" name="saw-Chuck-Norris">
+                <span class="control__mark"></span>
+                <span class="control__label">Видел Чака Норриса</span>
+              </label>
+            </li>
+            <li class="travel-achievements__item">
+              <label class="travel-achievements__control control">
+                <input class="visually-hidden control__input" type="checkbox" name="bought-some-souvenirs">
+                <span class="control__mark"></span>
+                <span class="control__label">Накупил сувениров</span>
+              </label>
+            </li>
+            <li class="travel-achievements__item">
+              <label class="travel-achievements__control control">
+                <input class="visually-hidden control__input" type="checkbox" name="held-the-tower" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Удержал башню</span>
+              </label>
+            </li>
+            <li class="travel-achievements__item">
+              <label class="travel-achievements__control control">
+                <input class="visually-hidden control__input" type="checkbox" name="trashed-the-hotel">
+                <span class="control__mark"></span>
+                <span class="control__label">Разгромил отель</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-choice contacts">
+          <legend class="visually-hidden">Контактная информация</legend>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <label for="contacts__phone">Номер телефона</label>
+              <input class="contacts__input" type="tel" id="contacts__phone" name="contacts__phone" placeholder="Номер, пожалуйста">
+            </li>
+            <li class="contacts__item">
+              <label for="contacts__email">Адрес почты</label>
+              <input class="contacts__input" type="email" id="contacts__email" name="contacts__email" placeholder="Введите почту *" required>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-choice application">
+          <legend class="application__title">С каким приложением путешествовали?</legend>
+          <ul class="application__list">
+            <li class="application__item">
+              <label class="application__control control">
+                <input class="visually-hidden control__input" type="radio" name="application__type" value="for-ios" checked>
+                <span class="control__mark"></span>
+                <span class="control__label control__label--radio">Pink для iOS</span>
+              </label>
+            </li>
+            <li class="application__item">
+              <label class="application__control control">
+                <input class="visually-hidden control__input" type="radio" name="application__type" value="for-android">
+                <span class="control__mark"></span>
+                <span class="control__label control__label--radio">Pink на Android</span>
+              </label>
+            </li>
+            <li class="application__item">
+              <label class="application__control control">
+                <input class="visually-hidden control__input" type="radio" name="application__type" value="for-windows-phone">
+                <span class="control__mark"></span>
+                <span class="control__label control__label--radio">Windows Phone</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-choice emotions">
+          <legend class="emotions__title">Опишите свои эмоции</legend>
+          <input class="emotions__input" type="text" id="emotions" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях">
+        </fieldset>
+        <button class="form-choice__toggle" type="submit">Применить</button>
+        <div class="form-choice__text text">
+          <span class="text__symbol">*</span>
+          <span class="text">— обязательные поля</span>
+        </div>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo">
+          <img src="img/icons/logotype-blue-tablet.svg" width="145" height="40" alt="HTML Academy: Пинк.">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">Мы на Ютубе</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
