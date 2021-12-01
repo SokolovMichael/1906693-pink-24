@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
@@ -31,30 +31,33 @@
         </div>
       </nav>
     </header>
-    <main class="page-main main-form">
-      <div class="intro__wrapper form-intro">
-        <h1 class="form-intro__slogan">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    <main class="page-main">
+      <div class="page-main__intro">
+        <h1 class="page-main__headline">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
-      <p class="form__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+      <p class="slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       <form class="form-choice" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="form-choice username">
+        <fieldset class="form-choice__fieldset form-choice__fieldset--username">
           <legend class="visually-hidden">Данные пользователя</legend>
           <ul class="username__list">
             <li class="username__item">
-              <label for="username__surname">Фамилия:</label>
-              <input class="username__input" type="text" id="username__surname" name="username__surname" placeholder="Укажите фамилию *" required>
+              <label class="form-choice__label">Фамилия:
+                <input class="username__input" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
+              </label>
             </li>
             <li class="username__item">
-              <label for="username__name">Имя:</label>
-              <input class="username__input" type="text" id="username__name" name="username__name" placeholder="Введите ваше имя *" required>
+              <label class="form-choice__label">Имя:
+                <input class="username__input" type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
+              </label>
             </li>
             <li class="username__item">
-              <label for="username__patronymic">Отчество:</label>
-              <input class="username__input" type="text" id="username__patronymic" name="username__patronymic" placeholder="Ну и отчество тоже">
+              <label class="form-choice__label">Отчество:
+                <input class="username__input" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+              </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form-choice travel-achievements">
+        <fieldset class="form-choice__fieldset form-choice__fieldset--travel-achievements">
           <legend class="travel-achievements__title">Ваши безбашенные достижения в путешествии</legend>
           <ul class="travel-achievements__list">
             <li class="travel-achievements__item">
@@ -101,20 +104,22 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form-choice contacts">
+        <fieldset class="form-choice__fieldset form-choice__fieldset--contacts">
           <legend class="visually-hidden">Контактная информация</legend>
           <ul class="contacts__list">
             <li class="contacts__item">
-              <label for="contacts__phone">Номер телефона</label>
-              <input class="contacts__input" type="tel" id="contacts__phone" name="contacts__phone" placeholder="Номер, пожалуйста">
+              <label class="form-choice__label">Номер телефона
+                <input class="username__input" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
+              </label>
             </li>
             <li class="contacts__item">
-              <label for="contacts__email">Адрес почты</label>
-              <input class="contacts__input" type="email" id="contacts__email" name="contacts__email" placeholder="Введите почту *" required>
+              <label class="form-choice__label">Адрес почты
+                <input class="username__input" type="email" id="email" name="email" placeholder="Введите почту *" required>
+              </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form-choice application">
+        <fieldset class="form-choice__fieldset form-choice__fieldset--application">
           <legend class="application__title">С каким приложением путешествовали?</legend>
           <ul class="application__list">
             <li class="application__item">
@@ -140,15 +145,15 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form-choice emotions">
+        <fieldset class="form-choice__fieldset form-choice__fieldset--emotions">
           <legend class="emotions__title">Опишите свои эмоции</legend>
-          <input class="emotions__input" type="text" id="emotions" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях">
+          <textarea class="emotions__input" name="emotions__text" placeholder='Можно прям в красках, не стесняясь в выражениях'></textarea>
         </fieldset>
-        <button class="form-choice__toggle" type="submit">Применить</button>
-        <div class="form-choice__text text">
-          <span class="text__symbol">*</span>
-          <span class="text">— обязательные поля</span>
-        </div>
+        <button class="form-choice__submit-button" type="submit">Применить</button>
+        <small class="form-choice__legend">
+          <sup class="form-choice__symbol">*</sup>
+          <span class="form-choice__text">— обязательные поля</span>
+        </small>
       </form>
     </main>
     <footer class="page-footer">
