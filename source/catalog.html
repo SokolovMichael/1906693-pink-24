@@ -136,24 +136,20 @@
         <form class="upload-photos__form" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data" method="post">
           <fieldset class="upload-photos__fieldset">
             <legend class="visually-hidden">Загрузите ваши фотографии для обработки</legend>
-            <input class="upload-photos__file" type="file" multiple accept="image/*">
+            <input class="upload-photos__file" type="file" name="uploaded-photo" multiple accept="image/*">
             <div class="upload-photos__buttons-wrapper">
-              <button class="upload-photos__button upload-photos__button--crop" type="button">
+              <button class="upload-photos__filter-button upload-photos__filter-button--crop" type="button">
                 <span class="visually-hidden">Обрезать фото</span>
               </button>
-              <button class="upload-photos__button upload-photos__button--fill" type="button">
+              <button class="upload-photos__filter-button upload-photos__filter-button--fill" type="button">
                 <span class="visually-hidden">Заливка</span>
               </button>
-              <button class="upload-photos__button upload-photos__button--contrast" type="button">
+              <button class="upload-photos__filter-button upload-photos__filter-button--contrast" type="button">
                 <span class="visually-hidden">Контрастность</span>
               </button>
               <input class="upload-photos__edit-range" type="range" min="0" max="100" step="1" value="50">
-              <button class="upload-photos__button upload-photos__button--post" type="submit">
-                <span class="upload-photos__button-title">Запостить</span>
-              </button>
-              <button class="upload-photos__button upload-photos__button--reset" type="reset">
-                <span class="upload-photos__button-title">Отмена</span>
-              </button>
+              <button class="upload-photos__button" type="submit">Запостить</button>
+              <button class="upload-photos__button" type="reset">Отмена</button>
             </div>
           </fieldset>
         </form>

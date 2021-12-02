@@ -42,17 +42,17 @@
           <ul class="form-choice__list">
             <li class="form-choice__item">
               <label class="form-choice__label">Фамилия:
-                <input class="form-choice__input" type="text" placeholder="Укажите фамилию *" required>
+                <input class="form-choice__input" type="text" name="surname" placeholder="Укажите фамилию *" required>
               </label>
             </li>
             <li class="form-choice__item">
               <label class="form-choice__label">Имя:
-                <input class="form-choice__input" type="text" placeholder="Введите ваше имя *" required>
+                <input class="form-choice__input" type="text" name="name" placeholder="Введите ваше имя *" required>
               </label>
             </li>
             <li class="form-choice__item">
               <label class="form-choice__label">Отчество:
-                <input class="form-choice__input" type="text" placeholder="Ну и отчество тоже">
+                <input class="form-choice__input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
               </label>
             </li>
           </ul>
@@ -62,42 +62,42 @@
           <ul class="form-choice__list">
             <li class="form-choice__item">
               <label class="form-choice__control control">
-                <input class="visually-hidden control__input" type="checkbox" checked>
+                <input class="visually-hidden control__input" type="checkbox" name="took-a-selfie-with-a-shark" checked>
                 <span class="control__mark"></span>
                 <span class="control__label">Сделал селфи с акулой</span>
               </label>
             </li>
             <li class="form-choice__item">
               <label class="form-choice__control control">
-                <input class="visually-hidden control__input" type="checkbox" checked>
+                <input class="visually-hidden control__input" type="checkbox" name="sunburned-on-the-beach" checked>
                 <span class="control__mark"></span>
                 <span class="control__label">Обгорел на пляже</span>
               </label>
             </li>
             <li class="form-choice__item">
               <label class="form-choice__control control">
-                <input class="visually-hidden control__input" type="checkbox">
+                <input class="visually-hidden control__input" type="checkbox" name="saw-Chuck-Norris">
                 <span class="control__mark"></span>
                 <span class="control__label">Видел Чака Норриса</span>
               </label>
             </li>
             <li class="form-choice__item">
               <label class="form-choice__control control">
-                <input class="visually-hidden control__input" type="checkbox">
+                <input class="visually-hidden control__input" type="checkbox" name="bought-some-souvenirs">
                 <span class="control__mark"></span>
                 <span class="control__label">Накупил сувениров</span>
               </label>
             </li>
             <li class="form-choice__item">
               <label class="form-choice__control control">
-                <input class="visually-hidden control__input" type="checkbox" checked>
+                <input class="visually-hidden control__input" type="checkbox" name="held-the-tower" checked>
                 <span class="control__mark"></span>
                 <span class="control__label">Удержал башню</span>
               </label>
             </li>
             <li class="form-choice__item">
               <label class="form-choice__control control">
-                <input class="visually-hidden control__input" type="checkbox">
+                <input class="visually-hidden control__input" type="checkbox" name="trashed-the-hotel">
                 <span class="control__mark"></span>
                 <span class="control__label">Разгромил отель</span>
               </label>
@@ -109,12 +109,12 @@
           <ul class="form-choice__list">
             <li class="form-choice__item">
               <label class="form-choice__label">Номер телефона
-                <input class="username__input" type="tel" placeholder="Номер, пожалуйста">
+                <input class="form-choice__input" type="tel" name="phone" placeholder="Номер, пожалуйста">
               </label>
             </li>
             <li class="form-choice__item">
               <label class="form-choice__label">Адрес почты
-                <input class="username__input" type="email" placeholder="Введите почту *" required>
+                <input class="form-choice__input" type="email" name="email" placeholder="Введите почту *" required>
               </label>
             </li>
           </ul>
@@ -124,21 +124,21 @@
           <ul class="form-choice__list">
             <li class="form-choice__item">
               <label class="form-choice__control control">
-                <input class="visually-hidden control__input" type="radio" value="for-ios" checked>
+                <input class="visually-hidden control__input" type="radio" name="form-choice__type" value="for-ios" checked>
                 <span class="control__mark"></span>
                 <span class="control__label control__label--radio">Pink для iOS</span>
               </label>
             </li>
             <li class="form-choice__item">
               <label class="form-choice__control control">
-                <input class="visually-hidden control__input" type="radio" value="for-android">
+                <input class="visually-hidden control__input" type="radio" name="form-choice__type" value="for-android">
                 <span class="control__mark"></span>
                 <span class="control__label control__label--radio">Pink на Android</span>
               </label>
             </li>
             <li class="form-choice__item">
               <label class="form-choice__control control">
-                <input class="visually-hidden control__input" type="radio" value="for-windows-phone">
+                <input class="visually-hidden control__input" type="radio" name="form-choice__type" value="for-windows-phone">
                 <span class="control__mark"></span>
                 <span class="control__label control__label--radio">Windows Phone</span>
               </label>
@@ -147,7 +147,7 @@
         </fieldset>
         <fieldset class="form-choice__fieldset form-choice__fieldset--emotions">
           <legend class="form-choice__title">Опишите свои эмоции</legend>
-          <textarea class="form-choice__input" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <textarea class="form-choice__review" name="emotions__text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
         <button class="form-choice__submit-button" type="submit">Применить</button>
         <small class="form-choice__note">
