@@ -35,69 +35,69 @@
       <div class="page-main__intro">
         <h1 class="page-main__headline">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
-      <p class="slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+      <p class="page-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       <form class="form-choice" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="form-choice__fieldset form-choice__fieldset--username">
           <legend class="visually-hidden">Данные пользователя</legend>
-          <ul class="username__list">
-            <li class="username__item">
+          <ul class="form-choice__list">
+            <li class="form-choice__item">
               <label class="form-choice__label">Фамилия:
-                <input class="username__input" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
+                <input class="form-choice__input" type="text" placeholder="Укажите фамилию *" required>
               </label>
             </li>
-            <li class="username__item">
+            <li class="form-choice__item">
               <label class="form-choice__label">Имя:
-                <input class="username__input" type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
+                <input class="form-choice__input" type="text" placeholder="Введите ваше имя *" required>
               </label>
             </li>
-            <li class="username__item">
+            <li class="form-choice__item">
               <label class="form-choice__label">Отчество:
-                <input class="username__input" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+                <input class="form-choice__input" type="text" placeholder="Ну и отчество тоже">
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="form-choice__fieldset form-choice__fieldset--travel-achievements">
-          <legend class="travel-achievements__title">Ваши безбашенные достижения в путешествии</legend>
-          <ul class="travel-achievements__list">
-            <li class="travel-achievements__item">
-              <label class="travel-achievements__control control">
-                <input class="visually-hidden control__input" type="checkbox" name="took-a-selfie-with-a-shark" checked>
+          <legend class="form-choice__title">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="form-choice__list">
+            <li class="form-choice__item">
+              <label class="form-choice__control control">
+                <input class="visually-hidden control__input" type="checkbox" checked>
                 <span class="control__mark"></span>
                 <span class="control__label">Сделал селфи с акулой</span>
               </label>
             </li>
-            <li class="travel-achievements__item">
-              <label class="travel-achievements__control control">
-                <input class="visually-hidden control__input" type="checkbox" name="sunburned-on-the-beach" checked>
+            <li class="form-choice__item">
+              <label class="form-choice__control control">
+                <input class="visually-hidden control__input" type="checkbox" checked>
                 <span class="control__mark"></span>
                 <span class="control__label">Обгорел на пляже</span>
               </label>
             </li>
-            <li class="travel-achievements__item">
-              <label class="travel-achievements__control control">
-                <input class="visually-hidden control__input" type="checkbox" name="saw-Chuck-Norris">
+            <li class="form-choice__item">
+              <label class="form-choice__control control">
+                <input class="visually-hidden control__input" type="checkbox">
                 <span class="control__mark"></span>
                 <span class="control__label">Видел Чака Норриса</span>
               </label>
             </li>
-            <li class="travel-achievements__item">
-              <label class="travel-achievements__control control">
-                <input class="visually-hidden control__input" type="checkbox" name="bought-some-souvenirs">
+            <li class="form-choice__item">
+              <label class="form-choice__control control">
+                <input class="visually-hidden control__input" type="checkbox">
                 <span class="control__mark"></span>
                 <span class="control__label">Накупил сувениров</span>
               </label>
             </li>
-            <li class="travel-achievements__item">
-              <label class="travel-achievements__control control">
-                <input class="visually-hidden control__input" type="checkbox" name="held-the-tower" checked>
+            <li class="form-choice__item">
+              <label class="form-choice__control control">
+                <input class="visually-hidden control__input" type="checkbox" checked>
                 <span class="control__mark"></span>
                 <span class="control__label">Удержал башню</span>
               </label>
             </li>
-            <li class="travel-achievements__item">
-              <label class="travel-achievements__control control">
-                <input class="visually-hidden control__input" type="checkbox" name="trashed-the-hotel">
+            <li class="form-choice__item">
+              <label class="form-choice__control control">
+                <input class="visually-hidden control__input" type="checkbox">
                 <span class="control__mark"></span>
                 <span class="control__label">Разгромил отель</span>
               </label>
@@ -106,39 +106,39 @@
         </fieldset>
         <fieldset class="form-choice__fieldset form-choice__fieldset--contacts">
           <legend class="visually-hidden">Контактная информация</legend>
-          <ul class="contacts__list">
-            <li class="contacts__item">
+          <ul class="form-choice__list">
+            <li class="form-choice__item">
               <label class="form-choice__label">Номер телефона
-                <input class="username__input" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
+                <input class="username__input" type="tel" placeholder="Номер, пожалуйста">
               </label>
             </li>
-            <li class="contacts__item">
+            <li class="form-choice__item">
               <label class="form-choice__label">Адрес почты
-                <input class="username__input" type="email" id="email" name="email" placeholder="Введите почту *" required>
+                <input class="username__input" type="email" placeholder="Введите почту *" required>
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="form-choice__fieldset form-choice__fieldset--application">
-          <legend class="application__title">С каким приложением путешествовали?</legend>
-          <ul class="application__list">
-            <li class="application__item">
-              <label class="application__control control">
-                <input class="visually-hidden control__input" type="radio" name="application__type" value="for-ios" checked>
+          <legend class="form-choice__title">С каким приложением путешествовали?</legend>
+          <ul class="form-choice__list">
+            <li class="form-choice__item">
+              <label class="form-choice__control control">
+                <input class="visually-hidden control__input" type="radio" value="for-ios" checked>
                 <span class="control__mark"></span>
                 <span class="control__label control__label--radio">Pink для iOS</span>
               </label>
             </li>
-            <li class="application__item">
-              <label class="application__control control">
-                <input class="visually-hidden control__input" type="radio" name="application__type" value="for-android">
+            <li class="form-choice__item">
+              <label class="form-choice__control control">
+                <input class="visually-hidden control__input" type="radio" value="for-android">
                 <span class="control__mark"></span>
                 <span class="control__label control__label--radio">Pink на Android</span>
               </label>
             </li>
-            <li class="application__item">
-              <label class="application__control control">
-                <input class="visually-hidden control__input" type="radio" name="application__type" value="for-windows-phone">
+            <li class="form-choice__item">
+              <label class="form-choice__control control">
+                <input class="visually-hidden control__input" type="radio" value="for-windows-phone">
                 <span class="control__mark"></span>
                 <span class="control__label control__label--radio">Windows Phone</span>
               </label>
@@ -146,11 +146,11 @@
           </ul>
         </fieldset>
         <fieldset class="form-choice__fieldset form-choice__fieldset--emotions">
-          <legend class="emotions__title">Опишите свои эмоции</legend>
-          <textarea class="emotions__input" name="emotions__text" placeholder='Можно прям в красках, не стесняясь в выражениях'></textarea>
+          <legend class="form-choice__title">Опишите свои эмоции</legend>
+          <textarea class="form-choice__input" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
         <button class="form-choice__submit-button" type="submit">Применить</button>
-        <small class="form-choice__legend">
+        <small class="form-choice__note">
           <sup class="form-choice__symbol">*</sup>
           <span class="form-choice__text">— обязательные поля</span>
         </small>
