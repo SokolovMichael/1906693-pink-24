@@ -3,29 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/icons/logotype-mobile.svg" width="74" height="23" alt="HTML Academy: Пинк.">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img src="img/icons/logotype-mobile.svg" width="74" height="23" alt="HTML Academy: Пинк.">
+        </a>
+        <button class="page-header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
+      </div>
+      <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html">Главная</a>
+              <a class="site-list__item-link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">Фотографии</a>
+              <a class="site-list__item-link" href="catalog.html">Фотографии</a>
             </li>
             <li class="site-list__item site-list__item--active">
-              <a>Конкурс</a>
+              <a class="site-list__item-link">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="https://htmlacademy.ru">HTML Academy</a>
+              <a class="site-list__item-link" href="https://htmlacademy.ru">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -149,7 +152,7 @@
           <legend class="form-choice__title">Опишите свои эмоции</legend>
           <textarea class="form-choice__review" name="review" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
-        <button class="form-choice__submit-button" type="submit">Применить</button>
+        <button class="form-choice__submit-button" type="submit">Отправить форму</button>
         <small class="form-choice__note">
           <sup class="form-choice__symbol">*</sup>
           <span class="form-choice__text">— обязательные поля</span>
@@ -164,19 +167,27 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+              <a class="social__link social__link--twitter" href="#">
+                <span class="visually-hidden">Мы в Твиттере</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+              <a class="social__link social__link--facebook" href="#">
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="#">Мы на Ютубе</a>
+              <a class="social__link social__link--youtube" href="#">
+                <span class="visually-hidden">Мы на Ютубе</span>
+              </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
           <span class="copyright__text">Разработано</span>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy</span>
+          </a>
         </div>
       </div>
     </footer>
