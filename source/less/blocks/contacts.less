@@ -8,16 +8,42 @@
   line-height: 29px;
   font-weight: 300;
   margin: 50px 49px 45px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 69px;
+  }
 }
 
 .contacts__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .contacts__item {
   margin-bottom: 31px;
+}
+
+.contacts__item:last-child {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    grid-column: span 2;
+  }
 }
 
 .contacts__name {

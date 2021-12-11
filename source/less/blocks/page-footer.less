@@ -1,3 +1,24 @@
 .page-footer {
   text-align: center;
 }
+
+.page-footer__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__logo-mobile {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.page-footer__logo-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+  }
+}
