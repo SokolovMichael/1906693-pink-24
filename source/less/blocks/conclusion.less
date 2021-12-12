@@ -1,6 +1,10 @@
 .conclusion {
   text-align: left;
   margin-left: 50%;
+
+  @media (min-width: @mobile-width-only) and (max-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .conclusion__title {
@@ -15,7 +19,7 @@
 }
 
 .conclusion__description,
-.conclusion__description-link {
+.conclusion__link {
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 30px;

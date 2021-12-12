@@ -9,10 +9,8 @@
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__wrapper">
-          <a class="main-nav__logo">
-            <img class="main-nav__logo-mobile" src="img/icons/logotype-mobile.svg" width="74" height="23" alt="HTML Academy: Пинк.">
-            <img class="main-nav__logo-tablet" src="img/icons/logotype-white-tablet.svg" width="145" height="40" alt="HTML Academy: Пинк.">
-            <img class="main-nav__logo-desktop" src="img/icons/logotype-white-desktop.svg" width="147" height="40" alt="HTML Academy: Пинк.">
+          <a class="main-nav__link">
+            <img class="main-nav__logo" src="img/icons/logotype-mobile.svg" width="74" height="23" alt="HTML Academy: Пинк.">
           </a>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -41,23 +39,23 @@
         <section class="intro">
           <div class="intro__wrapper">
             <h2 class="visually-hidden">Скачать приложение Пинк</h2>
-            <a class="button button-download" href="#">Скачать приложение</a>
+            <a class="button button--download" href="#">Скачать приложение</a>
             <ul class="intro__list">
               <li class="intro__list-item">
                 <a class="intro__download-link" href="#">
-                  <img src="img/apple-logo.png" width="47" height="56" alt="Ссылка на App Store.">
+                  <img class="intro__download-icon" src="img/icons/apple-logo.svg" width="47" height="56" alt="Ссылка на App Store.">
                   <span class="visually-hidden">Скачать приложение для IOS</span>
                 </a>
               </li>
               <li class="intro__list-item">
                 <a class="intro__download-link" href="#">
-                  <img src="img/android-logo.png" width="43" height="47" alt="Ссылка на Google play.">
+                  <img class="intro__download-icon" src="img/icons/android-logo.svg" width="43" height="47" alt="Ссылка на Google play.">
                   <span class="visually-hidden">Скачать приложение для Android</span>
                 </a>
               </li>
               <li class="intro__list-item">
                 <a class="intro__download-link" href="#">
-                  <img src="img/microsoft-logo.png" width="44" height="41" alt="Ссылка на Windows Store.">
+                  <img class="intro__download-icon" src="img/icons/microsoft-logo.svg" width="44" height="41" alt="Ссылка на Windows Store.">
                   <span class="visually-hidden">Скачать приложение для Windows Phone</span>
                 </a>
               </li>
@@ -87,12 +85,12 @@
             </li>
           </ul>
         </div>
-        <div class="advantages__conclusion conclusion">
+      </section>
+      <section class="conclusion">
+        <div class="conclusion__wrapper">
           <h2 class="conclusion__title">Эффект на 24 часа</h2>
           <p class="conclusion__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-          <div class="conclusion__description-link">
-            <a class="conclusion__link" href="#">Узнать больше об исследовании</a>
-          </div>
+          <a class="conclusion__link" href="#">Узнать больше об исследовании</a>
         </div>
       </section>
       <section class="reviews">
@@ -193,7 +191,7 @@
               </td>
             </tr>
           </table>
-          <div class="toggles prices-toggles">
+          <div class="toggles prices__toggles">
             <button class="toggles__button" type="button">1</button>
             <button class="toggles__button toggles__button--current" type="button">2</button>
             <button class="toggles__button" type="button">3</button>
@@ -221,25 +219,24 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo">
-          <img class="page-footer__logo-mobile" src="img/icons/logotype-blue-tablet.svg" width="145" height="40" alt="HTML Academy: Пинк.">
-          <img class="page-footer__logo-desktop" src="img/icons/logotype-blue-desktop.svg" width="147" height="40" alt="HTML Academy: Пинк.">
+        <a class="page-footer__link">
+          <img class="page-footer__logo" src="img/icons/logotype-blue-tablet.svg" width="145" height="40" alt="HTML Academy: Пинк.">
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#">
-                <span class="visually-hidden1">Мы в Твиттере</span>
+                <span class="visually-hidden">Мы в Твиттере</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="#">
-                <span class="visually-hidden1">Мы в Фейсбуке</span>
+                <span class="visually-hidden">Мы в Фейсбуке</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="#">
-                <span class="visually-hidden1">Мы на Ютубе</span>
+                <span class="visually-hidden">Мы на Ютубе</span>
               </a>
             </li>
           </ul>
@@ -247,7 +244,7 @@
         <div class="page-footer__copyright copyright">
           <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden1">HTML Academy</span>
+            <span class="visually-hidden">HTML Academy</span>
           </a>
         </div>
       </div>
