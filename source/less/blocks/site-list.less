@@ -1,21 +1,27 @@
 .site-list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    width: 680px;
+    justify-content: space-between;
+  }
 }
 
 .site-list__item {
   background-color: #283645;
   box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
   padding: 25px 0;
+
+  @media (min-width: @desktop-width) {
+    background-color: transparent;
+  }
 }
 
 .site-list__item-link {
   text-decoration: none;
-  color: #ffffff;
 }

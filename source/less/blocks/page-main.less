@@ -2,6 +2,13 @@
   color: #ffffff;
   background-color: #283645;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 50%;
+  }
 }
 
 .page-main__slogan {
@@ -9,6 +16,24 @@
   line-height: 29px;
   font-weight: 300;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.page-main__image {
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .page-main__headline {

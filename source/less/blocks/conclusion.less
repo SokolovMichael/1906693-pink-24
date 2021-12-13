@@ -1,0 +1,31 @@
+.conclusion {
+  text-align: left;
+  margin-left: 50%;
+
+  @media (min-width: @mobile-width-only) and (max-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.conclusion__title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+
+  @media (min-width: @desktop-width) {
+    line-height: 30px;
+  }
+}
+
+.conclusion__description,
+.conclusion__link {
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.conclusion__link {
+  color: #d22856;
+}

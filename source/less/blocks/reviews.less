@@ -3,14 +3,48 @@
   color: #283645;
 }
 
+.reviews__author-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+}
+
 .reviews__author-name {
   font-size: 18px;
-  line-height: 30px;
   font-weight: 700;
   font-style: normal;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+  }
+}
+
+.reviews__author-profession {
+  font-style: normal;
+
+  @media (min-width: @mobile-width-only) and (max-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .reviews__text {
   margin: 31px 0 44px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 }

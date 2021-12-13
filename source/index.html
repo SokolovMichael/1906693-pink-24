@@ -7,65 +7,63 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <a class="page-header__logo">
-          <img src="img/icons/logotype-mobile.svg" width="74" height="23" alt="HTML Academy: Пинк.">
-        </a>
-        <button class="page-header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-      </div>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__item-link">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__item-link" href="catalog.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__item-link" href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__item-link" href="https://htmlacademy.ru">HTML Academy</a>
-            </li>
-          </ul>
+          <a class="main-nav__link">
+            <img class="main-nav__logo" src="img/icons/logotype-mobile.svg" width="74" height="23" alt="HTML Academy: Пинк.">
+          </a>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
         </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__item-link">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__item-link" href="catalog.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__item-link" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__item-link" href="https://htmlacademy.ru">HTML Academy</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="page-main">
       <div class="page-main__intro">
         <h1 class="page-main__slogan">Взгляните на жизнь иначе</h1>
-        <img class="main-nav__image" src="img/intro-image.png" width="320" height="286" alt="HTML Academy: Пинк.">
+        <img class="page-main__image" src="img/intro-image.png" width="320" height="286" alt="HTML Academy: Пинк.">
+        <section class="intro">
+          <div class="intro__wrapper">
+            <h2 class="visually-hidden">Скачать приложение Пинк</h2>
+            <a class="button button--download" href="#">Скачать приложение</a>
+            <ul class="intro__list">
+              <li class="intro__list-item">
+                <a class="intro__download-link" href="#">
+                  <img class="intro__download-icon" src="img/icons/apple-logo.svg" width="47" height="56" alt="Ссылка на App Store.">
+                  <span class="visually-hidden">Скачать приложение для IOS</span>
+                </a>
+              </li>
+              <li class="intro__list-item">
+                <a class="intro__download-link" href="#">
+                  <img class="intro__download-icon" src="img/icons/android-logo.svg" width="43" height="47" alt="Ссылка на Google play.">
+                  <span class="visually-hidden">Скачать приложение для Android</span>
+                </a>
+              </li>
+              <li class="intro__list-item">
+                <a class="intro__download-link" href="#">
+                  <img class="intro__download-icon" src="img/icons/microsoft-logo.svg" width="44" height="41" alt="Ссылка на Windows Store.">
+                  <span class="visually-hidden">Скачать приложение для Windows Phone</span>
+                </a>
+              </li>
+            </ul>
+            <p class="intro__legend">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
+        </section>
       </div>
-      <section class="intro">
-        <div class="intro__wrapper">
-          <h2 class="visually-hidden">Скачать приложение Пинк</h2>
-          <a class="button button-download" href="#">Скачать приложение</a>
-          <ul class="intro__list">
-            <li class="intro__list-item">
-              <a class="intro__download-link" href="#">
-                <img src="img/apple-logo.png" width="47" height="56" alt="Ссылка на App Store.">
-                <span class="visually-hidden">Скачать приложение для IOS</span>
-              </a>
-            </li>
-            <li class="intro__list-item">
-              <a class="intro__download-link" href="#">
-                <img src="img/android-logo.png" width="43" height="47" alt="Ссылка на Google play.">
-                <span class="visually-hidden">Скачать приложение для Android</span>
-              </a>
-            </li>
-            <li class="intro__list-item">
-              <a class="intro__download-link" href="#">
-                <img src="img/microsoft-logo.png" width="44" height="41" alt="Ссылка на Windows Store.">
-                <span class="visually-hidden">Скачать приложение для Windows Phone</span>
-              </a>
-            </li>
-          </ul>
-          <p class="intro__legend">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        </div>
-      </section>
       <section class="advantages">
         <div class="advantages__wrapper">
           <h2 class="visually-hidden">Преимущества приложения</h2>
@@ -83,9 +81,16 @@
             <li class="advantages__item advantages__item--friends">
               <h3 class="advantages__title">Заводит новых друзей</h3>
               <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-              <img class="advantages__image" src="img/advantages-item-friends.png" width="157" height="283" alt="Интерфейс приложения Пинк.">
+              <img class="advantages__image advantages__image--friends" src="img/advantages-item-friends.png" width="157" height="283" alt="Интерфейс приложения Пинк.">
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="conclusion">
+        <div class="conclusion__wrapper">
+          <h2 class="conclusion__title">Эффект на 24 часа</h2>
+          <p class="conclusion__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="conclusion__link" href="#">Узнать больше об исследовании</a>
         </div>
       </section>
       <section class="reviews">
@@ -95,18 +100,21 @@
             <blockquote class="reviews__item">
               <div class="reviews__author-info">
                 <cite class="reviews__author-name">Николай Петров</cite>
+                <cite class="reviews__author-profession">25 лет, водитель трамвая</cite>
                 <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </div>
             </blockquote>
             <blockquote class="reviews__item">
               <div class="reviews__author-info">
                 <cite class="reviews__author-name">Николай Петров</cite>
+                <cite class="reviews__author-profession">25 лет, водитель трамвая</cite>
                 <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </div>
             </blockquote>
             <blockquote class="reviews__item">
               <div class="reviews__author-info">
                 <cite class="reviews__author-name">Николай Петров</cite>
+                <cite class="reviews__author-profession">25 лет, водитель трамвая</cite>
                 <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </div>
             </blockquote>
@@ -125,6 +133,8 @@
           <h2 class="visually-hidden">Цены и свойства</h2>
           <table class="prices__table">
             <tr>
+              <th class="prices__cell prices__cell--empty">
+              </th>
               <th class="prices__cell">
                 <p class="prices__title">База</p>
                 <p class="prices__text">1,99 usd</p>
@@ -139,6 +149,9 @@
               </th>
             </tr>
             <tr>
+              <td class="prices__properties prices__properties--non-mobile">
+                <p class="prices__property-name prices__property-name--non-mobile">Розовый фильтр</p>
+              </td>
               <td class="prices__properties prices__properties--selected">
                 <p class="prices__property-name">Розовый фильтр</p>
               </td>
@@ -150,6 +163,9 @@
               </td>
             </tr>
             <tr>
+              <td class="prices__properties prices__properties--non-mobile">
+                <p class="prices__property-name prices__property-name--non-mobile">Смайлики</p>
+              </td>
               <td class="prices__properties prices__properties--unselected">
                 <p class="prices__property-name">Смайлики</p>
               </td>
@@ -161,6 +177,9 @@
               </td>
             </tr>
             <tr>
+              <td class="prices__properties prices__properties--non-mobile">
+                <p class="prices__property-name prices__property-name--non-mobile">Комментарии</p>
+              </td>
               <td class="prices__properties prices__properties--unselected">
                 <p class="prices__property-name">Комментарии</p>
               </td>
@@ -172,7 +191,7 @@
               </td>
             </tr>
           </table>
-          <div class="toggles">
+          <div class="toggles prices__toggles">
             <button class="toggles__button" type="button">1</button>
             <button class="toggles__button toggles__button--current" type="button">2</button>
             <button class="toggles__button" type="button">3</button>
@@ -200,8 +219,8 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo">
-          <img src="img/icons/logotype-blue-tablet.svg" width="145" height="40" alt="HTML Academy: Пинк.">
+        <a class="page-footer__link">
+          <img class="page-footer__logo" src="img/icons/logotype-blue-tablet.svg" width="145" height="40" alt="HTML Academy: Пинк.">
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
