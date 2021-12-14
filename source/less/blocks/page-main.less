@@ -5,10 +5,6 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-
-  @media (min-width: @tablet-width) {
-    margin-right: 50%;
-  }
 }
 
 .page-main__slogan {
@@ -20,6 +16,7 @@
   @media (min-width: @tablet-width) {
     font-size: 40px;
     line-height: 48px;
+    margin-right: 50%;
   }
 
   @media (min-width: @desktop-width) {
@@ -41,6 +38,11 @@
   line-height: 33px;
   font-weight: 300;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .page-main__text {
@@ -48,4 +50,16 @@
   color: #283645;
   text-align: center;
   margin: 54px 20px 55px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.page-main__text--form {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+  }
 }

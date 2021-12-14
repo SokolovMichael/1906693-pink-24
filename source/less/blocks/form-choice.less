@@ -1,38 +1,92 @@
+.form-choice {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .form-choice__fieldset {
   border: none;
   margin: 0;
 }
 
+.form-choice__fieldset--travel-achievements {
+  @media (min-width: @desktop-width) {
+    grid-column: span 2;
+  }
+}
+
+.form-choice__fieldset--travel-achievements,
+.form-choice__fieldset--application {
+  background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    border: 2px solid @page-background-color;
+    border-radius: 1px;
+    background-color: @white;
+  }
+}
+
+.form-choice__fieldset--application {
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
+}
+
+.form-choice__fieldset--travel-achievements,
+.form-choice__fieldset--emotions,
+.form-choice__submit {
+  @media (min-width: @tablet-width) {
+    order: 4;
+  }
+}
+
+.form-choice__fieldset--contacts {
+  @media (min-width: @tablet-width) {
+    order: 3;
+    border: 2px solid @page-background-color;
+    border-radius: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: span 2;
+  }
+}
+
 .form-choice__fieldset--emotions {
   margin-bottom: 52px;
-}
 
-.form-choice__title {
-  color: #d22856;
-  font-size: 14px;
-  line-height: 18px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 400;
-  margin: 42px auto 0;
-}
+  @media (min-width: @tablet-width) {
+    border: 2px solid @page-background-color;
+    border-radius: 1px;
+  }
 
-.form-choice__title--travel-achievements {
-  margin-bottom: 55px;
-}
-
-.form-choice__title--application {
-  margin-bottom: 52px;
-}
-
-.form-choice__title--emotions {
-  margin-bottom: 22px;
+  @media (min-width: @desktop-width) {
+    grid-column: span 2;
+  }
 }
 
 .form-choice__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.form-choice__list--contacts {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form-choice__list--travel-achievements {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .form-choice__item {
@@ -47,6 +101,10 @@
   color: #d22856;
   line-height: 30px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .form-choice__input,
@@ -55,12 +113,7 @@
   font-size: 18px;
   line-height: 30px;
   color: #283645;
-}
-
-.form-choice__review {
-  resize: none;
-  width: 276px;
-  height: 197px;
+  width: 100%;
 }
 
 .form-choice__input::-webkit-input-placeholder {
@@ -71,9 +124,27 @@
   color: #283645;
 }
 
-.form-choice__fieldset--travel-achievements,
-.form-choice__fieldset--application {
-  background-color: #f2f2f2;
+.form-choice__title {
+  color: #d22856;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 42px auto 0;
+}
+
+.form-choice__title--contacts {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.form-choice__review {
+  resize: none;
+  height: 197px;
 }
 
 .form-choice__review::-webkit-input-placeholder {
@@ -82,6 +153,21 @@
 
 .form-choice__review::-moz-placeholder {
   color: #283645;
+}
+
+.form-choice__submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: span 2;
+  }
 }
 
 .form-choice__submit-button {
