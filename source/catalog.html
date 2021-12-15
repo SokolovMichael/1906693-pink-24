@@ -7,31 +7,29 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <a class="page-header__logo">
-          <img src="img/icons/logotype-mobile.svg" width="74" height="23" alt="HTML Academy: Пинк.">
-        </a>
-        <button class="page-header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-      </div>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__item-link" href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__item-link">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__item-link" href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__item-link" href="https://htmlacademy.ru">HTML Academy</a>
-            </li>
-          </ul>
+          <a class="main-nav__link">
+            <img class="main-nav__logo" src="img/icons/logotype-mobile.svg" width="74" height="23" alt="HTML Academy: Пинк.">
+          </a>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
         </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__item-link">Главная</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__item-link" href="catalog.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__item-link" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__item-link" href="https://htmlacademy.ru">HTML Academy</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="page-main">
@@ -44,87 +42,101 @@
           <h2 class="visually-hidden">Фотографии и отзывы</h2>
           <ul class="photos__list">
             <li class="photos__item photos__item--panorama">
-              <img class="photos__image" src="img/catalog/panorama-tablet.jpg" width="320" height="137" alt="Панорамное фото от Анны.">
-              <div class="photos__item-comments comments">
-                <span class="comments__author">Анна</span>
-                <span class="comments__time">(5 минут назад)</span>
-                <p class="comments__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-                <button class="comments__like-button" type="button">
-                  <span class="visually-hidden">Мне нравится</span>
-                </button>
-                <p class="comments__like-counter">Нравится: 215</p>
+              <div class="photos__item-comments photos__item-comments--panorama">
+                <p class="photos__author photos__author--panorama">Анна
+                  <span class="photos__time">(5 минут назад)</span>
+                </p>
+                <p class="photos__text photos__text--panorama">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <div class="photos__like photos__like--panorama">
+                  <button class="photos__like-button" type="button">
+                    <span class="visually-hidden">Мне нравится</span>
+                  </button>
+                  <p class="photos__like-counter">Нравится: 215</p>
+                </div>
               </div>
             </li>
             <li class="photos__item">
-              <img class="photos__image" src="img/catalog/photo-1-mobile.jpg" width="280" height="180" alt="Фото от Левона.">
-              <div class="photos__item-comments comments">
-                <span class="comments__author">Левон</span>
-                <span class="comments__time">(5 часов назад)</span>
-                <p class="comments__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <button class="comments__like-button" type="button">
-                  <span class="visually-hidden">Мне нравится</span>
-                </button>
-                <p class="comments__like-counter">Нравится: 356</p>
+              <div class="photos__item-comments">
+                <p class="photos__author">Левон
+                  <span class="photos__time">(5 часов назад)</span>
+                </p>
+                <p class="photos__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <div class="photos__like">
+                  <button class="photos__like-button" type="button">
+                    <span class="visually-hidden">Мне нравится</span>
+                  </button>
+                  <p class="photos__like-counter">Нравится: 356</p>
+                </div>
               </div>
             </li>
             <li class="photos__item">
-              <img class="photos__image" src="img/catalog/photo-2-mobile.jpg" width="280" height="180" alt="Фото от Антона.">
-              <div class="photos__item-comments comments">
-                <span class="comments__author">Антон</span>
-                <span class="comments__time">(12 часов назад)</span>
-                <p class="comments__text">Соседи будут рады!</p>
-                <button class="comments__like-button" type="button">
-                  <span class="visually-hidden">Мне нравится</span>
-                </button>
-                <p class="comments__like-counter">Нравится: 666</p>
+              <div class="photos__item-comments">
+                <p class="photos__author">Антон
+                  <span class="photos__time">(12 часов назад)</span>
+                </p>
+                <p class="photos__text">Соседи будут рады!</p>
+                <div class="photos__like">
+                  <button class="photos__like-button" type="button">
+                    <span class="visually-hidden">Мне нравится</span>
+                  </button>
+                  <p class="photos__like-counter">Нравится: 666</p>
+                </div>
               </div>
             </li>
             <li class="photos__item">
-              <img class="photos__image" src="img/catalog/photo-3-tablet.jpg" width="280" height="180" alt="Фото от Бориса.">
-              <div class="photos__item-comments comments">
-                <span class="comments__author">Борис</span>
-                <span class="comments__time">(20 часов назад)</span>
-                <p class="comments__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                <button class="comments__like-button" type="button">
-                  <span class="visually-hidden">Мне нравится</span>
-                </button>
-                <p class="comments__like-counter">Нравится: 215</p>
+              <div class="photos__item-comments">
+                <p class="photos_author">Борис
+                  <span class="photos__time">(20 часов назад)</span>
+                </p>
+                <p class="photos__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <div class="photos__like">
+                  <button class="photos__like-button" type="button">
+                    <span class="visually-hidden">Мне нравится</span>
+                  </button>
+                  <p class="photos__like-counter">Нравится: 215</p>
+                </div>
               </div>
             </li>
             <li class="photos__item">
-              <img class="photos__image" src="img/catalog/photo-4-tablet.jpg" width="280" height="180" alt="Кубанская бахча.">
-              <div class="photos__item-comments comments">
-                <span class="comments__author">Сергей</span>
-                <span class="comments__time">(25 часов назад)</span>
-                <p class="comments__text">Самая кубанская в мире!</p>
-                <button class="comments__like-button" type="button">
-                  <span class="visually-hidden">Мне нравится</span>
-                </button>
-                <p class="comments__like-counter">Нравится: 4</p>
+              <div class="photos__item-comments">
+                <p class="photos__author">Сергей
+                  <span class="photos__time">(25 часов назад)</span>
+                </p>
+                <p class="photos__text">Самая кубанская в мире!</p>
+                <div class="photos__like">
+                  <button class="photos__like-button" type="button">
+                    <span class="visually-hidden">Мне нравится</span>
+                  </button>
+                  <p class="photos__like-counter">Нравится: 4</p>
+                </div>
               </div>
             </li>
             <li class="photos__item">
-              <img class="photos__image" src="img/catalog/photo-5-tablet.jpg" width="280" height="180" alt="Фото от Максима.">
-              <div class="photos__item-comments comments">
-                <span class="comments__author">Максим</span>
-                <span class="comments__time">(40 часов назад)</span>
-                <p class="comments__text">Где снег-то?</p>
-                <button class="comments__like-button" type="button">
-                  <span class="visually-hidden">Мне нравится</span>
-                </button>
-                <p class="comments__like-counter">Нравится: 150</p>
+              <div class="photos__item-comments">
+                <p class="photos__author">Максим
+                  <span class="photos__time">(40 часов назад)</span>
+                </p>
+                <p class="photos__text">Где снег-то?</p>
+                <div class="photos__like">
+                  <button class="photos__like-button" type="button">
+                    <span class="visually-hidden">Мне нравится</span>
+                  </button>
+                  <p class="photos__like-counter">Нравится: 150</p>
+                </div>
               </div>
             </li>
             <li class="photos__item">
-              <img class="photos__image" src="img/catalog/photo-6-tablet.jpg" width="280" height="180" alt="Фото крыла самолета.">
-              <div class="photos__item-comments comments">
-                <span class="comments__author">Надежда</span>
-                <span class="comments__time">(45 часов назад)</span>
-                <p class="comments__text">Всем GM и взаимные лайки!</p>
-                <button class="comments__like-button" type="button">
-                  <span class="visually-hidden">Мне нравится</span>
-                </button>
-                <p class="comments__like-counter">Нравится: 2560</p>
+              <div class="photos__item-comments">
+                <p class="photos__author">Надежда
+                  <span class="photos__time">(45 часов назад)</span>
+                </p>
+                <p class="photos__text">Всем GM и взаимные лайки!</p>
+                <div class="photos__like">
+                  <button class="photos__like-button" type="button">
+                    <span class="visually-hidden">Мне нравится</span>
+                  </button>
+                  <p class="photos__like-counter">Нравится: 2560</p>
+                </div>
               </div>
             </li>
           </ul>
@@ -138,21 +150,36 @@
         </div>
         <form class="upload-photos__form" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data" method="post">
           <fieldset class="upload-photos__fieldset">
-            <legend class="visually-hidden">Загрузите ваши фотографии для обработки</legend>
-            <input class="upload-photos__file" type="file" name="uploaded-photo" multiple accept="image/*">
-            <div class="upload-photos__buttons-wrapper">
-              <button class="upload-photos__filter-button upload-photos__filter-button--crop" type="button">
-                <span class="visually-hidden">Обрезать фото</span>
-              </button>
-              <button class="upload-photos__filter-button upload-photos__filter-button--fill" type="button">
-                <span class="visually-hidden">Заливка</span>
-              </button>
-              <button class="upload-photos__filter-button upload-photos__filter-button--contrast" type="button">
-                <span class="visually-hidden">Контрастность</span>
-              </button>
-              <input class="upload-photos__edit-range" type="range" min="0" max="100" step="1" value="50">
-              <button class="upload-photos__button upload-photos__button--post" type="submit">Запостить</button>
-              <button class="upload-photos__button upload-photos__button--reset" type="reset">Отмена</button>
+            <div class="upload-photos__wrapper">
+              <legend class="visually-hidden">Загрузите ваши фотографии для обработки</legend>
+              <input class="upload-photos__file" type="file" name="uploaded-photo" multiple accept="image/*">
+              <div class="upload-photos__buttons">
+                <ul class="upload-photos__edit-buttons">
+                  <li class="upload-photos__item">
+                    <button class="upload-photos__filter-button upload-photos__filter-button--crop" type="button">
+                      <span class="visually-hidden">Обрезать фото</span>
+                    </button>
+                    <input class="upload-photos__edit-range upload-photos__edit-range--crop" type="range" min="0" max="100" step="1" value="50">
+                  </li>
+                  <li class="upload-photos__item">
+                    <button class="upload-photos__filter-button upload-photos__filter-button--fill" type="button">
+                      <span class="visually-hidden">Заливка</span>
+                    </button>
+                    <input class="upload-photos__edit-range upload-photos__edit-range--fill" type="range" min="0" max="100" step="1" value="50">
+                  </li>
+                  <li class="upload-photos__item">
+                    <button class="upload-photos__filter-button upload-photos__filter-button--contrast" type="button">
+                      <span class="visually-hidden">Контрастность</span>
+                    </button>
+                    <input class="upload-photos__edit-range upload-photos__edit-range--contrast" type="range" min="0" max="100" step="1" value="50">
+                  </li>
+                </ul>
+                <input class="upload-photos__edit-range upload-photos__edit-range--general" type="range" min="0" max="100" step="1" value="50">
+                <div class="upload-photos__post-buttons">
+                  <button class="upload-photos__button upload-photos__button--post" type="submit">Запостить</button>
+                  <button class="upload-photos__button upload-photos__button--reset" type="reset">Отмена</button>
+                </div>
+              </div>
             </div>
           </fieldset>
         </form>
@@ -160,8 +187,8 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo">
-          <img src="img/icons/logotype-blue-tablet.svg" width="145" height="40" alt="HTML Academy: Пинк.">
+        <a class="page-footer__link">
+          <img class="page-footer__logo" src="img/icons/logotype-blue-tablet.svg" width="145" height="40" alt="HTML Academy: Пинк.">
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">

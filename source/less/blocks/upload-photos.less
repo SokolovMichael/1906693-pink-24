@@ -7,6 +7,10 @@
 
 .upload-photos__slogan {
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .upload-photos__form {
@@ -15,6 +19,63 @@
 
 .upload-photos__fieldset {
   border: none;
+}
+
+.upload-photos__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.upload-photos__buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.upload-photos__edit-buttons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+  }
+}
+
+.upload-photos__item {
+  display: flex;
+}
+
+.upload-photos__edit-range--crop,
+.upload-photos__edit-range--fill,
+.upload-photos__edit-range--contrast {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.upload-photos__edit-range--general {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.upload-photos__post-buttons {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .upload-photos__button {
