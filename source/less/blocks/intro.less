@@ -1,7 +1,18 @@
 .intro {
   background-color: #1d2631;
-  color: #ffffff;
   padding: 28px 20px 38px;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+  }
+}
+
+.intro__wrapper {
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 50% 0 0;
+  }
 }
 
 .intro__list {
@@ -9,11 +20,35 @@
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+}
+
+.intro__list-item:not(:last-child) {
+  margin-right: 35px;
 }
 
 .intro__legend {
   font-weight: 300;
   text-align: center;
+}
+
+.intro__slogan {
+  @media (min-width: @mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    text-align: center;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
