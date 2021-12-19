@@ -11,56 +11,41 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 21px;
-  left: 20px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
   width: 50px;
-  height: 4px;
-  background-color: #ffffff;
-  border-radius: 2px;
-  box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+  height: 24px;
+  background-image: url("../img/icons/main-nav-toggle/open-menu-button.svg");
 }
 
 .main-nav--closed .main-nav__toggle:hover::before,
 .main-nav--closed .main-nav__toggle:active::before {
-  background-color: #d22856;
-  box-shadow: 0 10px 0 0 #d22856, 0 20px 0 0 #d22856;
+  background-image: url("../img/icons/main-nav-toggle/open-menu-button-hover.svg");
 }
 
-.main-nav--opened .main-nav__toggle {
+.main-nav--opened .main-nav__toggle::before {
+  content: "";
+  position: absolute;
   top: 0;
   right: 0;
-  left: auto;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 33px;
-    left: 30px;
-    width: 33px;
-    height: 3px;
-    background-color: #ffffff;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/icons/main-nav-toggle/close-menu-button.svg");
 }
 
 .main-nav--opened .main-nav__toggle:hover::before,
-.main-nav--opened .main-nav__toggle:active::before,
-.main-nav--opened .main-nav__toggle:hover::after,
-.main-nav--opened .main-nav__toggle:active::after {
-  background-color: #d22856;
+.main-nav--opened .main-nav__toggle:active::before {
+  background-image: url("../img/icons/main-nav-toggle/close-menu-button-hover.svg");
 }
 
 .main-nav--closed .main-nav__toggle:active::before,
-.main-nav--opened .main-nav__toggle:active::before,
-.main-nav--opened .main-nav__toggle:active::after {
+.main-nav--opened .main-nav__toggle:active::before {
   opacity: 0.3;
 }
 
@@ -77,7 +62,6 @@
   left: 0;
   background-color: #283645;
   z-index: 10;
-  min-height: 80vh;
 }
 
 .main-nav--nojs .main-nav__wrapper {

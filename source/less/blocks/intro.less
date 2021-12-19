@@ -1,6 +1,7 @@
 .intro {
   background-color: #1d2631;
   padding: 28px 20px 38px;
+  color: #ffffff;
 
   @media (min-width: @tablet-width) {
     background-color: transparent;
@@ -11,7 +12,7 @@
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    margin: 0 50% 0 0;
+    margin-right: 50%;
   }
 }
 
@@ -31,24 +32,4 @@
 .intro__legend {
   font-weight: 300;
   text-align: center;
-}
-
-.intro__slogan {
-  @media (min-width: @mobile-width-only) {
-    display: none;
-  }
-
-  @media (min-width: @tablet-width) {
-    display: block;
-    text-align: center;
-    font-weight: 300;
-    font-size: 40px;
-    line-height: 48px;
-    margin: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    font-size: 50px;
-    line-height: 68px;
-  }
 }
