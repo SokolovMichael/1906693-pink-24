@@ -1,7 +1,19 @@
 .intro {
   background-color: #1d2631;
-  color: #ffffff;
   padding: 28px 20px 38px;
+  color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+  }
+}
+
+.intro__wrapper {
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 50%;
+  }
 }
 
 .intro__list {
@@ -9,8 +21,12 @@
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+}
+
+.intro__list-item:not(:last-child) {
+  margin-right: 35px;
 }
 
 .intro__legend {

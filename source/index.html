@@ -7,35 +7,38 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <a class="main-nav__link">
-            <img class="main-nav__logo" src="img/icons/logotype-mobile.svg" width="74" height="23" alt="HTML Academy: Пинк.">
-          </a>
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-        </div>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__item-link">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__item-link" href="catalog.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__item-link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__item-link" href="https://htmlacademy.ru">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__wrapper">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <div class="main-nav__wrapper">
+            <div class="main-nav__buttons">
+              <a class="main-nav__link">
+                <img class="main-nav__logo" src="img/icons/logotype-mobile.svg" width="74" height="23" alt="HTML Academy: Пинк.">
+              </a>
+              <button class="main-nav__toggle" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
+            </div>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__item-link">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__item-link" href="catalog.html">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__item-link" href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__item-link" href="https://htmlacademy.ru">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
       <div class="page-main__intro">
         <h1 class="page-main__slogan">Взгляните на жизнь иначе</h1>
-        <img class="page-main__image" src="img/intro-image.png" width="320" height="286" alt="HTML Academy: Пинк.">
         <section class="intro">
           <div class="intro__wrapper">
             <h2 class="visually-hidden">Скачать приложение Пинк</h2>
@@ -214,7 +217,13 @@
             <p class="contacts__details">ул. Большая Конюшенная, 19/8</p>
           </li>
         </ul>
-        <div class="road-map"></div>
+        <div class="contacts__road-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.82526767823026!2d30.32286798264162!3d59.938743789986816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1639781160399!5m2!1sru!2sru"
+            allowfullscreen
+            title="Офис компании по адресу ул. Большая Конюшенная, 19/8">
+          </iframe>
+        </div>
       </address>
     </main>
     <footer class="page-footer">
@@ -249,5 +258,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/main-nav.js" type="text/javascript"></script>
   </body>
 </html>
