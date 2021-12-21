@@ -1,6 +1,6 @@
 .intro {
   background-color: #1d2631;
-  padding: 28px 20px 38px;
+  padding: 28px 0 38px;
   color: #ffffff;
 
   @media (min-width: @tablet-width) {
@@ -9,10 +9,15 @@
 }
 
 .intro__wrapper {
-  margin: 0;
+  text-align: center;
+  padding: 0 20px;
 
   @media (min-width: @tablet-width) {
-    margin-right: 50%;
+    width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 110px;
   }
 }
 
@@ -31,5 +36,4 @@
 
 .intro__legend {
   font-weight: 300;
-  text-align: center;
 }

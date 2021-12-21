@@ -7,33 +7,37 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <a class="main-nav__link">
-            <img class="main-nav__logo" src="img/icons/logotype-mobile.svg" width="74" height="23" alt="HTML Academy: Пинк.">
-          </a>
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-        </div>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__item-link">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__item-link" href="catalog.html">Фотографии</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__item-link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__item-link" href="https://htmlacademy.ru">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__wrapper">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <div class="main-nav__wrapper">
+            <div class="main-nav__buttons">
+              <a class="main-nav__link">
+                <img class="main-nav__logo" src="img/icons/logotype-mobile.svg" width="74" height="23" alt="HTML Academy: Пинк.">
+              </a>
+              <button class="main-nav__toggle" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
+            </div>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__item-link" href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__item-link" href="catalog.html">Фотографии</a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__item-link">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__item-link" href="https://htmlacademy.ru">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
-      <div class="page-main__intro">
+      <div class="page-main__wrapper">
         <h1 class="page-main__headline">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
       <p class="page-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
@@ -193,5 +197,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/main-nav.js" type="text/javascript"></script>
   </body>
 </html>
