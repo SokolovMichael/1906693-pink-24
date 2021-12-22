@@ -1,18 +1,53 @@
 .intro {
-  background-color: #1d2631;
-  padding: 28px 0 38px;
+  background-color: @dark-blue;
   color: #ffffff;
+  background-image: url("../img/back-intro-header.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  min-height: 170px;
 
   @media (min-width: @tablet-width) {
-    background-color: transparent;
+    min-height: 330px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 285px;
+  }
+}
+
+.intro__slogan {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  margin: 0 auto;
+  width: 280px;
+  padding: 29px 0 320px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    width: 200px;
+    padding: 102px 0 39px 50px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    padding: 114px 0 51px 110px;
+    font-size: 50px;
+    line-height: 68px;
   }
 }
 
 .intro__wrapper {
+  background-color: #1d2631;
+  padding: 28px 0 38px;
+  color: #ffffff;
   text-align: center;
-  padding: 0 20px;
 
   @media (min-width: @tablet-width) {
+    background-color: transparent;
     width: 300px;
   }
 
