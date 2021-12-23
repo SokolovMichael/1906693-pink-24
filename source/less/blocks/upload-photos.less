@@ -2,7 +2,15 @@
   line-height: 30px;
   text-align: center;
   color: #283645;
-  margin-bottom: 52px;
+  margin: 49px 0 52px;
+
+  @media (min-width: @tablet-width) {
+    margin: 73px 0 78px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 17px 0 75px;
+  }
 }
 
 .upload-photos__slogan {
@@ -72,6 +80,8 @@
 .upload-photos__post-buttons {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
@@ -84,4 +94,31 @@
   line-height: 18px;
   font-weight: 700;
   padding: 21px 0;
+  border: 3px solid #d22856;
+  box-sizing: border-box;
+  border-radius: 30px;
+  width: 280px;
+  margin-bottom: 12px;
+
+  @media (min-width: @tablet-width) {
+    width: 260px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 183px;
+    margin: 0 44px 0 0;
+  }
+}
+
+.upload-photos__button:last-child {
+  margin-bottom: 41px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
