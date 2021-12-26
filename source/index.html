@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -12,7 +16,11 @@
           <div class="main-nav__wrapper">
             <div class="main-nav__buttons">
               <a class="main-nav__link">
-                <img class="main-nav__logo" src="img/icons/logotype-mobile.svg" width="74" height="23" alt="HTML Academy: Пинк.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/icons/logotype-header-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/icons/logotype-header-tablet.svg">
+                  <img class="main-nav__logo" src="img/icons/logotype-header-mobile.svg" width="74" height="23" alt="HTML Academy: Пинк.">
+                </picture>
               </a>
               <button class="main-nav__toggle" type="button">
                 <span class="visually-hidden">Открыть меню</span>
@@ -39,6 +47,13 @@
     <main class="page-main">
       <div class="intro">
         <h1 class="intro__slogan">Взгляните на жизнь иначе</h1>
+        <div class="intro__image-wrapper">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
+            <img class="intro__image" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" width="320" height="286" alt="Взгляни на жизнь иначе.">
+          </picture>
+        </div>
         <div class="intro__wrapper">
           <h2 class="visually-hidden">Скачать приложение Пинк</h2>
           <a class="button button--download" href="#">Скачать приложение</a>
@@ -66,23 +81,42 @@
         </div>
       </div>
       <section class="advantages">
+        <h2 class="visually-hidden">Преимущества приложения</h2>
+        <p class="advantages__slogan">Устали от серости мегаполиса?</p>
+        <p class="advantages__slogan">Нам есть, что вам предложить!</p>
         <div class="advantages__wrapper">
-          <h2 class="visually-hidden">Преимущества приложения</h2>
-          <p class="advantages__slogan">Устали от серости мегаполиса?</p>
-          <p class="advantages__slogan">Нам есть, что вам предложить!</p>
+          <picture>
+            <img class="advantages__image-tablet" src="img/advantages/advantages-item-friends-tablet.png" srcset="img/advantages/advantages-item-friends-tablet@2x.png 2x" width="268" height="480" alt="Интерфейс приложения Пинк.">
+          </picture>
           <ul class="advantages__list">
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--mood">
               <h3 class="advantages__title">Поднимает настроение</h3>
               <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              <div class="advantages__image-wrapper">
+                <picture>
+                  <img class="advantages__image advantages__image--mood" src="img/advantages/advantages-item-mood-desktop.png" srcset="img/advantages/advantages-item-mood-desktop@2x.png 2x" width="186" height="300" alt="Интерфейс приложения Пинк.">
+                </picture>
+              </div>
             </li>
             <li class="advantages__item advantages__item--world">
               <h3 class="advantages__title">Меняет мир вокруг</h3>
               <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              <div class="advantages__image-wrapper">
+                <picture>
+                  <img class="advantages__image advantages__image--world" src="img/advantages/advantages-item-world-desktop.png" srcset="img/advantages/advantages-item-world-desktop@2x.png 2x" width="186" height="300" alt="Интерфейс приложения Пинк.">
+                </picture>
+              </div>
             </li>
             <li class="advantages__item advantages__item--friends">
               <h3 class="advantages__title">Заводит новых друзей</h3>
               <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-              <img class="advantages__image advantages__image--friends" src="img/advantages-item-friends.png" width="157" height="283" alt="Интерфейс приложения Пинк.">
+              <div class="advantages__image-wrapper">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/advantages/advantages-item-friends-desktop.png 1x, img/advantages/advantages-item-friends-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/advantages/advantages-item-friends-tablet.png 1x, img/advantages/advantages-item-friends-tablet@2x.png 2x">
+                  <img class="advantages__image advantages__image--friends" src="img/advantages/advantages-item-friends-mobile.png" srcset="img/advantages/advantages-item-friends-mobile@2x.png 2x" width="157" height="283" alt="Интерфейс приложения Пинк.">
+                </picture>
+              </div>
             </li>
           </ul>
         </div>
@@ -227,7 +261,10 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__link">
-          <img class="page-footer__logo" src="img/icons/logotype-blue-tablet.svg" width="145" height="40" alt="HTML Academy: Пинк.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/icons/logotype-footer-desktop.svg">
+            <img class="page-footer__logo" src="img/icons/logotype-footer.svg" width="145" height="40" alt="HTML Academy: Пинк.">
+          </picture>
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">

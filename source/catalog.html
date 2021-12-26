@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -12,7 +16,11 @@
           <div class="main-nav__wrapper">
             <div class="main-nav__buttons">
               <a class="main-nav__link">
-                <img class="main-nav__logo" src="img/icons/logotype-mobile.svg" width="74" height="23" alt="HTML Academy: Пинк.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/icons/logotype-header-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/icons/logotype-header-tablet.svg">
+                  <img class="main-nav__logo" src="img/icons/logotype-header-mobile.svg" width="74" height="23" alt="HTML Academy: Пинк.">
+                </picture>
               </a>
               <button class="main-nav__toggle" type="button">
                 <span class="visually-hidden">Открыть меню</span>
@@ -46,6 +54,13 @@
           <h2 class="visually-hidden">Фотографии и отзывы</h2>
           <ul class="photos__list">
             <li class="photos__item photos__item--panorama">
+              <div class="photos__item-image-wrapper">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/catalog/anna/panorama-desktop.jpg 1x, img/catalog/anna/panorama-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog/anna/panorama-tablet.jpg 1x, img/catalog/anna/panorama-tablet@2x.jpg 2x">
+                  <img class="photos__item-image photos__item-image--panorama" src="img/catalog/anna/panorama-mobile.jpg" srcset="img/catalog/anna/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Панорамное фото от Анны.">
+                </picture>
+              </div>
               <div class="photos__item-comments photos__item-comments--panorama">
                 <p class="photos__author photos__author--panorama">Анна
                   <span class="photos__time">(5 минут назад)</span>
@@ -60,6 +75,13 @@
               </div>
             </li>
             <li class="photos__item">
+              <div class="photos__item-image-wrapper">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/catalog/levon/photo-1-desktop.jpg 1x, img/catalog/levon/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog/levon/photo-1-tablet.jpg 1x, img/catalog/levon/photo-1-tablet@2x.jpg 2x">
+                  <img class="photos__item-image" src="img/catalog/levon/photo-1-mobile.jpg" srcset="img/catalog/levon/photo-1-mobile@2x.jpg 2x" width="280" height="180" alt="Фото от Левона.">
+                </picture>
+              </div>
               <div class="photos__item-comments">
                 <p class="photos__author">Левон
                   <span class="photos__time">(5 часов назад)</span>
@@ -74,6 +96,13 @@
               </div>
             </li>
             <li class="photos__item">
+              <div class="photos__item-image-wrapper">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/catalog/anton/photo-2-desktop.jpg 1x, img/catalog/anton/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog/anton/photo-2-tablet.jpg 1x, img/catalog/anton/photo-2-tablet@2x.jpg 2x">
+                  <img class="photos__item-image" src="img/catalog/anton/photo-2-mobile.jpg" srcset="img/catalog/anton/photo-2-mobile@2x.jpg 2x" width="280" height="180" alt="Фото от Антона.">
+                </picture>
+              </div>
               <div class="photos__item-comments">
                 <p class="photos__author">Антон
                   <span class="photos__time">(12 часов назад)</span>
@@ -88,6 +117,13 @@
               </div>
             </li>
             <li class="photos__item">
+              <div class="photos__item-image-wrapper">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/catalog/boris/photo-3-desktop.jpg 1x, img/catalog/boris/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog/boris/photo-3-tablet.jpg 1x, img/catalog/boris/photo-3-tablet@2x.jpg 2x">
+                  <img class="photos__item-image" src="img/catalog/boris/photo-3-mobile.jpg" srcset="img/catalog/boris/photo-3-mobile@2x.jpg 2x" width="280" height="180" alt="Фото от Бориса.">
+                </picture>
+              </div>
               <div class="photos__item-comments">
                 <p class="photos__author">Борис
                   <span class="photos__time">(20 часов назад)</span>
@@ -102,6 +138,13 @@
               </div>
             </li>
             <li class="photos__item">
+              <div class="photos__item-image-wrapper">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/catalog/sergey/photo-4-desktop.jpg 1x, img/catalog/sergey/photo-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog/sergey/photo-4-tablet.jpg 1x, img/catalog/sergey/photo-4-tablet@2x.jpg 2x">
+                  <img class="photos__item-image" src="img/catalog/sergey/photo-4-mobile.jpg" srcset="img/catalog/sergey/photo-4-mobile@2x.jpg 2x" width="280" height="180" alt="Фото от Сергея.">
+                </picture>
+              </div>
               <div class="photos__item-comments">
                 <p class="photos__author">Сергей
                   <span class="photos__time">(25 часов назад)</span>
@@ -116,6 +159,13 @@
               </div>
             </li>
             <li class="photos__item">
+              <div class="photos__item-image-wrapper">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/catalog/maksim/photo-5-desktop.jpg 1x, img/catalog/maksim/photo-5-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog/maksim/photo-5-tablet.jpg 1x, img/catalog/maksim/photo-5-tablet@2x.jpg 2x">
+                  <img class="photos__item-image" src="img/catalog/maksim/photo-5-mobile.jpg" srcset="img/catalog/maksim/photo-5-mobile@2x.jpg 2x" width="280" height="180" alt="Фото от Максима.">
+                </picture>
+              </div>
               <div class="photos__item-comments">
                 <p class="photos__author">Максим
                   <span class="photos__time">(40 часов назад)</span>
@@ -130,6 +180,13 @@
               </div>
             </li>
             <li class="photos__item">
+              <div class="photos__item-image-wrapper">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/catalog/nadezhda/photo-6-desktop.jpg 1x, img/catalog/nadezhda/photo-6-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog/nadezhda/photo-6-tablet.jpg 1x, img/catalog/nadezhda/photo-6-tablet@2x.jpg 2x">
+                  <img class="photos__item-image" src="img/catalog/nadezhda/photo-6-mobile.jpg" srcset="img/catalog/nadezhda/photo-6-mobile@2x.jpg 2x" width="280" height="180" alt="Фото от Надежды.">
+                </picture>
+              </div>
               <div class="photos__item-comments">
                 <p class="photos__author">Надежда
                   <span class="photos__time">(45 часов назад)</span>
@@ -192,7 +249,10 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__link">
-          <img class="page-footer__logo" src="img/icons/logotype-blue-tablet.svg" width="145" height="40" alt="HTML Academy: Пинк.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/icons/logotype-footer-desktop.svg">
+            <img class="page-footer__logo" src="img/icons/logotype-footer.svg" width="145" height="40" alt="HTML Academy: Пинк.">
+          </picture>
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">

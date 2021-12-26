@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -12,7 +16,11 @@
           <div class="main-nav__wrapper">
             <div class="main-nav__buttons">
               <a class="main-nav__link">
-                <img class="main-nav__logo" src="img/icons/logotype-mobile.svg" width="74" height="23" alt="HTML Academy: Пинк.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/icons/logotype-header-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/icons/logotype-header-tablet.svg">
+                  <img class="main-nav__logo" src="img/icons/logotype-header-mobile.svg" width="74" height="23" alt="HTML Academy: Пинк.">
+                </picture>
               </a>
               <button class="main-nav__toggle" type="button">
                 <span class="visually-hidden">Открыть меню</span>
@@ -168,7 +176,10 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__link">
-          <img class="page-footer__logo" src="img/icons/logotype-blue-tablet.svg" width="145" height="40" alt="HTML Academy: Пинк.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/icons/logotype-footer-desktop.svg">
+            <img class="page-footer__logo" src="img/icons/logotype-footer.svg" width="145" height="40" alt="HTML Academy: Пинк.">
+          </picture>
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
