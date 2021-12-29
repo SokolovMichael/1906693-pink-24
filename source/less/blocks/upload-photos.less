@@ -57,8 +57,44 @@
   }
 }
 
-.upload-photos__item {
-  display: flex;
+.upload-photos__filter-button {
+  position: relative;
+  height: 44px;
+  width: 48px;
+  margin-right: 35px;
+  border: none;
+  background-color: transparent;
+}
+
+.upload-photos__filter-button:last-child {
+  margin-right: 0;
+}
+
+.upload-photos__button-icon {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+  fill: #283645;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    fill: #d22856;
+    opacity: 1;
+  }
+}
+
+.upload-photos__button-icon--current {
+  fill: #d22856;
+  opacity: 1;
 }
 
 .upload-photos__edit-range--crop,

@@ -3,5 +3,27 @@
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.social__item {
+  margin-right: 8px;
+}
+
+.social__item:last-child {
+  margin-right: 0;
+}
+
+.social__link-icon {
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.social__link-icon circle {
+  &:hover {
+    opacity: 1;
+  }
 }

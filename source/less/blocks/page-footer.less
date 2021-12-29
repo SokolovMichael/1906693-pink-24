@@ -9,7 +9,31 @@
   }
 }
 
-.page-footer__logo {
+.page-footer__logo-first {
+  cursor: pointer;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 147px;
+  }
+}
+
+.page-footer__logo-second {
+  cursor: pointer;
+  display: none;
+
+  &:active {
+    opacity: 0.3;
+    display: block;
+  }
+
   @media (min-width: @desktop-width) {
     width: 147px;
   }

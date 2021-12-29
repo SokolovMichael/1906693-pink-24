@@ -1,6 +1,15 @@
 .reviews {
   text-align: center;
   color: #283645;
+  margin-bottom: 83px;
+}
+
+.reviews__item {
+  display: none;
+}
+
+.reviews__item--current {
+  display: block;
 }
 
 .reviews__author-info {
@@ -46,5 +55,14 @@
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
+  }
+}
+
+.reviews__prev,
+.reviews__next {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
   }
 }
