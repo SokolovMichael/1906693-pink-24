@@ -64,23 +64,9 @@
   margin-right: 35px;
   border: none;
   background-color: transparent;
-}
-
-.upload-photos__filter-button:last-child {
-  margin-right: 0;
-}
-
-.upload-photos__button-icon {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  cursor: pointer;
   fill: #283645;
   opacity: 0.3;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.5;
@@ -92,9 +78,45 @@
   }
 }
 
-.upload-photos__button-icon--current {
+.upload-photos__filter-button:last-child {
+  margin-right: 0;
+}
+
+.upload-photos__filter-button--current {
   fill: #d22856;
   opacity: 1;
+}
+
+.upload-photos__button-icon {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.upload-photos__edit-range {
+  width: 240px;
+  background-color: #f2f2f2;
+  appearance: none;
+}
+
+.upload-photos__edit-range::-webkit-slider-runnable-track,
+.upload-photos__edit-range::-moz-range-track {
+  height: 2px;
+  background-color: #283645;
+}
+
+.upload-photos__edit-range::-webkit-slider-thumb,
+.upload-photos__edit-range::-moz-range-thumb {
+  background-color: #ffffff;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
 }
 
 .upload-photos__edit-range--crop,

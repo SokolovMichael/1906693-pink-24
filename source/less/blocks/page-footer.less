@@ -9,32 +9,27 @@
   }
 }
 
-.page-footer__logo-first {
+.page-footer__link {
   cursor: pointer;
+  fill: #d22856;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__link--active1 {
+  pointer-events: none;
+}
+
+.page-footer__logo-second {
+  fill: #283645;
 
   &:hover {
     fill: #d22856;
   }
 
   &:active {
-    display: none;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 147px;
-  }
-}
-
-.page-footer__logo-second {
-  cursor: pointer;
-  display: none;
-
-  &:active {
-    opacity: 0.3;
-    display: block;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 147px;
+    fill: #283645;
   }
 }

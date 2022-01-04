@@ -6,10 +6,9 @@
 .toggles__button {
   margin-right: 18px;
   border: none;
-  position: relative;
-  width: 13px;
-  height: 13px;
-  background-color: transparent;
+  background-color: rgba(40, 54, 69, 0.3);
+  border-radius: 50%;
+  padding: 3px;
   cursor: pointer;
 }
 
@@ -17,30 +16,7 @@
   margin-right: 0;
 }
 
-.toggles__button-icon {
-  fill: #283645;
-  opacity: 0.3;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.1;
-  }
-}
-
-.toggles__button--current .toggles__button-icon {
-  border: 3px solid #283645;
-  border-radius: 50%;
-  opacity: 1;
+.toggles__button--current {
   background-color: #ffffff;
-  fill: transparent;
-  cursor: auto;
+  outline: 3px solid #283645;
 }
