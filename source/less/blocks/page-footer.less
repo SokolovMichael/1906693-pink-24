@@ -9,27 +9,23 @@
   }
 }
 
-.page-footer__link {
-  cursor: pointer;
-  fill: #d22856;
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-.page-footer__link--active1 {
+.page-footer__link--active {
   pointer-events: none;
 }
 
-.page-footer__logo-second {
+.page-footer__link-icon--first {
+  fill: #d22856;
+  margin-right: 12px;
+}
+
+.page-footer__link-icon--second {
   fill: #283645;
+}
 
-  &:hover {
-    fill: #d22856;
-  }
+.page-footer__link:hover .page-footer__link-icon--second {
+  fill: #d22856;
+}
 
-  &:active {
-    fill: #283645;
-  }
+.page-footer__link:active .page-footer__link-icon {
+  opacity: 0.3;
 }

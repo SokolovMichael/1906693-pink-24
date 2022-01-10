@@ -17,13 +17,13 @@
             <div class="main-nav__buttons">
               <a class="main-nav__link main-nav__link--active">
                 <svg class="main-nav__logo main-nav__logo--visible-mobile" width="74" height="23">
-                  <use xlink:href="img/sprite.svg#main-nav__logo--visible-mobile"></use>
+                  <use xlink:href="img/sprite.svg#nav-logo-mobile"></use>
                 </svg>
                 <svg class="main-nav__logo main-nav__logo--visible-tablet" width="145" height="40">
-                  <use xlink:href="img/sprite.svg#main-nav__logo--visible-tablet"></use>
+                  <use xlink:href="img/sprite.svg#nav-logo-tablet"></use>
                 </svg>
                 <svg class="main-nav__logo main-nav__logo--visible-desktop" width="147" height="40">
-                  <use xlink:href="img/sprite.svg#main-nav__logo--visible-desktop"></use>
+                  <use xlink:href="img/sprite.svg#nav-logo-desktop"></use>
                 </svg>
               </a>
               <button class="main-nav__toggle" type="button">
@@ -75,7 +75,7 @@
             <li class="intro__list-item">
               <a class="intro__download-link" href="#">
                 <svg class="intro__download-icon" width="47" height="58">
-                  <use xlink:href="img/sprite.svg#intro__download-icon--apple"></use>
+                  <use xlink:href="img/sprite.svg#icon-apple"></use>
                 </svg>
                 <span class="visually-hidden">Скачать приложение для IOS</span>
               </a>
@@ -83,7 +83,7 @@
             <li class="intro__list-item">
               <a class="intro__download-link" href="#">
                 <svg class="intro__download-icon" width="43" height="47">
-                  <use xlink:href="img/sprite.svg#intro__download-icon--android"></use>
+                  <use xlink:href="img/sprite.svg#icon-android"></use>
                 </svg>
                 <span class="visually-hidden">Скачать приложение для Android</span>
               </a>
@@ -91,7 +91,7 @@
             <li class="intro__list-item">
               <a class="intro__download-link" href="#">
                 <svg class="intro__download-icon" width="44" height="41">
-                  <use xlink:href="img/sprite.svg#intro__download-icon--windows"></use>
+                  <use xlink:href="img/sprite.svg#icon-windows"></use>
                 </svg>
                 <span class="visually-hidden">Скачать приложение для Windows Phone</span>
               </a>
@@ -177,9 +177,15 @@
             <button class="reviews__next" type="button">Следующий отзыв</button>
           </div>
           <div class="toggles reviews__toggles">
-            <button class="toggles__button toggles__button--current" type="button"></button>
-            <button class="toggles__button" type="button"></button>
-            <button class="toggles__button" type="button"></button>
+            <button class="toggles__button toggles__button--current" type="button">
+              <span class="visually-hidden">Первый отзыв</span>
+            </button>
+            <button class="toggles__button" type="button">
+              <span class="visually-hidden">Второй отзыв</span>
+            </button>
+            <button class="toggles__button" type="button">
+              <span class="visually-hidden">Третий отзыв</span>
+            </button>
           </div>
         </div>
       </section>
@@ -210,19 +216,19 @@
               <td class="prices__properties">
                 <span class="prices__property-name">Розовый фильтр</span>
                 <svg class="prices__properties-icon prices__properties-icon--selected" width="31" height="21">
-                  <use xlink:href="img/sprite.svg#prices__properties-icon--selected"></use>
+                  <use xlink:href="img/sprite.svg#prices-selected"></use>
                 </svg>
               </td>
               <td class="prices__properties">
                 <span class="prices__property-name">Розовый фильтр</span>
                 <svg class="prices__properties-icon prices__properties-icon--selected" width="31" height="21">
-                  <use xlink:href="img/sprite.svg#prices__properties-icon--selected"></use>
+                  <use xlink:href="img/sprite.svg#prices-selected"></use>
                 </svg>
               </td>
               <td class="prices__properties">
                 <span class="prices__property-name">Розовый фильтр</span>
                 <svg class="prices__properties-icon prices__properties-icon--selected" width="31" height="21">
-                  <use xlink:href="img/sprite.svg#prices__properties-icon--selected"></use>
+                  <use xlink:href="img/sprite.svg#prices-selected"></use>
                 </svg>
               </td>
             </tr>
@@ -233,19 +239,19 @@
               <td class="prices__properties">
                 <span class="prices__property-name">Смайлики</span>
                 <svg class="prices__properties-icon prices__properties-icon--unselected" width="27" height="27">
-                  <use xlink:href="img/sprite.svg#prices__properties-icon--unselected"></use>
+                  <use xlink:href="img/sprite.svg#prices-unselected"></use>
                 </svg>
               </td>
               <td class="prices__properties">
                 <span class="prices__property-name">Смайлики</span>
                 <svg class="prices__properties-icon prices__properties-icon--selected" width="31" height="21">
-                  <use xlink:href="img/sprite.svg#prices__properties-icon--selected"></use>
+                  <use xlink:href="img/sprite.svg#prices-selected"></use>
                 </svg>
               </td>
               <td class="prices__properties">
                 <span class="prices__property-name">Смайлики</span>
                 <svg class="prices__properties-icon prices__properties-icon--selected" width="31" height="21">
-                  <use xlink:href="img/sprite.svg#prices__properties-icon--selected"></use>
+                  <use xlink:href="img/sprite.svg#prices-selected"></use>
                 </svg>
               </td>
             </tr>
@@ -256,27 +262,33 @@
               <td class="prices__properties">
                 <span class="prices__property-name">Комментарии</span>
                 <svg class="prices__properties-icon prices__properties-icon--unselected" width="27" height="27">
-                  <use xlink:href="img/sprite.svg#prices__properties-icon--unselected"></use>
+                  <use xlink:href="img/sprite.svg#prices-unselected"></use>
                 </svg>
               </td>
               <td class="prices__properties">
                 <span class="prices__property-name">Комментарии</span>
                 <svg class="prices__properties-icon prices__properties-icon--unselected" width="27" height="27">
-                  <use xlink:href="img/sprite.svg#prices__properties-icon--unselected"></use>
+                  <use xlink:href="img/sprite.svg#prices-unselected"></use>
                 </svg>
               </td>
               <td class="prices__properties">
                 <span class="prices__property-name">Комментарии</span>
                 <svg class="prices__properties-icon prices__properties-icon--selected" width="31" height="21">
-                  <use xlink:href="img/sprite.svg#prices__properties-icon--selected"></use>
+                  <use xlink:href="img/sprite.svg#prices-selected"></use>
                 </svg>
               </td>
             </tr>
           </table>
           <div class="toggles prices__toggles">
-            <button class="toggles__button" type="button"></button>
-            <button class="toggles__button toggles__button--current" type="button"></button>
-            <button class="toggles__button" type="button"></button>
+            <button class="toggles__button" type="button">
+              <span class="visually-hidden">База</span>
+            </button>
+            <button class="toggles__button toggles__button--current" type="button">
+              <span class="visually-hidden">Стандарт</span>
+            </button>
+            <button class="toggles__button" type="button">
+              <span class="visually-hidden">Анлим</span>
+            </button>
           </div>
         </div>
       </section>
@@ -308,8 +320,11 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__link page-footer__link--active">
-          <svg class="page-footer__link-icon" width="145" height="40">
-            <use xlink:href="img/sprite.svg#page-footer__link-icon"></use>
+          <svg class="page-footer__link-icon page-footer__link-icon--first" width="59" height="40">
+            <use xlink:href="img/sprite.svg#footer-link-icon-first"></use>
+          </svg>
+          <svg class="page-footer__link-icon page-footer__link-icon--second" width="74" height="23">
+            <use xlink:href="img/sprite.svg#footer-link-icon-second"></use>
           </svg>
         </a>
         <div class="page-footer__social social">
@@ -318,7 +333,7 @@
               <a class="social__link" href="#">
                 <span class="visually-hidden">Мы в Твиттере</span>
                 <svg class="social__link-icon" width="18" height="16">
-                  <use xlink:href="img/sprite.svg#social__link-icon--twitter"></use>
+                  <use xlink:href="img/sprite.svg#social-twitter"></use>
                 </svg>
               </a>
             </li>
@@ -326,7 +341,7 @@
               <a class="social__link" href="#">
                 <span class="visually-hidden">Мы в Фейсбуке</span>
                 <svg class="social__link-icon" width="9" height="20">
-                  <use xlink:href="img/sprite.svg#social__link-icon--facebook"></use>
+                  <use xlink:href="img/sprite.svg#social-facebook"></use>
                 </svg>
               </a>
             </li>
@@ -334,7 +349,7 @@
               <a class="social__link" href="#">
                 <span class="visually-hidden">Мы на Ютубе</span>
                 <svg class="social__link-icon" width="15" height="15">
-                  <use xlink:href="img/sprite.svg#social__link-icon--youtube"></use>
+                  <use xlink:href="img/sprite.svg#social-youtube"></use>
                 </svg>
               </a>
             </li>
@@ -345,7 +360,7 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTML Academy</span>
             <svg class="copyright__link-icon" width="27" height="34">
-              <use xlink:href="img/sprite.svg#copyright__link-icon"></use>
+              <use xlink:href="img/sprite.svg#copyright-icon"></use>
             </svg>
           </a>
         </div>

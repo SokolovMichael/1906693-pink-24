@@ -64,27 +64,11 @@
   margin-right: 35px;
   border: none;
   background-color: transparent;
-  fill: #283645;
-  opacity: 0.3;
   cursor: pointer;
-
-  &:hover {
-    opacity: 0.5;
-  }
-
-  &:active {
-    fill: #d22856;
-    opacity: 1;
-  }
 }
 
 .upload-photos__filter-button:last-child {
   margin-right: 0;
-}
-
-.upload-photos__filter-button--current {
-  fill: #d22856;
-  opacity: 1;
 }
 
 .upload-photos__button-icon {
@@ -95,6 +79,22 @@
   right: 0;
   bottom: 0;
   margin: auto;
+  fill: #283645;
+  opacity: 0.3;
+}
+
+.upload-photos__filter-button--current .upload-photos__button-icon {
+  fill: #d22856;
+  opacity: 1;
+}
+
+.upload-photos__filter-button:hover .upload-photos__button-icon {
+  opacity: 0.5;
+}
+
+.upload-photos__filter-button:active .upload-photos__button-icon {
+  fill: #d22856;
+  opacity: 1;
 }
 
 .upload-photos__edit-range {
