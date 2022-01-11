@@ -14,12 +14,28 @@
   background-color: #e5e5e5;
   text-transform: uppercase;
   line-height: 30px;
+  margin: auto;
 }
 
 .prices__cell {
   background-color: #283645;
   color: #ffffff;
   font-size: 16px;
+  min-width: 276px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 152px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 234px;
+  }
+}
+
+.prices__cell--hit {
+  @media (min-width: @mobile-width-only) and (max-width: @tablet-width) {
+    min-width: 280px;
+  }
 }
 
 .prices__cell--empty {
