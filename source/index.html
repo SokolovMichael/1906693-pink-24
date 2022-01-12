@@ -15,15 +15,25 @@
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <div class="main-nav__wrapper">
             <div class="main-nav__buttons">
-              <a class="main-nav__link">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="img/icons/logotype-header-desktop.svg">
-                  <source media="(min-width: 768px)" srcset="img/icons/logotype-header-tablet.svg">
-                  <img class="main-nav__logo" src="img/icons/logotype-header-mobile.svg" width="74" height="23" alt="HTML Academy: Пинк.">
-                </picture>
+              <a class="main-nav__link main-nav__link--active">
+                <svg class="main-nav__logo main-nav__logo--visible-mobile" width="74" height="23">
+                  <use xlink:href="img/sprite.svg#nav-logo-mobile"></use>
+                </svg>
+                <svg class="main-nav__logo main-nav__logo--visible-tablet" width="145" height="40">
+                  <use xlink:href="img/sprite.svg#nav-logo-tablet"></use>
+                </svg>
+                <svg class="main-nav__logo main-nav__logo--visible-desktop" width="147" height="40">
+                  <use xlink:href="img/sprite.svg#nav-logo-desktop"></use>
+                </svg>
               </a>
               <button class="main-nav__toggle" type="button">
                 <span class="visually-hidden">Открыть меню</span>
+                <svg class="main-nav__toggle-icon main-nav__toggle-icon--open-menu" width="50" height="24">
+                  <use xlink:href="img/sprite.svg#toggle-open-menu"></use>
+                </svg>
+                <svg class="main-nav__toggle-icon main-nav__toggle-icon--close-menu" width="23" height="23">
+                  <use xlink:href="img/sprite.svg#toggle-close-menu"></use>
+                </svg>
               </button>
             </div>
             <ul class="main-nav__list site-list">
@@ -49,6 +59,10 @@
         <h1 class="intro__slogan">Взгляните на жизнь иначе</h1>
         <div class="intro__image-wrapper">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/intro/intro-desktop.webp 1x, img/intro/intro-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/intro/intro-tablet.webp 1x, img/intro/intro-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
+
             <source media="(min-width: 1200px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
             <img class="intro__image" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" width="320" height="286" alt="Взгляни на жизнь иначе.">
@@ -60,19 +74,25 @@
           <ul class="intro__list">
             <li class="intro__list-item">
               <a class="intro__download-link" href="#">
-                <img class="intro__download-icon" src="img/icons/apple-logo.svg" width="47" height="56" alt="Ссылка на App Store.">
+                <svg class="intro__download-icon" width="47" height="58">
+                  <use xlink:href="img/sprite.svg#icon-apple"></use>
+                </svg>
                 <span class="visually-hidden">Скачать приложение для IOS</span>
               </a>
             </li>
             <li class="intro__list-item">
               <a class="intro__download-link" href="#">
-                <img class="intro__download-icon" src="img/icons/android-logo.svg" width="43" height="47" alt="Ссылка на Google play.">
+                <svg class="intro__download-icon" width="43" height="47">
+                  <use xlink:href="img/sprite.svg#icon-android"></use>
+                </svg>
                 <span class="visually-hidden">Скачать приложение для Android</span>
               </a>
             </li>
             <li class="intro__list-item">
               <a class="intro__download-link" href="#">
-                <img class="intro__download-icon" src="img/icons/microsoft-logo.svg" width="44" height="41" alt="Ссылка на Windows Store.">
+                <svg class="intro__download-icon" width="44" height="41">
+                  <use xlink:href="img/sprite.svg#icon-windows"></use>
+                </svg>
                 <span class="visually-hidden">Скачать приложение для Windows Phone</span>
               </a>
             </li>
@@ -132,7 +152,7 @@
         <div class="reviews__wrapper">
           <h2 class="visually-hidden">Отзывы</h2>
           <div class="reviews__list">
-            <blockquote class="reviews__item">
+            <blockquote class="reviews__item reviews__item--current">
               <div class="reviews__author-info">
                 <cite class="reviews__author-name">Николай Петров</cite>
                 <cite class="reviews__author-profession">25 лет, водитель трамвая</cite>
@@ -156,11 +176,17 @@
             <button class="reviews__prev" type="button">Предыдущий отзыв</button>
             <button class="reviews__next" type="button">Следующий отзыв</button>
           </div>
-          <div class="toggles">
-            <button class="toggles__button toggles__button--current" type="button">1</button>
-            <button class="toggles__button" type="button">2</button>
-            <button class="toggles__button" type="button">3</button>
-          </>
+          <div class="toggles reviews__toggles">
+            <button class="toggles__button toggles__button--current" type="button">
+              <span class="visually-hidden">Первый отзыв</span>
+            </button>
+            <button class="toggles__button" type="button">
+              <span class="visually-hidden">Второй отзыв</span>
+            </button>
+            <button class="toggles__button" type="button">
+              <span class="visually-hidden">Третий отзыв</span>
+            </button>
+          </div>
         </div>
       </section>
       <section class="prices">
@@ -187,49 +213,82 @@
               <td class="prices__properties prices__properties--non-mobile">
                 <p class="prices__property-name prices__property-name--non-mobile">Розовый фильтр</p>
               </td>
-              <td class="prices__properties prices__properties--selected">
-                <p class="prices__property-name">Розовый фильтр</p>
+              <td class="prices__properties">
+                <span class="prices__property-name">Розовый фильтр</span>
+                <svg class="prices__properties-icon prices__properties-icon--selected" width="31" height="21">
+                  <use xlink:href="img/sprite.svg#prices-selected"></use>
+                </svg>
               </td>
-              <td class="prices__properties prices__properties--selected">
-                <p class="prices__property-name">Розовый фильтр</p>
+              <td class="prices__properties">
+                <span class="prices__property-name">Розовый фильтр</span>
+                <svg class="prices__properties-icon prices__properties-icon--selected" width="31" height="21">
+                  <use xlink:href="img/sprite.svg#prices-selected"></use>
+                </svg>
               </td>
-              <td class="prices__properties prices__properties--selected">
-                <p class="prices__property-name">Розовый фильтр</p>
+              <td class="prices__properties">
+                <span class="prices__property-name">Розовый фильтр</span>
+                <svg class="prices__properties-icon prices__properties-icon--selected" width="31" height="21">
+                  <use xlink:href="img/sprite.svg#prices-selected"></use>
+                </svg>
               </td>
             </tr>
             <tr>
               <td class="prices__properties prices__properties--non-mobile">
                 <p class="prices__property-name prices__property-name--non-mobile">Смайлики</p>
               </td>
-              <td class="prices__properties prices__properties--unselected">
-                <p class="prices__property-name">Смайлики</p>
+              <td class="prices__properties">
+                <span class="prices__property-name">Смайлики</span>
+                <svg class="prices__properties-icon prices__properties-icon--unselected" width="27" height="27">
+                  <use xlink:href="img/sprite.svg#prices-unselected"></use>
+                </svg>
               </td>
-              <td class="prices__properties prices__properties--selected">
-                <p class="prices__property-name">Смайлики</p>
+              <td class="prices__properties">
+                <span class="prices__property-name">Смайлики</span>
+                <svg class="prices__properties-icon prices__properties-icon--selected" width="31" height="21">
+                  <use xlink:href="img/sprite.svg#prices-selected"></use>
+                </svg>
               </td>
-              <td class="prices__properties prices__properties--selected">
-                <p class="prices__property-name">Смайлики</p>
+              <td class="prices__properties">
+                <span class="prices__property-name">Смайлики</span>
+                <svg class="prices__properties-icon prices__properties-icon--selected" width="31" height="21">
+                  <use xlink:href="img/sprite.svg#prices-selected"></use>
+                </svg>
               </td>
             </tr>
             <tr>
               <td class="prices__properties prices__properties--non-mobile">
                 <p class="prices__property-name prices__property-name--non-mobile">Комментарии</p>
               </td>
-              <td class="prices__properties prices__properties--unselected">
-                <p class="prices__property-name">Комментарии</p>
+              <td class="prices__properties">
+                <span class="prices__property-name">Комментарии</span>
+                <svg class="prices__properties-icon prices__properties-icon--unselected" width="27" height="27">
+                  <use xlink:href="img/sprite.svg#prices-unselected"></use>
+                </svg>
               </td>
-              <td class="prices__properties prices__properties--unselected">
-                <p class="prices__property-name">Комментарии</p>
+              <td class="prices__properties">
+                <span class="prices__property-name">Комментарии</span>
+                <svg class="prices__properties-icon prices__properties-icon--unselected" width="27" height="27">
+                  <use xlink:href="img/sprite.svg#prices-unselected"></use>
+                </svg>
               </td>
-              <td class="prices__properties prices__properties--selected">
-                <p class="prices__property-name">Комментарии</p>
+              <td class="prices__properties">
+                <span class="prices__property-name">Комментарии</span>
+                <svg class="prices__properties-icon prices__properties-icon--selected" width="31" height="21">
+                  <use xlink:href="img/sprite.svg#prices-selected"></use>
+                </svg>
               </td>
             </tr>
           </table>
           <div class="toggles prices__toggles">
-            <button class="toggles__button" type="button">1</button>
-            <button class="toggles__button toggles__button--current" type="button">2</button>
-            <button class="toggles__button" type="button">3</button>
+            <button class="toggles__button" type="button">
+              <span class="visually-hidden">База</span>
+            </button>
+            <button class="toggles__button toggles__button--current" type="button">
+              <span class="visually-hidden">Стандарт</span>
+            </button>
+            <button class="toggles__button" type="button">
+              <span class="visually-hidden">Анлим</span>
+            </button>
           </div>
         </div>
       </section>
@@ -260,27 +319,38 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__link">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/icons/logotype-footer-desktop.svg">
-            <img class="page-footer__logo" src="img/icons/logotype-footer.svg" width="145" height="40" alt="HTML Academy: Пинк.">
-          </picture>
+        <a class="page-footer__link page-footer__link--active">
+          <svg class="page-footer__link-icon page-footer__link-icon--first" width="59" height="40">
+            <use xlink:href="img/sprite.svg#footer-link-icon-first"></use>
+          </svg>
+          <svg class="page-footer__link-icon page-footer__link-icon--second" width="74" height="23">
+            <use xlink:href="img/sprite.svg#footer-link-icon-second"></use>
+          </svg>
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">
+              <a class="social__link" href="#">
                 <span class="visually-hidden">Мы в Твиттере</span>
+                <svg class="social__link-icon" width="18" height="16">
+                  <use xlink:href="img/sprite.svg#social-twitter"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">
+              <a class="social__link" href="#">
                 <span class="visually-hidden">Мы в Фейсбуке</span>
+                <svg class="social__link-icon" width="9" height="20">
+                  <use xlink:href="img/sprite.svg#social-facebook"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="#">
+              <a class="social__link" href="#">
                 <span class="visually-hidden">Мы на Ютубе</span>
+                <svg class="social__link-icon" width="15" height="15">
+                  <use xlink:href="img/sprite.svg#social-youtube"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -289,6 +359,9 @@
           <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTML Academy</span>
+            <svg class="copyright__link-icon" width="27" height="34">
+              <use xlink:href="img/sprite.svg#copyright-icon"></use>
+            </svg>
           </a>
         </div>
       </div>

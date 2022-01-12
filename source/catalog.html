@@ -15,15 +15,25 @@
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <div class="main-nav__wrapper">
             <div class="main-nav__buttons">
-              <a class="main-nav__link">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="img/icons/logotype-header-desktop.svg">
-                  <source media="(min-width: 768px)" srcset="img/icons/logotype-header-tablet.svg">
-                  <img class="main-nav__logo" src="img/icons/logotype-header-mobile.svg" width="74" height="23" alt="HTML Academy: Пинк.">
-                </picture>
+              <a class="main-nav__link" href="index.html">
+                <svg class="main-nav__logo main-nav__logo--visible-mobile" width="74" height="23">
+                  <use xlink:href="img/sprite.svg#nav-logo-mobile"></use>
+                </svg>
+                <svg class="main-nav__logo main-nav__logo--visible-tablet" width="145" height="40">
+                  <use xlink:href="img/sprite.svg#nav-logo-tablet"></use>
+                </svg>
+                <svg class="main-nav__logo main-nav__logo--visible-desktop" width="147" height="40">
+                  <use xlink:href="img/sprite.svg#nav-logo-desktop"></use>
+                </svg>
               </a>
               <button class="main-nav__toggle" type="button">
                 <span class="visually-hidden">Открыть меню</span>
+                <svg class="main-nav__toggle-icon main-nav__toggle-icon--open-menu" width="50" height="24">
+                  <use xlink:href="img/sprite.svg#toggle-open-menu"></use>
+                </svg>
+                <svg class="main-nav__toggle-icon main-nav__toggle-icon--close-menu" width="23" height="23">
+                  <use xlink:href="img/sprite.svg#toggle-close-menu"></use>
+                </svg>
               </button>
             </div>
             <ul class="main-nav__list site-list">
@@ -69,6 +79,9 @@
                 <div class="photos__like photos__like--panorama">
                   <button class="photos__like-button" type="button">
                     <span class="visually-hidden">Мне нравится</span>
+                    <svg class="photos__like-button-icon" width="14" height="12">
+                      <use xlink:href="img/sprite.svg#like-button"></use>
+                    </svg>
                   </button>
                   <p class="photos__like-counter">Нравится: 215</p>
                 </div>
@@ -90,6 +103,9 @@
                 <div class="photos__like">
                   <button class="photos__like-button" type="button">
                     <span class="visually-hidden">Мне нравится</span>
+                    <svg class="photos__like-button-icon" width="14" height="12">
+                      <use xlink:href="img/sprite.svg#like-button"></use>
+                    </svg>
                   </button>
                   <p class="photos__like-counter">Нравится: 356</p>
                 </div>
@@ -111,6 +127,9 @@
                 <div class="photos__like">
                   <button class="photos__like-button" type="button">
                     <span class="visually-hidden">Мне нравится</span>
+                    <svg class="photos__like-button-icon" width="14" height="12">
+                      <use xlink:href="img/sprite.svg#like-button"></use>
+                    </svg>
                   </button>
                   <p class="photos__like-counter">Нравится: 666</p>
                 </div>
@@ -132,6 +151,9 @@
                 <div class="photos__like">
                   <button class="photos__like-button" type="button">
                     <span class="visually-hidden">Мне нравится</span>
+                    <svg class="photos__like-button-icon" width="14" height="12">
+                      <use xlink:href="img/sprite.svg#like-button"></use>
+                    </svg>
                   </button>
                   <p class="photos__like-counter">Нравится: 215</p>
                 </div>
@@ -153,6 +175,9 @@
                 <div class="photos__like">
                   <button class="photos__like-button" type="button">
                     <span class="visually-hidden">Мне нравится</span>
+                    <svg class="photos__like-button-icon" width="14" height="12">
+                      <use xlink:href="img/sprite.svg#like-button"></use>
+                    </svg>
                   </button>
                   <p class="photos__like-counter">Нравится: 4</p>
                 </div>
@@ -174,6 +199,9 @@
                 <div class="photos__like">
                   <button class="photos__like-button" type="button">
                     <span class="visually-hidden">Мне нравится</span>
+                    <svg class="photos__like-button-icon" width="14" height="12">
+                      <use xlink:href="img/sprite.svg#like-button"></use>
+                    </svg>
                   </button>
                   <p class="photos__like-counter">Нравится: 150</p>
                 </div>
@@ -195,6 +223,9 @@
                 <div class="photos__like">
                   <button class="photos__like-button" type="button">
                     <span class="visually-hidden">Мне нравится</span>
+                    <svg class="photos__like-button-icon" width="14" height="12">
+                      <use xlink:href="img/sprite.svg#like-button"></use>
+                    </svg>
                   </button>
                   <p class="photos__like-counter">Нравится: 2560</p>
                 </div>
@@ -217,20 +248,29 @@
               <div class="upload-photos__buttons">
                 <ul class="upload-photos__edit-buttons">
                   <li class="upload-photos__item">
-                    <button class="upload-photos__filter-button upload-photos__filter-button--crop" type="button">
+                    <button class="upload-photos__filter-button upload-photos__filter-button--current upload-photos__filter-button--crop" type="button">
                       <span class="visually-hidden">Обрезать фото</span>
+                      <svg class="upload-photos__button-icon" width="44" height="44">
+                        <use xlink:href="img/sprite.svg#photos-crop"></use>
+                      </svg>
                     </button>
                     <input class="upload-photos__edit-range upload-photos__edit-range--crop" type="range" min="0" max="100" step="1" value="50">
                   </li>
                   <li class="upload-photos__item">
                     <button class="upload-photos__filter-button upload-photos__filter-button--fill" type="button">
                       <span class="visually-hidden">Заливка</span>
+                      <svg class="upload-photos__button-icon" width="48" height="43">
+                        <use xlink:href="img/sprite.svg#photos-fill"></use>
+                      </svg>
                     </button>
                     <input class="upload-photos__edit-range upload-photos__edit-range--fill" type="range" min="0" max="100" step="1" value="50">
                   </li>
                   <li class="upload-photos__item">
                     <button class="upload-photos__filter-button upload-photos__filter-button--contrast" type="button">
                       <span class="visually-hidden">Контрастность</span>
+                      <svg class="upload-photos__button-icon" width="34" height="34">
+                        <use xlink:href="img/sprite.svg#photos-contrast"></use>
+                      </svg>
                     </button>
                     <input class="upload-photos__edit-range upload-photos__edit-range--contrast" type="range" min="0" max="100" step="1" value="50">
                   </li>
@@ -248,27 +288,38 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__link">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/icons/logotype-footer-desktop.svg">
-            <img class="page-footer__logo" src="img/icons/logotype-footer.svg" width="145" height="40" alt="HTML Academy: Пинк.">
-          </picture>
+        <a class="page-footer__link" href="index.html">
+          <svg class="page-footer__link-icon page-footer__link-icon--first" width="59" height="40">
+            <use xlink:href="img/sprite.svg#footer-link-icon-first"></use>
+          </svg>
+          <svg class="page-footer__link-icon page-footer__link-icon--second" width="74" height="23">
+            <use xlink:href="img/sprite.svg#footer-link-icon-second"></use>
+          </svg>
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">
+              <a class="social__link" href="#">
                 <span class="visually-hidden">Мы в Твиттере</span>
+                <svg class="social__link-icon" width="18" height="16">
+                  <use xlink:href="img/sprite.svg#social-twitter"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">
+              <a class="social__link" href="#">
                 <span class="visually-hidden">Мы в Фейсбуке</span>
+                <svg class="social__link-icon" width="9" height="20">
+                  <use xlink:href="img/sprite.svg#social-facebook"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="#">
+              <a class="social__link" href="#">
                 <span class="visually-hidden">Мы на Ютубе</span>
+                <svg class="social__link-icon" width="15" height="15">
+                  <use xlink:href="img/sprite.svg#social-youtube"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -277,6 +328,9 @@
           <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTML Academy</span>
+            <svg class="copyright__link-icon" width="27" height="34">
+              <use xlink:href="img/sprite.svg#copyright-icon"></use>
+            </svg>
           </a>
         </div>
       </div>

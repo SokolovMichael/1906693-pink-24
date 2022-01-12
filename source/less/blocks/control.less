@@ -1,3 +1,60 @@
 .control {
+  position: relative;
   color: #283645;
+  display: inline-block;
+  padding-left: 79px;
+  cursor: pointer;
+}
+
+.control__mark {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background: #ffffff;
+  border: 2px solid #e5e5e5;
+  content: "";
+  z-index: 1;
+  margin-left: 20px;
+}
+
+.control__input + .control__mark {
+  margin-left: 20px;
+}
+
+.control__mark-icon {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 29px;
+  width: 22px;
+  height: 18px;
+  content: "";
+  z-index: 2;
+}
+
+.control__input[type="checkbox"]:checked + .control__mark-icon {
+  display: block;
+  fill: #d22856;
+}
+
+.control__input[type="radio"] + .control__mark {
+  border-radius: 50%;
+  width: 37px;
+  height: 37px;
+}
+
+.control__input[type="radio"]:checked + .control__mark::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 15px;
+  height: 15px;
+  background-color: #d22856;
+  border-radius: 50%;
+  content: "";
 }

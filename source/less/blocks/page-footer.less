@@ -9,8 +9,23 @@
   }
 }
 
-.page-footer__logo {
-  @media (min-width: @desktop-width) {
-    width: 147px;
-  }
+.page-footer__link--active {
+  pointer-events: none;
+}
+
+.page-footer__link-icon--first {
+  fill: #d22856;
+  margin-right: 12px;
+}
+
+.page-footer__link-icon--second {
+  fill: #283645;
+}
+
+.page-footer__link:hover .page-footer__link-icon--second {
+  fill: #d22856;
+}
+
+.page-footer__link:active .page-footer__link-icon {
+  opacity: 0.3;
 }
