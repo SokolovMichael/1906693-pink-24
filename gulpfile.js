@@ -32,29 +32,29 @@ export const styles = () => {
 
 const html = () => {
   return gulp.src('source/*.html')
-    .pipe(htmlmin({ collapseWhitespace: true }))    
-    .pipe(gulp.dest('build'));    
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'));
 }
 
 // Scripts
 
 const scripts = () => {
   return gulp.src('source/js/*.js')
-    .pipe(terser())    
-    .pipe(gulp.dest('build/js'));    
+    .pipe(terser())
+    .pipe(gulp.dest('build/js'));
 }
 
 // Images
 
 const optimizeImages = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
-    .pipe(squoosh())    
-    .pipe(gulp.dest('build/img'));    
+    .pipe(squoosh())
+    .pipe(gulp.dest('build/img'));
 }
 
 const copyImages = () => {
-  return gulp.src('source/img/**/*.{png,jpg}')       
-    .pipe(gulp.dest('build/img'));    
+  return gulp.src('source/img/**/*.{png,jpg}')
+    .pipe(gulp.dest('build/img'));
 }
 
 // WebP
@@ -63,25 +63,25 @@ const createWebp = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
     .pipe(squoosh({
         webp: {}
-    }))     
-    .pipe(gulp.dest('build/img'));    
+    }))
+    .pipe(gulp.dest('build/img'));
 }
 
 // SVG
 
 const svg = () =>
   gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
-    .pipe(svgo())    
-    .pipe(gulp.dest('build/img'));  
+    .pipe(svgo())
+    .pipe(gulp.dest('build/img'));
 
 const sprite = () => {
   return gulp.src('source/img/icons/*.svg')
     .pipe(svgo())
     .pipe(svgstore({
         inlineSvg: true
-    })) 
+    }))
     .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('build/img'));   
+    .pipe(gulp.dest('build/img'));
 }
 
 // Copy
@@ -94,7 +94,7 @@ const copy = (done) => {
     'source/img/sprite.svg',
   ],  {
       base: 'source'
-  })      
+  })
     .pipe(gulp.dest('build'))
   done();
 }
@@ -102,7 +102,7 @@ const copy = (done) => {
 // Clean
 
 const clean = () => {
-  return del('build');    
+  return del('build');
 };
 
 // Server
@@ -166,4 +166,3 @@ export default gulp.series(
     server,
     watcher
   ));
-  
