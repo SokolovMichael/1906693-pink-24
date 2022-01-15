@@ -7,7 +7,7 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -114,6 +114,8 @@
               <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
               <div class="advantages__image-wrapper">
                 <picture>
+                  <source type="image/webp" srcset="img/advantages/advantages-item-mood-desktop.webp 1x, img/advantages/advantages-item-mood-desktop@2x.webp 2x">
+
                   <img class="advantages__image advantages__image--mood" src="img/advantages/advantages-item-mood-desktop.png" srcset="img/advantages/advantages-item-mood-desktop@2x.png 2x" width="186" height="300" alt="Интерфейс приложения Пинк.">
                 </picture>
               </div>
@@ -123,8 +125,10 @@
               <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
               <div class="advantages__image-wrapper">
                 <picture>
+                  <source type="image/webp" srcset="img/advantages/advantages-item-world-desktop.webp 1x, img/advantages/advantages-item-world-desktop@2x.webp 2x">
+
                   <img class="advantages__image advantages__image--world" src="img/advantages/advantages-item-world-desktop.png" srcset="img/advantages/advantages-item-world-desktop@2x.png 2x" width="186" height="300" alt="Интерфейс приложения Пинк.">
-                </picture>
+                </picture>                
               </div>
             </li>
             <li class="advantages__item advantages__item--friends">
@@ -132,10 +136,14 @@
               <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
               <div class="advantages__image-wrapper">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/advantages/advantages-item-friends-desktop.webp 1x, img/advantages/advantages-item-friends-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/advantages/advantages-item-friends-tablet.webp 1x, img/advantages/advantages-item-friends-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/advantages/advantages-item-friends-mobile.webp 1x, img/advantages/advantages-item-friends-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1200px)" srcset="img/advantages/advantages-item-friends-desktop.png 1x, img/advantages/advantages-item-friends-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/advantages/advantages-item-friends-tablet.png 1x, img/advantages/advantages-item-friends-tablet@2x.png 2x">
                   <img class="advantages__image advantages__image--friends" src="img/advantages/advantages-item-friends-mobile.png" srcset="img/advantages/advantages-item-friends-mobile@2x.png 2x" width="157" height="283" alt="Интерфейс приложения Пинк.">
-                </picture>
+                </picture>                
               </div>
             </li>
           </ul>
