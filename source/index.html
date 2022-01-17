@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -65,7 +68,7 @@
 
             <source media="(min-width: 1200px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
-            <img class="intro__image" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" width="320" height="286" alt="Взгляни на жизнь иначе.">
+            <img class="intro__image" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" loading="lazy" width="320" height="286" alt="Взгляни на жизнь иначе.">
           </picture>
         </div>
         <div class="intro__wrapper">
@@ -106,7 +109,9 @@
         <p class="advantages__slogan">Нам есть, что вам предложить!</p>
         <div class="advantages__wrapper">
           <picture>
-            <img class="advantages__image-tablet" src="img/advantages/advantages-item-friends-tablet.png" srcset="img/advantages/advantages-item-friends-tablet@2x.png 2x" width="268" height="480" alt="Интерфейс приложения Пинк.">
+            <source type="image/webp" srcset="img/advantages/advantages-item-friends-tablet.webp 1x, img/advantages/advantages-item-friends-tablet@2x.webp 2x">
+
+            <img class="advantages__image-tablet" src="img/advantages/advantages-item-friends-tablet.png" srcset="img/advantages/advantages-item-friends-tablet@2x.png 2x" loading="lazy" width="268" height="480" alt="Интерфейс приложения Пинк.">
           </picture>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--mood">
@@ -116,7 +121,7 @@
                 <picture>
                   <source type="image/webp" srcset="img/advantages/advantages-item-mood-desktop.webp 1x, img/advantages/advantages-item-mood-desktop@2x.webp 2x">
 
-                  <img class="advantages__image advantages__image--mood" src="img/advantages/advantages-item-mood-desktop.png" srcset="img/advantages/advantages-item-mood-desktop@2x.png 2x" width="186" height="300" alt="Интерфейс приложения Пинк.">
+                  <img class="advantages__image advantages__image--mood" src="img/advantages/advantages-item-mood-desktop.png" srcset="img/advantages/advantages-item-mood-desktop@2x.png 2x" loading="lazy" width="186" height="300" alt="Интерфейс приложения Пинк.">
                 </picture>
               </div>
             </li>
@@ -127,7 +132,7 @@
                 <picture>
                   <source type="image/webp" srcset="img/advantages/advantages-item-world-desktop.webp 1x, img/advantages/advantages-item-world-desktop@2x.webp 2x">
 
-                  <img class="advantages__image advantages__image--world" src="img/advantages/advantages-item-world-desktop.png" srcset="img/advantages/advantages-item-world-desktop@2x.png 2x" width="186" height="300" alt="Интерфейс приложения Пинк.">
+                  <img class="advantages__image advantages__image--world" src="img/advantages/advantages-item-world-desktop.png" srcset="img/advantages/advantages-item-world-desktop@2x.png 2x" loading="lazy" width="186" height="300" alt="Интерфейс приложения Пинк.">
                 </picture>
               </div>
             </li>
@@ -142,7 +147,7 @@
 
                   <source media="(min-width: 1200px)" srcset="img/advantages/advantages-item-friends-desktop.png 1x, img/advantages/advantages-item-friends-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/advantages/advantages-item-friends-tablet.png 1x, img/advantages/advantages-item-friends-tablet@2x.png 2x">
-                  <img class="advantages__image advantages__image--friends" src="img/advantages/advantages-item-friends-mobile.png" srcset="img/advantages/advantages-item-friends-mobile@2x.png 2x" width="157" height="283" alt="Интерфейс приложения Пинк.">
+                  <img class="advantages__image advantages__image--friends" src="img/advantages/advantages-item-friends-mobile.png" srcset="img/advantages/advantages-item-friends-mobile@2x.png 2x" loading="lazy" width="157" height="283" alt="Интерфейс приложения Пинк.">
                 </picture>
               </div>
             </li>
@@ -320,7 +325,8 @@
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.82526767823026!2d30.32286798264162!3d59.938743789986816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1639781160399!5m2!1sru!2sru"
             allowfullscreen
-            title="Офис компании по адресу ул. Большая Конюшенная, 19/8">
+            title="Офис компании по адресу ул. Большая Конюшенная, 19/8"
+            loading="lazy">
           </iframe>
         </div>
       </address>
