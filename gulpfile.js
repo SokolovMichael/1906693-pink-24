@@ -9,6 +9,7 @@ import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgo';
 import svgstore from 'gulp-svgstore';
+import htmlmin from 'gulp-htmlmin';
 import del from 'del';
 import browser from 'browser-sync';
 
@@ -25,6 +26,14 @@ export const styles = () => {
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
+};
+
+// Html
+
+const html = () => {
+  return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'));
 };
 
 // Scripts
@@ -83,7 +92,6 @@ const copy = (done) => {
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
     'source/*.webmanifest',
-    'source/*.html',
   ],  {
       base: 'source'
   })
@@ -134,6 +142,7 @@ export const build = gulp.series(
   optimizeImages,
   gulp.parallel(
     styles,
+    html,
     scripts,
     svg,
     sprite,
@@ -149,6 +158,7 @@ export default gulp.series(
   copyImages,
   gulp.parallel(
     styles,
+    html,
     scripts,
     svg,
     sprite,
