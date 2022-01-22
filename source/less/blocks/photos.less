@@ -1,14 +1,14 @@
 .photos__wrapper {
-  margin: 0 20px;
+  margin: 0;
 }
 
 .photos__list {
   list-style-type: none;
-  margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 20px;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -55,13 +55,11 @@
   }
 }
 
-.photos__item-image-wrapper {
-  text-align: center;
-}
-
 .photos__item-image {
+  width: 100%;
+  display: block;
+
   @media (min-width: @tablet-width) {
-    width: 300px;
     height: 300px;
   }
 
@@ -72,12 +70,10 @@
 
 .photos__item-image--panorama {
   @media (min-width: @tablet-width) {
-    width: 660px;
     height: 509px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1200px;
     height: 506px;
   }
 }

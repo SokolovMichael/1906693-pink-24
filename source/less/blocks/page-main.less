@@ -1,17 +1,25 @@
+.page-main {
+  margin-bottom: 45px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 37px;
+  }
+}
+
 .page-main__intro {
   background-color: @dark-blue;
   color: #ffffff;
-  background-image: url("../img/back-intro-header.jpg");
+  background-image: url("../img/back-intro-mobile.webp");
   background-repeat: no-repeat;
   background-position: 50% 0;
   min-height: 170px;
 
   @media (min-width: @tablet-width) {
-    min-height: 330px;
+    background-image: url("../img/back-intro-tablet.webp");
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 285px;
+    background-image: url("../img/back-intro-desktop.webp");
   }
 }
 
@@ -22,18 +30,21 @@
   text-align: center;
   margin: 0 auto;
   width: 228px;
-  padding-top: 36px;
+  padding-top: 102px;
+  padding-bottom: 51px;
 
   @media (min-width: @tablet-width) {
     font-size: 50px;
     line-height: 68px;
-    width: 620px;
-    padding-top: 81px;
+    width: 480px;
+    padding-top: 191px;
+    padding-bottom: 74px;
   }
 
-  @media (min-width: @tablet-width) {
-    padding-top: 74px;
+  @media (min-width: @desktop-width) {
     width: 747px;
+    padding-top: 184px;
+    padding-bottom: 104px;
   }
 }
 

@@ -5,8 +5,15 @@
 .page-footer__wrapper {
   @media (min-width: @tablet-width) {
     display: flex;
-    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 17px;
+    padding-bottom: 10px;
   }
+}
+
+.page-footer__link {
+  display: block;
+  margin-bottom: 32px;
 }
 
 .page-footer__link--active {
@@ -15,7 +22,7 @@
 
 .page-footer__link-icon--first {
   fill: #d22856;
-  margin-right: 12px;
+  margin-right: 8px;
 }
 
 .page-footer__link-icon--second {
@@ -28,4 +35,21 @@
 
 .page-footer__link:active .page-footer__link-icon {
   opacity: 0.3;
+}
+
+.page-footer__social {
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+  }
+}
+
+.page-footer__copyright {
+  padding-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+    padding-top: 10px;
+  }
 }

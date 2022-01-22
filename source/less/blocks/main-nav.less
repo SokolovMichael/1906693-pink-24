@@ -1,10 +1,13 @@
 .main-nav {
   position: relative;
   width: auto;
-  min-height: 66px;
 
   @media (min-width: @desktop-width) {
     background-color: transparent;
+    display: flex;
+    padding: 0;
+    padding-left: 130px;
+    padding-right: 110px;
   }
 }
 
@@ -23,11 +26,15 @@
   position: absolute;
   top: 0;
   right: 0;
-  left: 0;
-  bottom: 0;
-  margin: auto;
+  margin: 22px 18px 0 0;
   width: 23px;
   height: 23px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-right: 20px;
+    margin-top: 43px;
+  }
 }
 
 .main-nav--closed .main-nav__toggle:active::before,
@@ -35,13 +42,17 @@
   opacity: 0.3;
 }
 
-.main-nav--opened .main-nav__wrapper {
+.main-nav--opened .main-nav__list {
   position: absolute;
-  top: 0;
+  top: 66px;
   right: 0;
   left: 0;
   background-color: #283645;
   z-index: 10;
+
+  @media (min-width: @tablet-width) {
+    top: 110px;
+  }
 }
 
 .main-nav--nojs .main-nav__wrapper {
@@ -63,20 +74,43 @@
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
-    margin: 0 auto;
-    max-width: 940px;
+    margin: 0;
   }
 }
 
 .main-nav__buttons {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  border-bottom: 1px solid #000000;
+  height: 69px;
+
+  @media (min-width: @tablet-width) {
+    height: 110px;
+  }
 
   @media (min-width: @desktop-width) {
     width: 147px;
     border-bottom: none;
+    height: 110px;
+  }
+}
+
+.main-nav--opened .main-nav__buttons {
+  background-color: #283645;
+}
+
+.main-nav__link {
+  margin: 22px 0 0 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 17px;
   }
 }
 
@@ -103,9 +137,11 @@
   display: none;
 }
 
-@media (max-width: @desktop-width) {
-  .main-nav--closed .site-list__item {
-    display: none;
+.main-nav--closed .site-list__item {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }
 
@@ -146,6 +182,10 @@
   background-color: transparent;
   cursor: pointer;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    height: 110px;
+  }
 
   @media (min-width: @desktop-width) {
     display: none;

@@ -1,10 +1,28 @@
 .conclusion {
   text-align: left;
-  margin-left: 50%;
+  margin-bottom: 100px;
 
-  @media (min-width: @mobile-width-only) and (max-width: @tablet-width) {
+
+  @media (min-width: @mobile-width-only) {
     display: none;
   }
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: #f2f2f2;
+  }
+}
+
+.conclusion__image {
+  margin: 0 auto;
+}
+
+.conclusion__wrapper {
+  margin-top: 41px;
 }
 
 .conclusion__title {
@@ -12,10 +30,20 @@
   line-height: 36px;
   font-weight: 700;
   color: #000000;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  width: 168px;
 
   @media (min-width: @desktop-width) {
     line-height: 30px;
   }
+}
+
+.conclusion__description {
+  margin: 0;
+  width: 300px;
+  margin-bottom: 10px;
 }
 
 .conclusion__description,

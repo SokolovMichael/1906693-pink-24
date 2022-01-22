@@ -27,6 +27,8 @@
 
 .upload-photos__fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .upload-photos__wrapper {
@@ -51,6 +53,7 @@
   padding: 0;
   display: flex;
   justify-content: center;
+  margin-bottom: 39px;
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
@@ -101,15 +104,37 @@
   width: 240px;
   background-color: #f2f2f2;
   appearance: none;
+  margin-bottom: 73px;
 }
 
-.upload-photos__edit-range::-webkit-slider-runnable-track,
+.upload-photos__edit-range::-webkit-slider-runnable-track {
+  height: 2px;
+  background-color: #283645;
+}
+
+
 .upload-photos__edit-range::-moz-range-track {
   height: 2px;
   background-color: #283645;
 }
 
-.upload-photos__edit-range::-webkit-slider-thumb,
+/* stylelint-disable */
+
+.upload-photos__edit-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 2px solid #d22856;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+  margin-top: -8px;
+	box-sizing: content-box;
+  appearance: none;
+}
+
+/* stylelint-enable */
+
 .upload-photos__edit-range::-moz-range-thumb {
   background-color: #ffffff;
   border: 2px solid #d22856;
@@ -139,7 +164,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
@@ -147,6 +171,7 @@
 }
 
 .upload-photos__button {
+  display: block;
   color: #d22856;
   font-size: 18px;
   line-height: 18px;
@@ -155,7 +180,6 @@
   border: 3px solid #d22856;
   box-sizing: border-box;
   border-radius: 30px;
-  width: 280px;
   margin-bottom: 12px;
 
   @media (min-width: @tablet-width) {
@@ -179,4 +203,8 @@
   @media (min-width: @desktop-width) {
     margin: 0;
   }
+}
+
+.upload-photos__file {
+  min-height: 414px;
 }
