@@ -47,20 +47,26 @@ const scripts = () => {
 // Images
 
 const optimizeImages = () => {
-  return gulp.src('source/img/**/*.{png,jpg}')
+  return gulp.src(['source/img/**/*.{png,jpg}', '!source/img/favicons/*.png'])
     .pipe(squoosh())
     .pipe(gulp.dest('build/img'));
 };
 
+const optimizeBackgroundImages = () => {
+  return gulp.src('source/img/background/*.jpg')
+    .pipe(squoosh())
+    .pipe(gulp.dest('build/img/background'));
+};
+
 const copyImages = () => {
-  return gulp.src('source/img/**/*.{png,jpg}')
+  return gulp.src(['source/img/**/*.{png,jpg}', '!source/img/background/*.jpg'])
     .pipe(gulp.dest('build/img'));
 };
 
 // WebP
 
 const createWebp = () => {
-  return gulp.src(['source/img/**/*.{png,jpg}', '!source/img/favicons/*.png'])
+  return gulp.src(['source/img/**/*.{png,jpg}', '!source/img/favicons/*.png', '!source/img/background/*.jpg'])
     .pipe(squoosh({
         webp: {}
     }))
@@ -70,9 +76,14 @@ const createWebp = () => {
 // SVG
 
 const svg = () => {
-  return gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
+  return gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg', '!source/img/favicons/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
+};
+
+const copySvg = () => {
+  return gulp.src('source/img/favicons/*.svg')
+    .pipe(gulp.dest('build/img/favicons/'));
 };
 
 const sprite = () => {
@@ -155,7 +166,9 @@ export const build = gulp.series(
 export default gulp.series(
   clean,
   copy,
+  optimizeBackgroundImages,
   copyImages,
+  copySvg,
   gulp.parallel(
     styles,
     html,

@@ -113,7 +113,6 @@
         <h2 class="visually-hidden">Преимущества приложения</h2>
         <p class="advantages__slogan">Устали от серости мегаполиса?</p>
         <p class="advantages__slogan">Нам есть, что вам<br>предложить!</p>
-        <div class="advantages__corner"></div>
         <div class="advantages__wrapper">
           <picture>
             <source type="image/webp" srcset="img/advantages/advantages-item-friends-tablet.webp 1x, img/advantages/advantages-item-friends-tablet@2x.webp 2x">
@@ -131,7 +130,6 @@
 
                   <img class="advantages__image advantages__image--mood" src="img/advantages/advantages-item-mood-desktop.png" srcset="img/advantages/advantages-item-mood-desktop@2x.png 2x" width="186" height="300" alt="Интерфейс приложения Пинк2.">
                 </picture>
-                <div class="advantages__image-shadow"></div>
               </div>
             </li>
             <li class="advantages__item advantages__item--world">
@@ -143,7 +141,6 @@
 
                   <img class="advantages__image advantages__image--world" src="img/advantages/advantages-item-world-desktop.png" srcset="img/advantages/advantages-item-world-desktop@2x.png 2x" width="186" height="300" alt="Интерфейс приложения Пинк3.">
                 </picture>
-                <div class="advantages__image-shadow"></div>
               </div>
             </li>
             <li class="advantages__item advantages__item--friends">
@@ -159,14 +156,13 @@
                   <source media="(min-width: 660px)" srcset="img/advantages/advantages-item-friends-tablet.png 1x, img/advantages/advantages-item-friends-tablet@2x.png 2x">
                   <img class="advantages__image advantages__image--friends" src="img/advantages/advantages-item-friends-mobile.png" srcset="img/advantages/advantages-item-friends-mobile@2x.png 2x" width="157" height="283" alt="Интерфейс приложения Пинк4.">
                 </picture>
-                <div class="advantages__image-shadow"></div>
               </div>
             </li>
           </ul>
         </div>
       </section>
       <section class="conclusion">
-        <img class="conclusion__image" src="img/effect-for-24-hours.svg" width="238" height="276" alt="Эффект на 24 часа.">
+        <img class="conclusion__image" src="img/svg/effect-for-24-hours.svg" width="238" height="276" alt="Эффект на 24 часа.">
         <div class="conclusion__wrapper">
           <h2 class="conclusion__title">Эффект<br>на 24 часа!</h2>
           <p class="conclusion__description">Британские ученые провели исследования и доказали, что положительный эффект<br>от использования приложения длится целые сутки!</p>
@@ -201,7 +197,7 @@
             <button class="reviews__prev" type="button">Предыдущий отзыв</button>
             <button class="reviews__next" type="button">Следующий отзыв</button>
           </div>
-          <div class="toggles reviews__toggles">
+          <div class="reviews__toggles toggles">
             <button class="toggles__button toggles__button--current" type="button">
               <span class="visually-hidden">Первый отзыв</span>
             </button>
@@ -215,7 +211,6 @@
         </div>
       </section>
       <section class="prices">
-        <div class="prices__corner"></div>
         <div class="prices__wrapper">
           <h2 class="visually-hidden">Цены и свойства</h2>
           <table class="prices__table">
@@ -227,12 +222,7 @@
                 <p class="prices__text">1,99 usd</p>
               </th>
               <th class="prices__cell prices__cell--hit">
-                <svg class="prices__cell-icon prices__cell-icon--mobile" width="74" height="74">
-                  <use xlink:href="img/sprite.svg#hit-label-mobile"></use>
-                </svg>
-                <svg class="prices__cell-icon prices__cell-icon--tablet" width="61" height="61">
-                  <use xlink:href="img/sprite.svg#hit-label-tablet"></use>
-                </svg>
+                <img class="prices__cell-icon" src="img/svg/hit-label.svg" width="74" height="74" alt="Хит.">
                 <p class="prices__title">Стандарт</p>
                 <p class="prices__text">3,99 usd</p>
               </th>
@@ -330,7 +320,7 @@
             </tr>
           </table>
         </div>
-        <div class="toggles prices__toggles">
+        <div class="prices__toggles toggles">
           <button class="toggles__button" type="button">
             <span class="visually-hidden">База</span>
           </button>
@@ -349,7 +339,7 @@
             <p class="contacts__name">Звоните:</p>
             <a class="contacts__details" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </li>
-          <li class="contacts__item contacts__item">
+          <li class="contacts__item">
             <p class="contacts__name">Пишите:</p>
             <a class="contacts__details contacts__details--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
@@ -359,7 +349,7 @@
           </li>
         </ul>
         <div class="contacts__road-map">
-          <iframe
+          <iframe class="contacts__iframe"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.82526767823026!2d30.32286798264162!3d59.938743789986816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1639781160399!5m2!1sru!2sru"
             allowfullscreen
             title="Офис компании по адресу ул. Большая Конюшенная, 19/8">

@@ -1,7 +1,7 @@
 .intro {
   background-color: #1d2631;
   color: #ffffff;
-  background-image: url("../img/back-intro-mobile.webp");
+  background-image: url("../img/background/back-intro-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: 320px 462px;
@@ -14,13 +14,13 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 200px;
-    background-image: url("../img/back-intro-tablet.webp");
+    background-image: url("../img/background/back-intro-tablet.jpg");
     height: 529px;
     margin-bottom: 45px;
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("../img/back-intro-desktop.webp");
+    background-image: url("../img/background/back-intro-desktop.jpg");
     height: 648px;
     padding-top: 205px;
     margin-bottom: 62px;
@@ -38,8 +38,7 @@
   @media (min-width: @tablet-width) {
     font-size: 40px;
     line-height: 48px;
-    margin-left: 70px;
-    margin-top: 3px;
+    margin: 3px auto 28px 70px;
     width: 200px;
   }
 
@@ -65,8 +64,7 @@
 .intro__download {
   background-color: #1d2631;
   text-align: center;
-  padding-top: 28px;
-  padding-bottom: 32px;
+  padding: 28px 0 32px;
 
   @media (min-width: @tablet-width) {
     width: 300px;
@@ -75,9 +73,6 @@
     background-color: transparent;
     top: 350px;
     left: 20px;
-    right: 0;
-    bottom: 0;
-    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -89,11 +84,10 @@
 .intro__list {
   list-style-type: none;
   padding: 0;
-  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
+  margin: 0 0 10px;
 
   @media (min-width: @desktop-width) {
     margin-bottom: 40px;

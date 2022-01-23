@@ -6,32 +6,8 @@
   cursor: pointer;
 }
 
-.control__mark {
-  position: absolute;
-  top: -10px;
-  left: 0;
-  width: 35px;
-  height: 35px;
-  background: #ffffff;
-  border: 2px solid #e5e5e5;
-  content: "";
-  z-index: 1;
-  margin-left: 20px;
-}
-
 .control__input + .control__mark {
   margin-left: 20px;
-}
-
-.control__mark-icon {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 29px;
-  width: 22px;
-  height: 18px;
-  content: "";
-  z-index: 2;
 }
 
 .control__input[type="checkbox"]:checked + .control__mark-icon {
@@ -57,4 +33,28 @@
   background-color: #d22856;
   border-radius: 50%;
   content: "";
+}
+
+.control__mark-icon {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 29px;
+  width: 22px;
+  height: 18px;
+  content: "";
+  z-index: 2;
+}
+
+.control__mark {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background: #ffffff;
+  border: 2px solid #e5e5e5;
+  content: "";
+  z-index: 1;
+  margin-left: 20px;
 }

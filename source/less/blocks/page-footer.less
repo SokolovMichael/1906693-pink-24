@@ -5,15 +5,22 @@
 .page-footer__wrapper {
   @media (min-width: @tablet-width) {
     display: flex;
-    margin-left: 20px;
-    margin-right: 17px;
     padding-bottom: 10px;
+    margin: 0 17px 0 20px;
   }
 }
 
 .page-footer__link {
   display: block;
   margin-bottom: 32px;
+}
+
+.page-footer__link:hover .page-footer__link-icon--second {
+  fill: #d22856;
+}
+
+.page-footer__link:active .page-footer__link-icon {
+  opacity: 0.3;
 }
 
 .page-footer__link--active {
@@ -29,14 +36,6 @@
   fill: #283645;
 }
 
-.page-footer__link:hover .page-footer__link-icon--second {
-  fill: #d22856;
-}
-
-.page-footer__link:active .page-footer__link-icon {
-  opacity: 0.3;
-}
-
 .page-footer__social {
   margin-bottom: 30px;
 
@@ -49,7 +48,6 @@
   padding-bottom: 40px;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 0;
-    padding-top: 10px;
+    padding: 10px 0 0;
   }
 }

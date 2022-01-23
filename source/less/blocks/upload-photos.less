@@ -42,6 +42,10 @@
   }
 }
 
+.upload-photos__file {
+  min-height: 414px;
+}
+
 .upload-photos__buttons {
   display: flex;
   flex-direction: column;
@@ -49,11 +53,10 @@
 
 .upload-photos__edit-buttons {
   list-style-type: none;
-  margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
-  margin-bottom: 39px;
+  margin: 0 0 39px;
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
@@ -74,6 +77,20 @@
   margin-right: 0;
 }
 
+.upload-photos__filter-button:hover .upload-photos__button-icon {
+  opacity: 0.5;
+}
+
+.upload-photos__filter-button:active .upload-photos__button-icon {
+  fill: #d22856;
+  opacity: 1;
+}
+
+.upload-photos__filter-button--current .upload-photos__button-icon {
+  fill: #d22856;
+  opacity: 1;
+}
+
 .upload-photos__button-icon {
   position: absolute;
   display: block;
@@ -84,20 +101,6 @@
   margin: auto;
   fill: #283645;
   opacity: 0.3;
-}
-
-.upload-photos__filter-button--current .upload-photos__button-icon {
-  fill: #d22856;
-  opacity: 1;
-}
-
-.upload-photos__filter-button:hover .upload-photos__button-icon {
-  opacity: 0.5;
-}
-
-.upload-photos__filter-button:active .upload-photos__button-icon {
-  fill: #d22856;
-  opacity: 1;
 }
 
 .upload-photos__edit-range {
@@ -112,7 +115,6 @@
   background-color: #283645;
 }
 
-
 .upload-photos__edit-range::-moz-range-track {
   height: 2px;
   background-color: #283645;
@@ -125,6 +127,21 @@
   cursor: pointer;
   width: 14px;
   height: 14px;
+}
+
+.upload-photos__edit-range::-webkit-slider-thumb {
+  border: 2px solid #d22856;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+  margin-top: -8px;
+  box-sizing: content-box;
+  appearance: none;
+
+  /* stylelint-disable-next-line */
+  -webkit-appearance: none;
 }
 
 .upload-photos__edit-range--crop,
@@ -187,24 +204,3 @@
     margin: 0;
   }
 }
-
-.upload-photos__file {
-  min-height: 414px;
-}
-
-/* stylelint-disable */
-
-.upload-photos__edit-range::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  border: 2px solid #d22856;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  cursor: pointer;
-  margin-top: -8px;
-  box-sizing: content-box;
-  appearance: none;
-}
-
-/* stylelint-enable */
