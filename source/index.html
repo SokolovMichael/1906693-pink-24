@@ -11,8 +11,7 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -57,23 +56,28 @@
             </ul>
           </div>
         </nav>
+        <div class="page-header__picture">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/intro/intro-desktop.webp 1x, img/intro/intro-desktop@2x.webp 2x">
+            <source type="image/webp" srcset="img/intro/intro-tablet.webp 1x, img/intro/intro-tablet@2x.webp 2x">
+
+            <source media="(min-width: 1200px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
+            <img class="page-header__image" src="img/intro/intro-tablet.png" srcset="img/intro/intro-tablet@2x.png 2x" width="660" height="545" alt="Взгляни на жизнь иначе.">
+          </picture>
+        </div>
       </div>
     </header>
     <main class="page-main">
       <div class="intro">
-        <h1 class="intro__slogan">Взгляните на жизнь иначе</h1>
-        <div class="intro__image-wrapper">
+        <h1 class="intro__slogan">Взгляните на жизнь иначе!</h1>
+        <div class="intro__picture">
           <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/intro/intro-desktop.webp 1x, img/intro/intro-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/intro/intro-tablet.webp 1x, img/intro/intro-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/intro/intro-mobile.webp 1x, img/intro/intro-mobile@2x.webp 2x">
 
-            <source media="(min-width: 1200px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
-            <img class="intro__image" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" loading="lazy" width="320" height="286" alt="Взгляни на жизнь иначе.">
+            <img class="intro__image" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" width="320" height="286" alt="Взгляни на жизнь иначе.">
           </picture>
         </div>
-        <div class="intro__wrapper">
+        <div class="intro__download">
           <h2 class="visually-hidden">Скачать приложение Пинк</h2>
           <a class="button button--download" href="#">Скачать приложение</a>
           <ul class="intro__list">
@@ -108,13 +112,14 @@
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества приложения</h2>
         <p class="advantages__slogan">Устали от серости мегаполиса?</p>
-        <p class="advantages__slogan">Нам есть, что вам предложить!</p>
+        <p class="advantages__slogan">Нам есть, что вам<br>предложить!</p>
         <div class="advantages__wrapper">
           <picture>
             <source type="image/webp" srcset="img/advantages/advantages-item-friends-tablet.webp 1x, img/advantages/advantages-item-friends-tablet@2x.webp 2x">
 
-            <img class="advantages__image-tablet" src="img/advantages/advantages-item-friends-tablet.png" srcset="img/advantages/advantages-item-friends-tablet@2x.png 2x" loading="lazy" width="268" height="480" alt="Интерфейс приложения Пинк.">
+            <img class="advantages__image-tablet" src="img/advantages/advantages-item-friends-tablet.png" srcset="img/advantages/advantages-item-friends-tablet@2x.png 2x" width="268" height="480" alt="Интерфейс приложения Пинк1.">
           </picture>
+
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--mood">
               <h3 class="advantages__title">Поднимает настроение</h3>
@@ -123,18 +128,18 @@
                 <picture>
                   <source type="image/webp" srcset="img/advantages/advantages-item-mood-desktop.webp 1x, img/advantages/advantages-item-mood-desktop@2x.webp 2x">
 
-                  <img class="advantages__image advantages__image--mood" src="img/advantages/advantages-item-mood-desktop.png" srcset="img/advantages/advantages-item-mood-desktop@2x.png 2x" loading="lazy" width="186" height="300" alt="Интерфейс приложения Пинк.">
+                  <img class="advantages__image advantages__image--mood" src="img/advantages/advantages-item-mood-desktop.png" srcset="img/advantages/advantages-item-mood-desktop@2x.png 2x" width="186" height="300" alt="Интерфейс приложения Пинк2.">
                 </picture>
               </div>
             </li>
             <li class="advantages__item advantages__item--world">
               <h3 class="advantages__title">Меняет мир вокруг</h3>
-              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы <span class="advantages__description--text-wrap">усилить эффект</span></p>
               <div class="advantages__image-wrapper">
                 <picture>
                   <source type="image/webp" srcset="img/advantages/advantages-item-world-desktop.webp 1x, img/advantages/advantages-item-world-desktop@2x.webp 2x">
 
-                  <img class="advantages__image advantages__image--world" src="img/advantages/advantages-item-world-desktop.png" srcset="img/advantages/advantages-item-world-desktop@2x.png 2x" loading="lazy" width="186" height="300" alt="Интерфейс приложения Пинк.">
+                  <img class="advantages__image advantages__image--world" src="img/advantages/advantages-item-world-desktop.png" srcset="img/advantages/advantages-item-world-desktop@2x.png 2x" width="186" height="300" alt="Интерфейс приложения Пинк3.">
                 </picture>
               </div>
             </li>
@@ -144,12 +149,12 @@
               <div class="advantages__image-wrapper">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/advantages/advantages-item-friends-desktop.webp 1x, img/advantages/advantages-item-friends-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/advantages/advantages-item-friends-tablet.webp 1x, img/advantages/advantages-item-friends-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/advantages/advantages-item-friends-tablet.webp 1x, img/advantages/advantages-item-friends-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/advantages/advantages-item-friends-mobile.webp 1x, img/advantages/advantages-item-friends-mobile@2x.webp 2x">
 
                   <source media="(min-width: 1200px)" srcset="img/advantages/advantages-item-friends-desktop.png 1x, img/advantages/advantages-item-friends-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/advantages/advantages-item-friends-tablet.png 1x, img/advantages/advantages-item-friends-tablet@2x.png 2x">
-                  <img class="advantages__image advantages__image--friends" src="img/advantages/advantages-item-friends-mobile.png" srcset="img/advantages/advantages-item-friends-mobile@2x.png 2x" loading="lazy" width="157" height="283" alt="Интерфейс приложения Пинк.">
+                  <source media="(min-width: 660px)" srcset="img/advantages/advantages-item-friends-tablet.png 1x, img/advantages/advantages-item-friends-tablet@2x.png 2x">
+                  <img class="advantages__image advantages__image--friends" src="img/advantages/advantages-item-friends-mobile.png" srcset="img/advantages/advantages-item-friends-mobile@2x.png 2x" width="157" height="283" alt="Интерфейс приложения Пинк4.">
                 </picture>
               </div>
             </li>
@@ -157,9 +162,10 @@
         </div>
       </section>
       <section class="conclusion">
+        <img class="conclusion__image" src="img/svg/effect-for-24-hours.svg" width="238" height="276" alt="Эффект на 24 часа.">
         <div class="conclusion__wrapper">
-          <h2 class="conclusion__title">Эффект на 24 часа</h2>
-          <p class="conclusion__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <h2 class="conclusion__title">Эффект<br>на 24 часа!</h2>
+          <p class="conclusion__description">Британские ученые провели исследования и доказали, что положительный эффект<br>от использования приложения длится целые сутки!</p>
           <a class="conclusion__link" href="#">Узнать больше об исследовании</a>
         </div>
       </section>
@@ -191,7 +197,7 @@
             <button class="reviews__prev" type="button">Предыдущий отзыв</button>
             <button class="reviews__next" type="button">Следующий отзыв</button>
           </div>
-          <div class="toggles reviews__toggles">
+          <div class="reviews__toggles toggles">
             <button class="toggles__button toggles__button--current" type="button">
               <span class="visually-hidden">Первый отзыв</span>
             </button>
@@ -216,6 +222,7 @@
                 <p class="prices__text">1,99 usd</p>
               </th>
               <th class="prices__cell prices__cell--hit">
+                <img class="prices__cell-icon" src="img/svg/hit-label.svg" width="74" height="74" alt="Хит.">
                 <p class="prices__title">Стандарт</p>
                 <p class="prices__text">3,99 usd</p>
               </th>
@@ -229,22 +236,28 @@
                 <p class="prices__property-name prices__property-name--non-mobile">Розовый фильтр</p>
               </td>
               <td class="prices__properties">
-                <span class="prices__property-name">Розовый фильтр</span>
-                <svg class="prices__properties-icon prices__properties-icon--selected" width="31" height="21">
-                  <use xlink:href="img/sprite.svg#prices-selected"></use>
-                </svg>
+                <div class="prices__properties-wrapper">
+                  <span class="prices__property-name">Розовый фильтр</span>
+                  <svg class="prices__properties-icon prices__properties-icon--selected" width="31" height="21">
+                    <use xlink:href="img/sprite.svg#prices-selected"></use>
+                  </svg>
+                </div>
               </td>
               <td class="prices__properties">
-                <span class="prices__property-name">Розовый фильтр</span>
-                <svg class="prices__properties-icon prices__properties-icon--selected" width="31" height="21">
-                  <use xlink:href="img/sprite.svg#prices-selected"></use>
-                </svg>
+                <div class="prices__properties-wrapper">
+                  <span class="prices__property-name">Розовый фильтр</span>
+                  <svg class="prices__properties-icon prices__properties-icon--selected" width="31" height="21">
+                    <use xlink:href="img/sprite.svg#prices-selected"></use>
+                  </svg>
+                </div>
               </td>
               <td class="prices__properties">
-                <span class="prices__property-name">Розовый фильтр</span>
-                <svg class="prices__properties-icon prices__properties-icon--selected" width="31" height="21">
-                  <use xlink:href="img/sprite.svg#prices-selected"></use>
-                </svg>
+                <div class="prices__properties-wrapper">
+                  <span class="prices__property-name">Розовый фильтр</span>
+                  <svg class="prices__properties-icon prices__properties-icon--selected" width="31" height="21">
+                    <use xlink:href="img/sprite.svg#prices-selected"></use>
+                  </svg>
+                </div>
               </td>
             </tr>
             <tr>
@@ -252,22 +265,28 @@
                 <p class="prices__property-name prices__property-name--non-mobile">Смайлики</p>
               </td>
               <td class="prices__properties">
-                <span class="prices__property-name">Смайлики</span>
-                <svg class="prices__properties-icon prices__properties-icon--unselected" width="27" height="27">
-                  <use xlink:href="img/sprite.svg#prices-unselected"></use>
-                </svg>
+                <div class="prices__properties-wrapper">
+                  <span class="prices__property-name">Смайлики</span>
+                  <svg class="prices__properties-icon prices__properties-icon--unselected" width="27" height="27">
+                    <use xlink:href="img/sprite.svg#prices-unselected"></use>
+                  </svg>
+                </div>
               </td>
               <td class="prices__properties">
-                <span class="prices__property-name">Смайлики</span>
-                <svg class="prices__properties-icon prices__properties-icon--selected" width="31" height="21">
-                  <use xlink:href="img/sprite.svg#prices-selected"></use>
-                </svg>
+                <div class="prices__properties-wrapper">
+                  <span class="prices__property-name">Смайлики</span>
+                  <svg class="prices__properties-icon prices__properties-icon--selected" width="31" height="21">
+                    <use xlink:href="img/sprite.svg#prices-selected"></use>
+                  </svg>
+                </div>
               </td>
               <td class="prices__properties">
-                <span class="prices__property-name">Смайлики</span>
-                <svg class="prices__properties-icon prices__properties-icon--selected" width="31" height="21">
-                  <use xlink:href="img/sprite.svg#prices-selected"></use>
-                </svg>
+                <div class="prices__properties-wrapper">
+                  <span class="prices__property-name">Смайлики</span>
+                  <svg class="prices__properties-icon prices__properties-icon--selected" width="31" height="21">
+                    <use xlink:href="img/sprite.svg#prices-selected"></use>
+                  </svg>
+                </div>
               </td>
             </tr>
             <tr>
@@ -275,36 +294,42 @@
                 <p class="prices__property-name prices__property-name--non-mobile">Комментарии</p>
               </td>
               <td class="prices__properties">
-                <span class="prices__property-name">Комментарии</span>
-                <svg class="prices__properties-icon prices__properties-icon--unselected" width="27" height="27">
-                  <use xlink:href="img/sprite.svg#prices-unselected"></use>
-                </svg>
+                <div class="prices__properties-wrapper">
+                  <span class="prices__property-name">Комментарии</span>
+                  <svg class="prices__properties-icon prices__properties-icon--unselected" width="27" height="27">
+                    <use xlink:href="img/sprite.svg#prices-unselected"></use>
+                  </svg>
+                </div>
               </td>
               <td class="prices__properties">
-                <span class="prices__property-name">Комментарии</span>
-                <svg class="prices__properties-icon prices__properties-icon--unselected" width="27" height="27">
-                  <use xlink:href="img/sprite.svg#prices-unselected"></use>
-                </svg>
+                <div class="prices__properties-wrapper">
+                  <span class="prices__property-name">Комментарии</span>
+                  <svg class="prices__properties-icon prices__properties-icon--unselected" width="27" height="27">
+                    <use xlink:href="img/sprite.svg#prices-unselected"></use>
+                  </svg>
+                </div>
               </td>
               <td class="prices__properties">
-                <span class="prices__property-name">Комментарии</span>
-                <svg class="prices__properties-icon prices__properties-icon--selected" width="31" height="21">
-                  <use xlink:href="img/sprite.svg#prices-selected"></use>
-                </svg>
+                <div class="prices__properties-wrapper">
+                  <span class="prices__property-name">Комментарии</span>
+                  <svg class="prices__properties-icon prices__properties-icon--unselected" width="31" height="21">
+                    <use xlink:href="img/sprite.svg#prices-selected"></use>
+                  </svg>
+                </div>
               </td>
             </tr>
           </table>
-          <div class="toggles prices__toggles">
-            <button class="toggles__button" type="button">
-              <span class="visually-hidden">База</span>
-            </button>
-            <button class="toggles__button toggles__button--current" type="button">
-              <span class="visually-hidden">Стандарт</span>
-            </button>
-            <button class="toggles__button" type="button">
-              <span class="visually-hidden">Анлим</span>
-            </button>
-          </div>
+        </div>
+        <div class="prices__toggles toggles">
+          <button class="toggles__button" type="button">
+            <span class="visually-hidden">База</span>
+          </button>
+          <button class="toggles__button toggles__button--current" type="button">
+            <span class="visually-hidden">Стандарт</span>
+          </button>
+          <button class="toggles__button" type="button">
+            <span class="visually-hidden">Анлим</span>
+          </button>
         </div>
       </section>
       <address class="contacts">
@@ -316,7 +341,7 @@
           </li>
           <li class="contacts__item">
             <p class="contacts__name">Пишите:</p>
-            <a class="contacts__details" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <a class="contacts__details contacts__details--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
           <li class="contacts__item">
             <p class="contacts__name">Приезжайте в гости:</p>
@@ -324,11 +349,10 @@
           </li>
         </ul>
         <div class="contacts__road-map">
-          <iframe
+          <iframe class="contacts__iframe"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.82526767823026!2d30.32286798264162!3d59.938743789986816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1639781160399!5m2!1sru!2sru"
             allowfullscreen
-            title="Офис компании по адресу ул. Большая Конюшенная, 19/8"
-            loading="lazy">
+            title="Офис компании по адресу ул. Большая Конюшенная, 19/8">
           </iframe>
         </div>
       </address>
@@ -372,10 +396,9 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">HTML Academy</span>
-            <svg class="copyright__link-icon" width="27" height="34">
+            <span class="copyright__text">Разработано</span>
+            <svg class="copyright__link-icon" width="30" height="34">
               <use xlink:href="img/sprite.svg#copyright-icon"></use>
             </svg>
           </a>

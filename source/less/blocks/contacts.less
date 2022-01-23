@@ -7,11 +7,12 @@
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
-  margin: 50px 49px 45px;
+  margin: 0 49px 35px;
 
   @media (min-width: @tablet-width) {
     font-size: 40px;
     line-height: 55px;
+    margin-bottom: 33px;
   }
 
   @media (min-width: @desktop-width) {
@@ -22,12 +23,14 @@
 
 .contacts__list {
   list-style-type: none;
-  margin: 0;
   padding: 0;
+  margin: 0 0 30px;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: @desktop-width) {
@@ -37,10 +40,12 @@
 }
 
 .contacts__item {
-  margin-bottom: 31px;
+  margin-bottom: 16px;
 }
 
 .contacts__item:last-child {
+  margin: 20px 20px 0;
+
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     grid-column: span 2;
   }
@@ -50,7 +55,12 @@
   font-size: 18px;
   line-height: 25px;
   font-weight: 700;
-  margin-bottom: 13px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 3px;
+    padding: 0;
+  }
 }
 
 .contacts__details {
@@ -59,7 +69,20 @@
   font-size: 24px;
   line-height: 33px;
   font-weight: 300;
-  margin: 0;
+  margin: 0 auto;
+  padding: 0;
+  width: 211px;
+}
+
+.contacts__details--mail:hover {
+  color: #283645;
+  text-decoration: underline;
+}
+
+.contacts__details--mail:active {
+  color: #283645;
+  opacity: 0.3;
+  text-decoration: none;
 }
 
 .contacts__road-map {
@@ -69,14 +92,13 @@
     min-height: 374px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     min-height: 502px;
   }
 }
 
-.contacts iframe {
+.contacts .contacts__iframe {
   border: none;
-  display: block;
   margin: 0 auto;
   width: 100%;
   height: 100%;

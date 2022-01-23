@@ -5,4 +5,28 @@
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 29px;
+  margin: 0 20px 32px 20px;
+  padding: 16px 30px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
+    padding: 16px 0;
+    margin-bottom: 69px;
+  }
+}
+
+.button:hover {
+  color: #d22856;
+  background-color: #ffffff;
+}
+
+.button:active {
+  opacity: 0.3;
 }

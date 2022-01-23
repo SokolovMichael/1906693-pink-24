@@ -11,8 +11,7 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -67,19 +66,19 @@
       <section class="photos">
         <div class="photos__wrapper">
           <h2 class="visually-hidden">Фотографии и отзывы</h2>
+          <div class="photos__item-image-wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/anna/panorama-desktop.webp 1x, img/catalog/anna/panorama-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/anna/panorama-tablet.webp 1x, img/catalog/anna/panorama-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/catalog/anna/panorama-mobile.webp 1x, img/catalog/anna/panorama-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1200px)" srcset="img/catalog/anna/panorama-desktop.jpg 1x, img/catalog/anna/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/anna/panorama-tablet.jpg 1x, img/catalog/anna/panorama-tablet@2x.jpg 2x">
+              <img class="photos__item-image photos__item-image--panorama" src="img/catalog/anna/panorama-mobile.jpg" srcset="img/catalog/anna/panorama-mobile@2x.jpg 2x" loading="lazy" width="320" height="137" alt="Панорамное фото от Анны.">
+            </picture>
+          </div>
           <ul class="photos__list">
             <li class="photos__item photos__item--panorama">
-              <div class="photos__item-image-wrapper">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/anna/panorama-desktop.webp 1x, img/catalog/anna/panorama-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/anna/panorama-tablet.webp 1x, img/catalog/anna/panorama-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/catalog/anna/panorama-mobile.webp 1x, img/catalog/anna/panorama-mobile@2x.webp 2x">
-
-                  <source media="(min-width: 1200px)" srcset="img/catalog/anna/panorama-desktop.jpg 1x, img/catalog/anna/panorama-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/catalog/anna/panorama-tablet.jpg 1x, img/catalog/anna/panorama-tablet@2x.jpg 2x">
-                  <img class="photos__item-image photos__item-image--panorama" src="img/catalog/anna/panorama-mobile.jpg" srcset="img/catalog/anna/panorama-mobile@2x.jpg 2x" loading="lazy" width="320" height="137" alt="Панорамное фото от Анны.">
-                </picture>
-              </div>
               <div class="photos__item-comments photos__item-comments--panorama">
                 <p class="photos__author photos__author--panorama">Анна
                   <span class="photos__time">(5 минут назад)</span>
@@ -358,9 +357,8 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">HTML Academy</span>
+            <span class="copyright__text">Разработано</span>
             <svg class="copyright__link-icon" width="27" height="34">
               <use xlink:href="img/sprite.svg#copyright-icon"></use>
             </svg>

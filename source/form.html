@@ -11,8 +11,7 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -71,17 +70,20 @@
           <legend class="visually-hidden">Данные пользователя</legend>
           <ul class="form-choice__list">
             <li class="form-choice__item">
-              <label class="form-choice__label">Фамилия:
+              <label class="form-choice__label">
+                <span class="form-choice__label-name">Фамилия:</span>
                 <input class="form-choice__input" type="text" name="surname" placeholder="Укажите фамилию *" required>
               </label>
             </li>
             <li class="form-choice__item">
-              <label class="form-choice__label">Имя:
+              <label class="form-choice__label">
+                <span class="form-choice__label-name">Имя:</span>
                 <input class="form-choice__input" type="text" name="name" placeholder="Введите ваше имя *" required>
               </label>
             </li>
             <li class="form-choice__item">
-              <label class="form-choice__label">Отчество:
+              <label class="form-choice__label">
+                <span class="form-choice__label-name">Отчество:</span>
                 <input class="form-choice__input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
               </label>
             </li>
@@ -156,12 +158,14 @@
           <legend class="form-choice__title form-choice__title--contacts">Контактная информация</legend>
           <ul class="form-choice__list form-choice__list--contacts">
             <li class="form-choice__item">
-              <label class="form-choice__label">Номер телефона
+              <label class="form-choice__label">
+                <span class="form-choice__label-name">Номер телефона</span>
                 <input class="form-choice__input" type="tel" name="phone" placeholder="Номер, пожалуйста">
               </label>
             </li>
             <li class="form-choice__item">
-              <label class="form-choice__label">Адрес почты
+              <label class="form-choice__label">
+                <span class="form-choice__label-name">Адрес почты</span>
                 <input class="form-choice__input" type="email" name="email" placeholder="Введите почту *" required>
               </label>
             </li>
@@ -245,9 +249,8 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">HTML Academy</span>
+            <span class="copyright__text">Разработано</span>
             <svg class="copyright__link-icon" width="27" height="34">
               <use xlink:href="img/sprite.svg#copyright-icon"></use>
             </svg>

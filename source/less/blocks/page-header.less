@@ -1,7 +1,40 @@
 .page-header {
+  position: absolute;
   display: flex;
   flex-direction: column;
+  width: 100%;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-  background-color: @dark-blue;
+  background-color: rgba(0, 0, 0, 0.25);
   color: @white;
+  height: 66px;
+
+  @media (min-width: @tablet-width) {
+    height: 110px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.page-header__image {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin: 0 auto;
+    height: 545px;
+    width: 660px;
+    position: absolute;
+    top: 185px;
+    right: 0;
+    z-index: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 645px;
+    width: 1050px;
+    top: 208px;
+    right: 5px;
+  }
 }
