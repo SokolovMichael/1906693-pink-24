@@ -158,15 +158,21 @@
           <legend class="form-choice__title form-choice__title--contacts">Контактная информация</legend>
           <ul class="form-choice__list form-choice__list--contacts">
             <li class="form-choice__item">
-              <label class="form-choice__label">
+              <label class="form-choice__label form-choice__label--contacts">
                 <span class="form-choice__label-name">Номер телефона</span>
                 <input class="form-choice__input" type="tel" name="phone" placeholder="Номер, пожалуйста">
+                <svg class="form-choice__icon-phone" width="59" height="59">
+                  <use xlink:href="img/sprite.svg#phone-icon"></use>
+                </svg>
               </label>
             </li>
             <li class="form-choice__item">
-              <label class="form-choice__label">
+              <label class="form-choice__label form-choice__label--contacts">
                 <span class="form-choice__label-name">Адрес почты</span>
                 <input class="form-choice__input" type="email" name="email" placeholder="Введите почту *" required>
+                <svg class="form-choice__icon-mail" width="59" height="59">
+                  <use xlink:href="img/sprite.svg#mail-icon"></use>
+                </svg>
               </label>
             </li>
           </ul>
@@ -198,7 +204,7 @@
           </ul>
         </fieldset>
         <fieldset class="form-choice__fieldset form-choice__fieldset--emotions">
-          <legend class="form-choice__title">Опишите свои эмоции</legend>
+          <legend class="form-choice__title form-choice__title--emotions">Опишите свои эмоции</legend>
           <textarea class="form-choice__review" name="review" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
         <div class="form-choice__submit">
@@ -218,6 +224,12 @@
           </svg>
           <svg class="page-footer__link-icon page-footer__link-icon--second" width="74" height="23">
             <use xlink:href="img/sprite.svg#footer-link-icon-second"></use>
+          </svg>
+          <svg class="page-footer__link-icon page-footer__link-icon--first-mod" width="61" height="40">
+            <use xlink:href="img/sprite.svg#footer-link-icon-first-mod"></use>
+          </svg>
+          <svg class="page-footer__link-icon page-footer__link-icon--second-mod" width="75" height="34">
+            <use xlink:href="img/sprite.svg#footer-link-icon-second-mod"></use>
           </svg>
         </a>
         <div class="page-footer__social social">

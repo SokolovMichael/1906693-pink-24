@@ -17,8 +17,6 @@
 }
 
 .form-choice__fieldset--username {
-  margin-bottom: 50px;
-
   @media (min-width: @tablet-width) {
     order: 1;
   }
@@ -28,6 +26,8 @@
 .form-choice__fieldset--application {
   background-color: #e5e5e5;
   padding-bottom: 50px;
+  margin-bottom: 42px;
+
 
   @media (min-width: @tablet-width) {
     background-color: transparent;
@@ -100,11 +100,14 @@
 .form-choice__list--contacts .form-choice__label {
   @media (min-width: @tablet-width) {
     flex-direction: column-reverse;
+    align-items: flex-start;
+    margin-right: 60px;
   }
 }
 
 .form-choice__item {
   margin-bottom: 29px;
+  position: relative;
 }
 
 .form-choice__item:last-child {
@@ -140,6 +143,35 @@
 
   @media (min-width: @tablet-width) {
     width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.form-choice__icon-phone {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 2px;
+    right: 16px;
+    width: 59px;
+    height: 59px;
+    display: block;
+    content: "";
+  }
+}
+
+.form-choice__icon-mail {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 2px;
+    right: 16px;
+    width: 59px;
+    height: 59px;
+    display: block;
+    content: "";
   }
 }
 
@@ -164,12 +196,17 @@
   line-height: 30px;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 82px;
   margin: 0 auto 30px;
 
   @media (min-width: @tablet-width) {
     padding: 0 25px;
   }
+}
+
+.form-choice__title--emotions {
+  padding: 0;
+  margin: 0 auto 22px;
 }
 
 .form-choice__title--contacts {
@@ -181,11 +218,14 @@
 }
 
 .form-choice__review {
+  display: block;
+  box-sizing: border-box;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
   width: 98%;
   resize: none;
   height: 197px;
+  padding: 22px 25px 22px 20px;
 }
 
 .form-choice__review::-webkit-input-placeholder {
@@ -225,6 +265,7 @@
   border-radius: 1px;
   padding: 14px 45px;
   cursor: pointer;
+  margin-bottom: 46px;
 }
 
 .form-choice__note {

@@ -13,6 +13,11 @@
   background-repeat: no-repeat;
   background-position: 50% 0;
   min-height: 170px;
+  background-size: 320px 462px;
+
+  @media (min-width: @mobile-width-only) {
+    background-size: 100%;
+  }
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/background/back-intro-tablet.jpg");
