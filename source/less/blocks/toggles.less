@@ -1,6 +1,10 @@
 .toggles {
   display: flex;
   justify-content: center;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .toggles__button {
