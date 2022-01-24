@@ -2,11 +2,14 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
+    width: 620px;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 940px;
   }
 }
 
@@ -91,9 +94,22 @@
   flex-direction: column;
 }
 
+.form-choice__list--travel-achievements {
+  @media (min-width: @desktop-width) {
+    height: 120px;
+    flex-wrap: wrap;
+  }
+}
+
 .form-choice__list--contacts {
   @media (min-width: @tablet-width) {
     margin: 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 74px;
   }
 }
 

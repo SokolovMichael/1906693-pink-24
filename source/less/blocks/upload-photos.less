@@ -23,6 +23,16 @@
 
 .upload-photos__form {
   background-color: #f2f2f2;
+  width: @mobile-width-only;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
 }
 
 .upload-photos__fieldset {
