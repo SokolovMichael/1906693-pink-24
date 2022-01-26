@@ -17,6 +17,8 @@
     background-image: url("../img/background/back-intro-tablet.jpg");
     height: 529px;
     margin-bottom: 45px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: @desktop-width) {
@@ -38,16 +40,20 @@
   @media (min-width: @tablet-width) {
     font-size: 40px;
     line-height: 48px;
-    margin: 3px auto 28px 70px;
     width: 200px;
+    margin: 0 60px 0 auto;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 50px;
     line-height: 69px;
-    margin-left: 130px;
     width: 300px;
+    margin-right: 200px;
   }
+}
+
+.intro__picture {
+  display: block;
 }
 
 .intro__image {
@@ -68,16 +74,13 @@
 
   @media (min-width: @tablet-width) {
     width: 300px;
-    position: absolute;
-    z-index: 2;
+    z-index: 1;
     background-color: transparent;
-    top: 350px;
-    left: 20px;
+    margin: 0 10px 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    top: 420px;
-    left: 130px;
+    margin-right: 200px;
   }
 }
 
