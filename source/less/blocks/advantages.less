@@ -168,11 +168,13 @@
 }
 
 .advantages__description {
-  margin: 0 20px;
   font-weight: 400;
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     margin: 0 0 35px;
+    width: 310px;
   }
 
   @media (min-width: @desktop-width) {
@@ -184,13 +186,16 @@
   }
 }
 
-.advantages__description-text {
+.advantages__description-transform {
+  display: none;
+
+
   @media (min-width: @tablet-width) {
     display: block;
   }
 
   @media (min-width: @desktop-width) {
-    display: inline-block;
+    display: none;
   }
 }
 

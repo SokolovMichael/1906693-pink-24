@@ -1,29 +1,4 @@
-.modal-container {
-  display: none;
-  position: absolute;
-  z-index: 2;
-  width: 320px;
-  text-align: center;
-  margin: 0 auto;
-  top: 1167px;
-  right: 0;
-  left: 0;
-  background-color: #ffffff;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-
-  @media (min-width: @tablet-width) {
-    top: 909px;
-    width: 460px;
-  }
-
-  @media (min-width: @desktop-width) {
-    top: 817px;
-    width: 780px;
-  }
-}
-
-.modal-container__failure {
-  display: block;
+.modal-failure {
   padding-top: 37px;
 
   @media (min-width: @tablet-width) {
@@ -31,7 +6,36 @@
   }
 }
 
-.modal-container__title {
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  width: 320px;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+
+  @media (min-width: @tablet-width) {
+    width: 460px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 780px;
+  }
+}
+
+.modal--active {
+  display: none;
+}
+
+.modal--inactive {
+  display: none;
+}
+
+.modal__title {
   font-size: 18px;
   margin: 0 0 25px;
   padding: 0;
@@ -48,7 +52,7 @@
   }
 }
 
-.modal-container__text {
+.modal__text {
   color: #283645;
   padding: 0;
   width: 275px;
@@ -65,64 +69,13 @@
   }
 }
 
-.modal-container__text--success {
+.modal__text--success {
   @media (min-width: @desktop-width) {
     margin-bottom: 40px;
   }
 }
 
-.modal-container__text-transfer {
-  display: block;
-
-  @media (min-width: @tablet-width) {
-    display: inline-block;
-  }
-}
-
-.modal-container__button {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 30px;
-  color: #ffffff;
-  text-transform: uppercase;
-  width: 280px;
-  cursor: pointer;
-  background-color: #2aab6d;
-  border: 2px solid #2aab6d;
-  border-radius: 4px;
-  padding: 15px 0 13px;
-
-  @media (min-width: @tablet-width) {
-    width: 296px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 456px;
-  }
-}
-
-.modal-container__button--failure {
-  @media (min-width: @desktop-width) {
-    width: 296px;
-  }
-}
-
-.modal-container__success {
-  display: block;
-  padding-top: 37px;
-  position: absolute;
-  top: 475px;
-  background-color: #ffffff;
-  left: 0;
-  right: 0;
-
-  @media (min-width: @desktop-width) {
-    top: 460px;
-  }
-}
-
-.modal-container__button-wrapper {
-  border-radius: 0 0 1px 1px;
+.modal__button-wrapper {
   padding: 41px 0 50px;
 
   @media (min-width: @tablet-width) {
@@ -135,8 +88,51 @@
   }
 }
 
-.modal-container__button-wrapper--success {
+.modal__button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 280px;
+  cursor: pointer;
+  background-color: #2aab6d;
+  border: 2px solid #2aab6d;
+  border-radius: 2px;
+  padding: 15px 0 13px;
+
+  @media (min-width: @tablet-width) {
+    width: 296px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 456px;
+  }
+}
+
+.modal__button--failure {
+  @media (min-width: @desktop-width) {
+    width: 296px;
+  }
+}
+
+.modal-success {
+  padding-top: 37px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 40px;
+  }
+}
+
+.modal__button-wrapper--success {
   background-color: #f2f2f2;
   margin-top: 32px;
   padding: 51px 0 51px;
+}
+
+
+.modal__text-transform {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
