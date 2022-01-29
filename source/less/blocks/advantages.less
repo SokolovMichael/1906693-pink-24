@@ -1,7 +1,15 @@
 .advantages {
   color: #283645;
   text-align: center;
-  margin-bottom: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .advantages__slogan {
@@ -25,21 +33,21 @@
 .advantages__wrapper {
   display: block;
   background-color: #f2f2f2;
-  position: relative;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #f2f2f2;
-    position: relative;
     padding: 20px 20px 0;
-    margin: 53px 0 55px;
+    position: relative;
+    min-height: 400px;
+    margin-top: 80px;
   }
 
   @media (min-width: @desktop-width) {
     display: block;
-    padding: 20px 160px 0;
-    margin-bottom: 0;
+    padding: 0;
+    margin-top: 58px;
   }
 }
 
@@ -61,25 +69,32 @@
   }
 
   @media (min-width: @desktop-width) {
-    display: none;
+    min-width: 1200px;
+    min-height: 100px;
+    top: 0;
   }
 }
 
-.advantages__image-tablet {
+.advantages__picture-tablet {
   display: none;
 
   @media (min-width: @tablet-width) {
     display: block;
-    position: absolute;
-    right: 54%;
-    bottom: 0;
-    left: 0;
-    margin: 0 auto;
+    position: relative;
   }
 
   @media (min-width: @desktop-width) {
     display: none;
   }
+}
+
+.advantages__image-tablet {
+  display: block;
+  position: absolute;
+  right: 40px;
+  bottom: 0;
+  width: 268px;
+  height: 480px;
 }
 
 .advantages__list {
@@ -89,13 +104,12 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
-    margin-top: 37px;
     justify-content: center;
   }
 }
 
 .advantages__item {
-  margin-bottom: 34px;
+  margin-bottom: 31px;
   padding: 0;
 
   @media (min-width: @tablet-width) {
@@ -106,19 +120,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 68px 0 0;
+    margin: 0 72px 0 0;
   }
 }
 
 .advantages__item:first-child {
-  padding-top: 50px;
+  padding-top: 82px;
 
   @media (min-width: @tablet-width) {
     padding-top: 2px;
   }
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .advantages__item:last-child {
+  margin-bottom: 0;
+
   @media (min-width: @desktop-width) {
     margin-right: 0;
   }
@@ -126,52 +146,65 @@
 
 .advantages__item:last-child .advantages__description {
   margin-bottom: 42px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .advantages__title {
   color: #000000;
   font-size: 18px;
   padding: 0;
-  margin: 0 0 10px;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 12px;
-  }
+  margin: 0 0 12px;
 
   @media (min-width: @desktop-width) {
     font-size: 30px;
     line-height: 30px;
     width: 240px;
     text-align: center;
-    margin-top: 50px;
+    margin: 55px 0 24px;
   }
 }
 
 .advantages__description {
   margin: 0 20px;
-  padding: 0;
+  font-weight: 400;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
+    margin: 0 0 35px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 30px;
-    width: 252px;
     text-align: center;
+    margin: 0;
+    width: 248px;
   }
 }
 
-.advantages__description--text-wrap {
+.advantages__description-text {
   @media (min-width: @tablet-width) {
     display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
   }
 }
 
 .advantages__image-wrapper {
-  order: -1;
-  position: relative;
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    min-height: 300px;
+    order: -1;
+    position: relative;
+  }
 }
 
 .advantages__image-wrapper::after {
@@ -197,11 +230,6 @@
   width: 157px;
   height: 278px;
 
-  @media (min-width: @tablet-width) {
-    width: 268px;
-    height: 480px;
-  }
-
   @media (min-width: @desktop-width) {
     width: 186px;
     height: 300px;
@@ -213,7 +241,7 @@
   display: none;
 
   @media (min-width: @desktop-width) {
-    display: inline-block;
+    display: block;
   }
 }
 
@@ -223,6 +251,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    display: inline-block;
+    display: block;
   }
 }

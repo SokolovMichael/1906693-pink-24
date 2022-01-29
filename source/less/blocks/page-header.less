@@ -2,11 +2,16 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: @mobile-width-only;
+  justify-content: center;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   background-color: rgba(0, 0, 0, 0.25);
   color: @white;
   height: 66px;
+
+  @media (min-width: @mobile-width-only) {
+    width: 100%;
+  }
 
   @media (min-width: @tablet-width) {
     height: 110px;
@@ -36,6 +41,6 @@
     height: 645px;
     width: 1050px;
     top: 208px;
-    right: 5px;
+    left: 140px;
   }
 }

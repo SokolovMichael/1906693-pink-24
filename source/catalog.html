@@ -20,6 +20,7 @@
           <div class="main-nav__wrapper">
             <div class="main-nav__buttons">
               <a class="main-nav__link" href="index.html">
+                <span class="visually-hidden">На главную</span>
                 <svg class="main-nav__logo main-nav__logo--visible-mobile" width="74" height="23">
                   <use xlink:href="img/sprite.svg#nav-logo-mobile"></use>
                 </svg>
@@ -58,11 +59,11 @@
         </nav>
       </div>
     </header>
-    <main class="page-main">
+    <main class="page-main page-main--catalog">
       <div class="page-main__intro">
-        <h1 class="page-main__headline">Фотографии пользователей</h1>
+        <h1 class="page-main__headline page-main__headline--catalog">Фотографии пользователей</h1>
       </div>
-      <p class="page-main__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <p class="page-main__text page-main__text--catalog">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       <section class="photos">
         <div class="photos__wrapper">
           <h2 class="visually-hidden">Фотографии и отзывы</h2>
@@ -76,19 +77,23 @@
               <source media="(min-width: 660px)" srcset="img/catalog/anna/panorama-tablet.jpg 1x, img/catalog/anna/panorama-tablet@2x.jpg 2x">
               <img class="photos__panorama-image" src="img/catalog/anna/panorama-mobile.jpg" srcset="img/catalog/anna/panorama-mobile@2x.jpg 2x" loading="lazy" width="320" height="137" alt="Панорамное фото от Анны.">
             </picture>
+            <svg class="photos__panorama-icon" width="140" height="36" viewBox="0 0 140 36">
+              <use xlink:href="img/sprite.svg#panorama-label"></use>
+            </svg>
             <div class="photos__panorama-comments">
               <p class="photos__panorama-author">Анна
                 <span class="photos__time">(5 минут назад)</span>
               </p>
-              <p class="photos__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <div class="photos__like">
+
+              <p class="photos__text photos__text--panorama">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <div class="photos__like photos__like--panorama">
                 <button class="photos__like-button" type="button">
                   <span class="visually-hidden">Мне нравится</span>
                   <svg class="photos__like-button-icon" width="14" height="12">
                     <use xlink:href="img/sprite.svg#like-button"></use>
                   </svg>
                 </button>
-                <p class="photos__like-counter">Нравится: 215</p>
+                <p class="photos__like-counter photos__like-counter--panorama">Нравится: 215</p>
               </div>
             </div>
           </div>
@@ -106,10 +111,12 @@
                 </picture>
               </div>
               <div class="photos__item-comments">
-                <p class="photos__author">Левон
-                  <span class="photos__time">(5 часов назад)</span>
-                </p>
-                <p class="photos__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <div class="photos__text-wrapper">
+                  <p class="photos__author">Левон
+                    <span class="photos__time">(5 часов назад)</span>
+                  </p>
+                  <p class="photos__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                </div>
                 <div class="photos__like">
                   <button class="photos__like-button" type="button">
                     <span class="visually-hidden">Мне нравится</span>
@@ -134,10 +141,12 @@
                 </picture>
               </div>
               <div class="photos__item-comments">
-                <p class="photos__author">Антон
-                  <span class="photos__time">(12 часов назад)</span>
-                </p>
-                <p class="photos__text">Соседи будут рады!</p>
+                <div class="photos__text-wrapper">
+                  <p class="photos__author">Антон
+                    <span class="photos__time">(12 часов назад)</span>
+                  </p>
+                  <p class="photos__text">Соседи будут рады!</p>
+                </div>
                 <div class="photos__like">
                   <button class="photos__like-button" type="button">
                     <span class="visually-hidden">Мне нравится</span>
@@ -162,10 +171,12 @@
                 </picture>
               </div>
               <div class="photos__item-comments">
-                <p class="photos__author">Борис
-                  <span class="photos__time">(20 часов назад)</span>
-                </p>
-                <p class="photos__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <div class="photos__text-wrapper">
+                  <p class="photos__author">Борис
+                    <span class="photos__time">(20 часов назад)</span>
+                  </p>
+                  <p class="photos__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                </div>
                 <div class="photos__like">
                   <button class="photos__like-button" type="button">
                     <span class="visually-hidden">Мне нравится</span>
@@ -190,10 +201,12 @@
                 </picture>
               </div>
               <div class="photos__item-comments">
-                <p class="photos__author">Сергей
-                  <span class="photos__time">(25 часов назад)</span>
-                </p>
-                <p class="photos__text">Самая кубанская в мире!</p>
+                <div class="photos__text-wrapper">
+                  <p class="photos__author">Сергей
+                    <span class="photos__time">(25 часов назад)</span>
+                  </p>
+                  <p class="photos__text">Самая кубанская в мире!</p>
+                </div>
                 <div class="photos__like">
                   <button class="photos__like-button" type="button">
                     <span class="visually-hidden">Мне нравится</span>
@@ -218,10 +231,12 @@
                 </picture>
               </div>
               <div class="photos__item-comments">
-                <p class="photos__author">Максим
-                  <span class="photos__time">(40 часов назад)</span>
-                </p>
-                <p class="photos__text">Где снег-то?</p>
+                <div class="photos__text-wrapper">
+                  <p class="photos__author">Максим
+                    <span class="photos__time">(40 часов назад)</span>
+                  </p>
+                  <p class="photos__text">Где снег-то?</p>
+                </div>
                 <div class="photos__like">
                   <button class="photos__like-button" type="button">
                     <span class="visually-hidden">Мне нравится</span>
@@ -246,10 +261,12 @@
                 </picture>
               </div>
               <div class="photos__item-comments">
-                <p class="photos__author">Надежда
-                  <span class="photos__time">(45 часов назад)</span>
-                </p>
-                <p class="photos__text">Всем GM и взаимные лайки!</p>
+                <div class="photos__text-wrapper">
+                  <p class="photos__author">Надежда
+                    <span class="photos__time">(45 часов назад)</span>
+                  </p>
+                  <p class="photos__text">Всем GM и взаимные лайки!</p>
+                </div>
                 <div class="photos__like">
                   <button class="photos__like-button" type="button">
                     <span class="visually-hidden">Мне нравится</span>
@@ -328,6 +345,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__link" href="index.html">
+          <span class="visually-hidden">На главную</span>
           <svg class="page-footer__link-icon page-footer__link-icon--first" width="59" height="40">
             <use xlink:href="img/sprite.svg#footer-link-icon-first"></use>
           </svg>
