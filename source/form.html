@@ -20,6 +20,7 @@
           <div class="main-nav__wrapper">
             <div class="main-nav__buttons">
               <a class="main-nav__link" href="index.html">
+                <span class="visually-hidden">На главную</span>
                 <svg class="main-nav__logo main-nav__logo--visible-mobile" width="74" height="23">
                   <use xlink:href="img/sprite.svg#nav-logo-mobile"></use>
                 </svg>
@@ -58,12 +59,12 @@
         </nav>
       </div>
     </header>
-    <main class="page-main">
+    <main class="page-main page-main--form">
       <div class="page-main__intro">
         <h1 class="page-main__headline">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
       <p class="page-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-        <span class="page-main__text page-main__text--form">Пожалуйста, заполните форму ниже:</span>
+        <span class="page-main__form">Пожалуйста, заполните форму ниже:</span>
       </p>
       <form class="form-choice" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="form-choice__fieldset form-choice__fieldset--username">
@@ -179,7 +180,7 @@
         </fieldset>
         <fieldset class="form-choice__fieldset form-choice__fieldset--application">
           <legend class="form-choice__title">С каким приложением путешествовали?</legend>
-          <ul class="form-choice__list">
+          <ul class="form-choice__list form-choice__list--application">
             <li class="form-choice__item">
               <label class="form-choice__control control">
                 <input class="visually-hidden control__input" type="radio" name="form-choice-type" value="for-ios" checked>
@@ -211,7 +212,10 @@
           <button class="form-choice__submit-button" type="submit">Отправить форму</button>
           <small class="form-choice__note">
             <sup class="form-choice__symbol">*</sup>
-            <span class="form-choice__text">— обязательные поля</span>
+            <span class="form-choice__text">— обязательные
+              <span class="form-choice__text-middle">для заполнения</span>
+              поля
+            </span>
           </small>
         </div>
       </form>
@@ -219,6 +223,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__link" href="index.html">
+          <span class="visually-hidden">На главную</span>
           <svg class="page-footer__link-icon page-footer__link-icon--first" width="59" height="40">
             <use xlink:href="img/sprite.svg#footer-link-icon-first"></use>
           </svg>
@@ -270,6 +275,22 @@
         </div>
       </div>
     </footer>
+    <div class="modal modal--failure">
+      <h2 class="modal__title">Что-то пошло не так!</h2>
+      <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <div class="modal__button-wrapper">
+        <button class="modal__button modal__button--failure" type="button">Ок</button>
+      </div>
+    </div>
+    <div class="modal modal--success">
+      <h2 class="modal__title">Ваша заявка отправлена</h2>
+      <p class="modal__text modal__text--success">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и&#32;
+        <br>оповестим вас.
+      </p>
+      <div class="modal__button-wrapper modal__button-wrapper--success">
+        <button class="modal__button" type="button">Закрыть окно</button>
+      </div>
+    </div>
     <script src="js/script.js" type="text/javascript"></script>
   </body>
 </html>

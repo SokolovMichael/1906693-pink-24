@@ -7,7 +7,12 @@
 
   @media (min-width: @tablet-width) {
     padding-bottom: 20px;
-    margin-bottom: 45px;
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 59px;
+    padding-bottom: 95px;
   }
 }
 
@@ -26,6 +31,11 @@
     min-width: 660px;
     min-height: 40px;
   }
+
+  @media (min-width: @desktop-width) {
+    min-width: 1200px;
+    min-height: 100px;
+  }
 }
 
 .prices__wrapper {
@@ -36,10 +46,14 @@
   background-color: #e5e5e5;
   text-transform: uppercase;
   line-height: 30px;
-  margin: 80px auto 45px;
+  margin: 99px auto 42px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 54px;
+    margin: 95px auto 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 152px auto 0;
   }
 }
 
@@ -61,10 +75,7 @@
 
 .prices__cell--empty {
   background-color: transparent;
-
-  @media (min-width: @mobile-width-only) {
-    display: none;
-  }
+  display: none;
 
   @media (min-width: @tablet-width) {
     display: block;
@@ -72,17 +83,24 @@
 }
 
 .prices__cell--hit {
-  @media (min-width: @mobile-width-only) {
-    min-width: 274px;
-  }
+  min-width: 274px;
 
   @media (min-width: @tablet-width) {
     min-width: 152px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 234px;
   }
 }
 
 .prices__title {
   margin: 10px 0 0;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 15px;
+    font-size: 18px;
+  }
 }
 
 .prices__text {
@@ -92,6 +110,11 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 20px;
+    font-size: 24px;
   }
 }
 
@@ -104,6 +127,11 @@
     width: 61px;
     height: 61px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 74px;
+    height: 74px;
+  }
 }
 
 .prices__properties {
@@ -113,16 +141,22 @@
   @media (min-width: @tablet-width) {
     padding: 0 0 10px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .prices__properties--non-mobile {
-  @media (min-width: @mobile-width-only) {
-    display: none;
-  }
+  display: none;
 
   @media (min-width: @tablet-width) {
     display: block;
     padding: 4px 0 10px 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 13px 27px 16px;
   }
 }
 

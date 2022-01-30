@@ -1,0 +1,119 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  width: 320px;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  padding-top: 37px;
+
+  @media (min-width: @tablet-width) {
+    width: 460px;
+    padding-top: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 780px;
+  }
+}
+
+.modal--active {
+  display: block;
+}
+
+.modal__title {
+  font-size: 18px;
+  margin: 0 0 25px;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 215px;
+    margin: 0 auto 23px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+  }
+}
+
+.modal__text {
+  color: #283645;
+  padding: 0;
+  width: 275px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    width: 315px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 380px;
+    margin-bottom: 63px;
+  }
+}
+
+.modal__text--success {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.modal__text--success br {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.modal__button-wrapper {
+  padding: 41px 0 50px;
+
+  @media (min-width: @tablet-width) {
+    padding: 33px 0 53px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: #f2f2f2;
+    padding: 51px 0 51px;
+  }
+}
+
+.modal__button-wrapper--success {
+  background-color: #f2f2f2;
+  margin-top: 32px;
+  padding: 51px 0 51px;
+}
+
+.modal__button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 280px;
+  cursor: pointer;
+  background-color: #2aab6d;
+  border: 2px solid #2aab6d;
+  border-radius: 2px;
+  padding: 15px 0 13px;
+
+  @media (min-width: @tablet-width) {
+    width: 296px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 456px;
+  }
+}
+
+.modal__button--failure {
+  @media (min-width: @desktop-width) {
+    width: 296px;
+  }
+}

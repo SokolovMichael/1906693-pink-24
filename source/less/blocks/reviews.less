@@ -6,6 +6,10 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 18px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 35px;
+  }
 }
 
 .reviews__wrapper {
@@ -22,7 +26,7 @@
   @media (min-width: @desktop-width) {
     position: relative;
     display: block;
-    height: 70px;
+    height: 90px;
     width: 50px;
     border: none;
     background-color: transparent;
@@ -34,11 +38,8 @@
 .reviews__scroll-next {
   position: absolute;
   display: block;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+  top: 36px;
+  left: 14px;
   fill: #283645;
   opacity: 0.3;
 }
@@ -53,10 +54,21 @@
   opacity: 0.1;
 }
 
+.reviews__list {
+  margin-bottom: 33px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
 .reviews__item {
   display: none;
   margin: 0;
-  padding: 0;
 }
 
 .reviews__item--current {
@@ -67,7 +79,6 @@
   display: flex;
   flex-direction: column;
   line-height: 30px;
-  margin-top: 40px;
 }
 
 .reviews__author-name {
@@ -85,6 +96,7 @@
 
   @media (min-width: @desktop-width) {
     font-size: 24px;
+    margin-bottom: 4px;
   }
 }
 
@@ -100,7 +112,6 @@
   @media (min-width: @tablet-width) {
     display: block;
     order: 2;
-    margin-bottom: 40px;
   }
 
   @media (min-width: @desktop-width) {
@@ -113,19 +124,22 @@
 
   @media (min-width: @desktop-width) {
     display: block;
-    margin: 0 auto 58px;
+    margin: 0 auto 49px;
   }
 }
 
 .reviews__text {
-  margin: 0 20px 35px;
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
+    margin-bottom: 34px;
+    width: 620px;
   }
 
   @media (min-width: @desktop-width) {
     width: 688px;
-    margin: 0 100px 35px;
+    margin: 0 90px 35px;
   }
 }
