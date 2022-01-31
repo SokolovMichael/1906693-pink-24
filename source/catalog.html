@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header page-header--nojs">
       <div class="page-header__wrapper">
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <div class="main-nav__wrapper">
@@ -68,24 +68,27 @@
         <div class="photos__wrapper">
           <h2 class="visually-hidden">Фотографии и отзывы</h2>
           <div class="photos__panorama">
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/anna/panorama-desktop.webp 1x, img/catalog/anna/panorama-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/anna/panorama-tablet.webp 1x, img/catalog/anna/panorama-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/catalog/anna/panorama-mobile.webp 1x, img/catalog/anna/panorama-mobile@2x.webp 2x">
+            <a class="photos__panorama-link" href="img/catalog/anna/panorama-desktop@2x.jpg">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/anna/panorama-desktop.webp 1x, img/catalog/anna/panorama-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/anna/panorama-tablet.webp 1x, img/catalog/anna/panorama-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/anna/panorama-mobile.webp 1x, img/catalog/anna/panorama-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1200px)" srcset="img/catalog/anna/panorama-desktop.jpg 1x, img/catalog/anna/panorama-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/catalog/anna/panorama-tablet.jpg 1x, img/catalog/anna/panorama-tablet@2x.jpg 2x">
-              <img class="photos__panorama-image" src="img/catalog/anna/panorama-mobile.jpg" srcset="img/catalog/anna/panorama-mobile@2x.jpg 2x" loading="lazy" width="320" height="137" alt="Панорамное фото от Анны.">
-            </picture>
-            <svg class="photos__panorama-icon" width="140" height="36" viewBox="0 0 140 36">
-              <use xlink:href="img/sprite.svg#panorama-label"></use>
-            </svg>
+                <source media="(min-width: 1200px)" srcset="img/catalog/anna/panorama-desktop.jpg 1x, img/catalog/anna/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/catalog/anna/panorama-tablet.jpg 1x, img/catalog/anna/panorama-tablet@2x.jpg 2x">
+                <img class="photos__panorama-image" src="img/catalog/anna/panorama-mobile.jpg" srcset="img/catalog/anna/panorama-mobile@2x.jpg 2x" loading="lazy" width="320" height="137" alt="Панорамное фото от Анны.">
+              </picture>
+              <svg class="photos__panorama-icon" width="140" height="36" viewBox="0 0 140 36">
+                <use xlink:href="img/sprite.svg#panorama-label"></use>
+              </svg>
+            </a>
             <div class="photos__panorama-comments">
               <p class="photos__panorama-author">Анна
                 <span class="photos__time">(5 минут назад)</span>
               </p>
-
-              <p class="photos__text photos__text--panorama">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <p class="photos__text photos__text--panorama">Прыгать или нет? Напишите в комментарии свой совет и&#32;
+                <br>смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+              </p>
               <div class="photos__like photos__like--panorama">
                 <button class="photos__like-button" type="button">
                   <span class="visually-hidden">Мне нравится</span>
@@ -100,15 +103,17 @@
           <ul class="photos__list">
             <li class="photos__item">
               <div class="photos__item-image-wrapper">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/levon/photo-1-desktop.webp 1x, img/catalog/levon/photo-1-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/levon/photo-1-tablet.webp 1x, img/catalog/levon/photo-1-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/catalog/levon/photo-1-mobile.webp 1x, img/catalog/levon/photo-1-mobile@2x.webp 2x">
+                <a class="photos__link" href="img/catalog/levon/photo-1-desktop@2x.jpg">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/levon/photo-1-desktop.webp 1x, img/catalog/levon/photo-1-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/levon/photo-1-tablet.webp 1x, img/catalog/levon/photo-1-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog/levon/photo-1-mobile.webp 1x, img/catalog/levon/photo-1-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1200px)" srcset="img/catalog/levon/photo-1-desktop.jpg 1x, img/catalog/levon/photo-1-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/catalog/levon/photo-1-tablet.jpg 1x, img/catalog/levon/photo-1-tablet@2x.jpg 2x">
-                  <img class="photos__item-image" src="img/catalog/levon/photo-1-mobile.jpg" srcset="img/catalog/levon/photo-1-mobile@2x.jpg 2x" loading="lazy" width="280" height="180" alt="Фото от Левона.">
-                </picture>
+                    <source media="(min-width: 1200px)" srcset="img/catalog/levon/photo-1-desktop.jpg 1x, img/catalog/levon/photo-1-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/catalog/levon/photo-1-tablet.jpg 1x, img/catalog/levon/photo-1-tablet@2x.jpg 2x">
+                    <img class="photos__item-image" src="img/catalog/levon/photo-1-mobile.jpg" srcset="img/catalog/levon/photo-1-mobile@2x.jpg 2x" loading="lazy" width="280" height="180" alt="Фото от Левона.">
+                  </picture>
+                </a>
               </div>
               <div class="photos__item-comments">
                 <div class="photos__text-wrapper">
@@ -130,15 +135,17 @@
             </li>
             <li class="photos__item">
               <div class="photos__item-image-wrapper">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/anton/photo-2-desktop.webp 1x, img/catalog/anton/photo-2-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/anton/photo-2-tablet.webp 1x, img/catalog/anton/photo-2-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/catalog/anton/photo-2-mobile.webp 1x, img/catalog/anton/photo-2-mobile@2x.webp 2x">
+                <a class="photos__link" href="img/catalog/anton/photo-2-desktop@2x.jpg">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/anton/photo-2-desktop.webp 1x, img/catalog/anton/photo-2-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/anton/photo-2-tablet.webp 1x, img/catalog/anton/photo-2-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog/anton/photo-2-mobile.webp 1x, img/catalog/anton/photo-2-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1200px)" srcset="img/catalog/anton/photo-2-desktop.jpg 1x, img/catalog/anton/photo-2-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/catalog/anton/photo-2-tablet.jpg 1x, img/catalog/anton/photo-2-tablet@2x.jpg 2x">
-                  <img class="photos__item-image" src="img/catalog/anton/photo-2-mobile.jpg" srcset="img/catalog/anton/photo-2-mobile@2x.jpg 2x" loading="lazy" width="280" height="180" alt="Фото от Антона.">
-                </picture>
+                    <source media="(min-width: 1200px)" srcset="img/catalog/anton/photo-2-desktop.jpg 1x, img/catalog/anton/photo-2-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/catalog/anton/photo-2-tablet.jpg 1x, img/catalog/anton/photo-2-tablet@2x.jpg 2x">
+                    <img class="photos__item-image" src="img/catalog/anton/photo-2-mobile.jpg" srcset="img/catalog/anton/photo-2-mobile@2x.jpg 2x" loading="lazy" width="280" height="180" alt="Фото от Антона.">
+                  </picture>
+                </a>
               </div>
               <div class="photos__item-comments">
                 <div class="photos__text-wrapper">
@@ -160,15 +167,17 @@
             </li>
             <li class="photos__item">
               <div class="photos__item-image-wrapper">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/boris/photo-3-desktop.webp 1x, img/catalog/boris/photo-3-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/boris/photo-3-tablet.webp 1x, img/catalog/boris/photo-3-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/catalog/boris/photo-3-mobile.webp 1x, img/catalog/boris/photo-3-mobile@2x.webp 2x">
+                <a class="photos__link" href="img/catalog/boris/photo-3-desktop@2x.jpg">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/boris/photo-3-desktop.webp 1x, img/catalog/boris/photo-3-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/boris/photo-3-tablet.webp 1x, img/catalog/boris/photo-3-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog/boris/photo-3-mobile.webp 1x, img/catalog/boris/photo-3-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1200px)" srcset="img/catalog/boris/photo-3-desktop.jpg 1x, img/catalog/boris/photo-3-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/catalog/boris/photo-3-tablet.jpg 1x, img/catalog/boris/photo-3-tablet@2x.jpg 2x">
-                  <img class="photos__item-image" src="img/catalog/boris/photo-3-mobile.jpg" srcset="img/catalog/boris/photo-3-mobile@2x.jpg 2x" loading="lazy" width="280" height="180" alt="Фото от Бориса.">
-                </picture>
+                    <source media="(min-width: 1200px)" srcset="img/catalog/boris/photo-3-desktop.jpg 1x, img/catalog/boris/photo-3-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/catalog/boris/photo-3-tablet.jpg 1x, img/catalog/boris/photo-3-tablet@2x.jpg 2x">
+                    <img class="photos__item-image" src="img/catalog/boris/photo-3-mobile.jpg" srcset="img/catalog/boris/photo-3-mobile@2x.jpg 2x" loading="lazy" width="280" height="180" alt="Фото от Бориса.">
+                  </picture>
+                </a>
               </div>
               <div class="photos__item-comments">
                 <div class="photos__text-wrapper">
@@ -190,15 +199,17 @@
             </li>
             <li class="photos__item">
               <div class="photos__item-image-wrapper">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/sergey/photo-4-desktop.webp 1x, img/catalog/sergey/photo-4-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/sergey/photo-4-tablet.webp 1x, img/catalog/sergey/photo-4-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/catalog/sergey/photo-4-mobile.webp 1x, img/catalog/sergey/photo-4-mobile@2x.webp 2x">
+                <a class="photos__link" href="img/catalog/sergey/photo-4-desktop@2x.jpg">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/sergey/photo-4-desktop.webp 1x, img/catalog/sergey/photo-4-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/sergey/photo-4-tablet.webp 1x, img/catalog/sergey/photo-4-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog/sergey/photo-4-mobile.webp 1x, img/catalog/sergey/photo-4-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1200px)" srcset="img/catalog/sergey/photo-4-desktop.jpg 1x, img/catalog/sergey/photo-4-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/catalog/sergey/photo-4-tablet.jpg 1x, img/catalog/sergey/photo-4-tablet@2x.jpg 2x">
-                  <img class="photos__item-image" src="img/catalog/sergey/photo-4-mobile.jpg" srcset="img/catalog/sergey/photo-4-mobile@2x.jpg 2x" loading="lazy" width="280" height="180" alt="Фото от Сергея.">
-                </picture>
+                    <source media="(min-width: 1200px)" srcset="img/catalog/sergey/photo-4-desktop.jpg 1x, img/catalog/sergey/photo-4-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/catalog/sergey/photo-4-tablet.jpg 1x, img/catalog/sergey/photo-4-tablet@2x.jpg 2x">
+                    <img class="photos__item-image" src="img/catalog/sergey/photo-4-mobile.jpg" srcset="img/catalog/sergey/photo-4-mobile@2x.jpg 2x" loading="lazy" width="280" height="180" alt="Фото от Сергея.">
+                  </picture>
+                </a>
               </div>
               <div class="photos__item-comments">
                 <div class="photos__text-wrapper">
@@ -220,15 +231,17 @@
             </li>
             <li class="photos__item">
               <div class="photos__item-image-wrapper">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/maksim/photo-5-desktop.webp 1x, img/catalog/maksim/photo-5-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/maksim/photo-5-tablet.webp 1x, img/catalog/maksim/photo-5-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/catalog/maksim/photo-5-mobile.webp 1x, img/catalog/maksim/photo-5-mobile@2x.webp 2x">
+                <a class="photos__link" href="img/catalog/maksim/photo-5-desktop@2x.jpg">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/maksim/photo-5-desktop.webp 1x, img/catalog/maksim/photo-5-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/maksim/photo-5-tablet.webp 1x, img/catalog/maksim/photo-5-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog/maksim/photo-5-mobile.webp 1x, img/catalog/maksim/photo-5-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1200px)" srcset="img/catalog/maksim/photo-5-desktop.jpg 1x, img/catalog/maksim/photo-5-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/catalog/maksim/photo-5-tablet.jpg 1x, img/catalog/maksim/photo-5-tablet@2x.jpg 2x">
-                  <img class="photos__item-image" src="img/catalog/maksim/photo-5-mobile.jpg" srcset="img/catalog/maksim/photo-5-mobile@2x.jpg 2x" loading="lazy" width="280" height="180" alt="Фото от Максима.">
-                </picture>
+                    <source media="(min-width: 1200px)" srcset="img/catalog/maksim/photo-5-desktop.jpg 1x, img/catalog/maksim/photo-5-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/catalog/maksim/photo-5-tablet.jpg 1x, img/catalog/maksim/photo-5-tablet@2x.jpg 2x">
+                    <img class="photos__item-image" src="img/catalog/maksim/photo-5-mobile.jpg" srcset="img/catalog/maksim/photo-5-mobile@2x.jpg 2x" loading="lazy" width="280" height="180" alt="Фото от Максима.">
+                  </picture>
+                </a>
               </div>
               <div class="photos__item-comments">
                 <div class="photos__text-wrapper">
@@ -250,15 +263,17 @@
             </li>
             <li class="photos__item">
               <div class="photos__item-image-wrapper">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/nadezhda/photo-6-desktop.webp 1x, img/catalog/nadezhda/photo-6-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/nadezhda/photo-6-tablet.webp 1x, img/catalog/nadezhda/photo-6-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/catalog/nadezhda/photo-6-mobile.webp 1x, img/catalog/nadezhda/photo-6-mobile@2x.webp 2x">
+                <a class="photos__link" href="img/catalog/nadezhda/photo-6-desktop@2x.jpg">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog/nadezhda/photo-6-desktop.webp 1x, img/catalog/nadezhda/photo-6-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/nadezhda/photo-6-tablet.webp 1x, img/catalog/nadezhda/photo-6-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog/nadezhda/photo-6-mobile.webp 1x, img/catalog/nadezhda/photo-6-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1200px)" srcset="img/catalog/nadezhda/photo-6-desktop.jpg 1x, img/catalog/nadezhda/photo-6-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/catalog/nadezhda/photo-6-tablet.jpg 1x, img/catalog/nadezhda/photo-6-tablet@2x.jpg 2x">
-                  <img class="photos__item-image" src="img/catalog/nadezhda/photo-6-mobile.jpg" srcset="img/catalog/nadezhda/photo-6-mobile@2x.jpg 2x" loading="lazy" width="280" height="180" alt="Фото от Надежды.">
-                </picture>
+                    <source media="(min-width: 1200px)" srcset="img/catalog/nadezhda/photo-6-desktop.jpg 1x, img/catalog/nadezhda/photo-6-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/catalog/nadezhda/photo-6-tablet.jpg 1x, img/catalog/nadezhda/photo-6-tablet@2x.jpg 2x">
+                    <img class="photos__item-image" src="img/catalog/nadezhda/photo-6-mobile.jpg" srcset="img/catalog/nadezhda/photo-6-mobile@2x.jpg 2x" loading="lazy" width="280" height="180" alt="Фото от Надежды.">
+                  </picture>
+                </a>
               </div>
               <div class="photos__item-comments">
                 <div class="photos__text-wrapper">
@@ -289,17 +304,19 @@
         </div>
         <form class="upload-photos__form" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data" method="post">
           <fieldset class="upload-photos__fieldset">
+            <legend class="visually-hidden">Загрузите ваши фотографии для обработки</legend>
             <div class="upload-photos__wrapper">
-              <legend class="visually-hidden">Загрузите ваши фотографии для обработки</legend>
               <div class="upload-photos__image-wrapper">
                 <input class="upload-photos__file" type="file" name="uploaded-photo" multiple accept="image/*">
-                <picture>
-                  <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/upload/photo-7-tablet.webp 1x, img/catalog/upload/photo-7-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/catalog/upload/photo-7-mobile.webp 1x, img/catalog/upload/photo-7-mobile@2x.webp 2x">
+                <a class="upload-photos__link" href="img/catalog/upload/photo-7-tablet@2x.jpg">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 660px)" srcset="img/catalog/upload/photo-7-tablet.webp 1x, img/catalog/upload/photo-7-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/catalog/upload/photo-7-mobile.webp 1x, img/catalog/upload/photo-7-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 660px)" srcset="img/catalog/upload/photo-7-tablet.jpg 1x, img/catalog/upload/photo-7-tablet@2x.jpg 2x">
-                  <img class="upload-photos__image" src="img/catalog/upload/photo-7-mobile.jpg" srcset="img/catalog/upload/photo-7-mobile@2x.jpg 2x" loading="lazy" width="280" height="374" alt="Загруженное фото.">
-                </picture>
+                    <source media="(min-width: 660px)" srcset="img/catalog/upload/photo-7-tablet.jpg 1x, img/catalog/upload/photo-7-tablet@2x.jpg 2x">
+                    <img class="upload-photos__image" src="img/catalog/upload/photo-7-mobile.jpg" srcset="img/catalog/upload/photo-7-mobile@2x.jpg 2x" loading="lazy" width="280" height="374" alt="Загруженное фото.">
+                  </picture>
+                </a>
               </div>
               <div class="upload-photos__buttons">
                 <ul class="upload-photos__edit-buttons">
@@ -397,6 +414,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

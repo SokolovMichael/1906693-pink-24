@@ -1,5 +1,5 @@
 .photos__wrapper {
-  margin-bottom: 41px;
+  margin-bottom: 40px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 67px;
@@ -104,6 +104,12 @@
   }
 }
 
+.photos__text--panorama br {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
 .photos__like {
   display: flex;
   position: relative;
@@ -197,6 +203,10 @@
   @media (min-width: @desktop-width) {
     margin-bottom: 35px;
   }
+}
+
+.photos__item:nth-child(5) .photos__text {
+  margin-bottom: 13px;
 }
 
 .photos__item:last-child {
