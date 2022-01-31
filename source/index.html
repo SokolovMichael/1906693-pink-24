@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header page-header--nojs">
       <div class="page-header__wrapper">
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <div class="main-nav__wrapper">
@@ -62,7 +62,7 @@
             <source type="image/webp" srcset="img/intro/intro-tablet.webp 1x, img/intro/intro-tablet@2x.webp 2x">
 
             <source media="(min-width: 1200px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
-            <img class="page-header__image" src="img/intro/intro-tablet.png" srcset="img/intro/intro-tablet@2x.png 2x" loading="lazy" width="660" height="545" alt="Взгляни на жизнь иначе.">
+            <img class="page-header__image page-header__image--nojs" src="img/intro/intro-tablet.png" srcset="img/intro/intro-tablet@2x.png 2x" loading="lazy" width="660" height="545" alt="Взгляни на жизнь иначе.">
           </picture>
         </div>
       </div>
@@ -363,30 +363,32 @@
           </button>
         </div>
       </section>
-      <address class="contacts">
+      <section class="contacts">
         <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <p class="contacts__name">Звоните:</p>
-            <a class="contacts__details" href="tel:+78125556666">+7 (812) 555-66-66</a>
-          </li>
-          <li class="contacts__item">
-            <p class="contacts__name">Пишите:</p>
-            <a class="contacts__details contacts__details--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </li>
-          <li class="contacts__item">
-            <p class="contacts__name">Приезжайте в гости:</p>
-            <p class="contacts__details">ул. Большая Конюшенная, 19/8</p>
-          </li>
-        </ul>
-        <div class="contacts__road-map">
-          <iframe class="contacts__iframe"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.82526767823026!2d30.32286798264162!3d59.938743789986816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1639781160399!5m2!1sru!2sru"
-            allowfullscreen
-            title="Офис компании по адресу ул. Большая Конюшенная, 19/8">
-          </iframe>
-        </div>
-      </address>
+        <address class="contacts__wrapper">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__name">Звоните:</p>
+              <a class="contacts__details" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__name">Пишите:</p>
+              <a class="contacts__details contacts__details--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__name">Приезжайте в гости:</p>
+              <p class="contacts__details">ул. Большая Конюшенная, 19/8</p>
+            </li>
+          </ul>
+          <div class="contacts__road-map">
+            <iframe class="contacts__iframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.82526767823026!2d30.32286798264162!3d59.938743789986816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1639781160399!5m2!1sru!2sru"
+              allowfullscreen
+              title="Офис компании по адресу ул. Большая Конюшенная, 19/8">
+            </iframe>
+          </div>
+        </address>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
@@ -443,6 +445,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -22,6 +22,20 @@
   }
 }
 
+.page-header--nojs {
+  position: relative;
+  background-color: #283645;
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.page-header__picture {
+  position: relative;
+}
+
 .page-header__image {
   display: none;
 
@@ -32,8 +46,8 @@
     width: 660px;
     position: absolute;
     top: 185px;
-    right: 0;
     left: 0;
+    right: 0;
     z-index: 1;
   }
 
@@ -42,5 +56,11 @@
     width: 1050px;
     top: 208px;
     left: 140px;
+  }
+}
+
+.page-header__image--nojs {
+  @media (min-width: @desktop-width) {
+    top: 98px;
   }
 }
