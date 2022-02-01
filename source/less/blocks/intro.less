@@ -17,8 +17,6 @@
     background-image: url("../img/background/back-intro-tablet.jpg");
     min-height: 527px;
     margin-bottom: 45px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: @desktop-width) {
@@ -33,6 +31,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+  }
 }
 
 .intro__slogan {
@@ -58,19 +62,27 @@
   }
 }
 
-.intro__mobile {
-  display: block;
-
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-}
-
 .intro__image {
   display: block;
   margin: 0 auto;
   width: 320px;
   height: 286px;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    height: 545px;
+    position: absolute;
+    top: -18px;
+    left: 0;
+    right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+    height: 645px;
+    top: 0;
+    left: 142px;
+  }
 }
 
 .intro__download {
