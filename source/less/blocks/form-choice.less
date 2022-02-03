@@ -32,7 +32,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 13px 35px 0 0;
+    margin: 13px 35px 52px 0;
   }
 }
 
@@ -124,10 +124,9 @@
 
 .form-choice__list--travel-achievements {
   @media (min-width: @desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
-    height: 170px;
-    margin-left: 110px;
+    display: grid;
+    grid-template-columns: 315px 295px 200px;
+    margin: 0 0 5px 109px;
   }
 }
 
@@ -141,16 +140,35 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 51px;
   }
+}
 
+.form-choice__list--travel-achievements .form-choice__item:nth-child(3) {
   @media (min-width: @desktop-width) {
-    width: 245px;
-    margin: 0 50px 51px 0;
+    order: 2;
+  }
+}
+
+.form-choice__list--travel-achievements .form-choice__item:nth-child(5) {
+  @media (min-width: @desktop-width) {
+    order: 3;
   }
 }
 
 .form-choice__list--travel-achievements .form-choice__item:nth-child(2) {
   @media (min-width: @desktop-width) {
-    margin-right: 69px;
+    order: 4;
+  }
+}
+
+.form-choice__list--travel-achievements .form-choice__item:nth-child(4) {
+  @media (min-width: @desktop-width) {
+    order: 5;
+  }
+}
+
+.form-choice__list--travel-achievements .form-choice__item:nth-child(6) {
+  @media (min-width: @desktop-width) {
+    order: 6;
   }
 }
 
@@ -241,6 +259,7 @@
   font-size: 18px;
   line-height: 30px;
   color: #283645;
+  outline: none;
 
   @media (min-width: @tablet-width) {
     width: 100%;
@@ -253,6 +272,7 @@
 
 .form-choice__input::-moz-placeholder {
   color: #283645;
+  opacity: 1;
 }
 
 .form-choice__icon-phone,
@@ -318,6 +338,7 @@
   resize: none;
   min-height: 201px;
   padding: 14px 19px;
+  outline: none;
 
   @media (min-width: @tablet-width) {
     min-height: 193px;
@@ -329,12 +350,25 @@
   }
 }
 
+.form-choice__input:hover,
+.form-choice__review:hover {
+  border: 2px solid #283645;
+}
+
+.form-choice__input:focus,
+.form-choice__input:active,
+.form-choice__review:focus,
+.form-choice__review:active {
+  border: 2px solid #d22856;
+}
+
 .form-choice__review::-webkit-input-placeholder {
   color: #283645;
 }
 
 .form-choice__review::-moz-placeholder {
   color: #283645;
+  opacity: 1;
 }
 
 .form-choice__submit {
@@ -370,6 +404,21 @@
     padding: 14px 55px;
     margin: 0;
   }
+}
+
+.form-choice__submit-button:hover {
+  background-color: #1c9b5e;
+  border: 2px solid #1c9b5e;
+}
+
+.form-choice__submit-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.form-choice__submit-button:disabled {
+  background-color: #e5e5e5;
+  border: 2px solid #e5e5e5;
+  color: #ffffff;
 }
 
 .form-choice__note {
